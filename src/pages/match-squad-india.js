@@ -119,12 +119,14 @@ const MatchSquadIndia = () => {
                             Points Table
                         </button>
                         </Link>
+                        <Link href="/live-stats/most-runs-stats">
                         <button
                             onclick="handleTabClick(event, 'stats')"
                             className="font-medium py-2 px-3 whitespace-nowrap"
                         >
                             Stats
                         </button>
+                        </Link>
                     </div>
                 </div>
 

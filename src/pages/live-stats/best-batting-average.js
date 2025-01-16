@@ -3,9 +3,7 @@ import Layout from '@/Components/Layout'
 import Link from 'next/link';
 import React, { useState } from 'react'
 
-const MostRunStats = () => {
-
-
+export default function BestBattingAverage() {
     return (
         <Layout>
             <section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
@@ -144,7 +142,7 @@ const MostRunStats = () => {
                                     <Link href="/live-stats/most-runs-stats">
                                         <button
                                             
-                                            className="state-btn new-class border-t px-2 py-3 w-full font-medium active text-left bg-[#ecf2fd] text-[#1a80f8] rounded-md "
+                                            className="state-btn new-class border-t px-2 py-3 w-full font-medium active text-left "
                                             onClick={() => handleStatsChange("most-runs")}
                                         >
                                           Most Runs 
@@ -157,16 +155,14 @@ const MostRunStats = () => {
                                            Highest Scores 
                                         </button>
                                         </Link>
-                                        <Link href="/live-stats/best-batting-average">
                                         <button
                                             // className="state-btn new-class border-b px-2 py-3 w-full font-medium  text-left "
                                             // data-target="batting-average"
-                                           className= "state-btn new-class border-t px-2 py-3 w-full font-medium active text-left rounded-md hover:bg-[#ecf2fd] hover:text-[#1a80f8]"
+                                           className= "state-btn new-class border-t px-2 py-3 w-full font-medium active text-left rounded-md hover:bg-[#ecf2fd] hover:text-[#1a80f8] bg-[#ecf2fd] text-[#1a80f8]"
                                             onClick={() => handleStatsChange("batting-average")}
                                         >
                                             Best Batting Average
                                         </button>
-                                        </Link>
                                         <button
                                             // className="state-btn new-class border-b px-2 py-3 w-full font-medium  text-left "
                                             // data-target="state-team"
@@ -521,5 +517,3 @@ const MostRunStats = () => {
         </Layout>
     )
 }
-
-export default MostRunStats;

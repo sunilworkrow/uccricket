@@ -4,73 +4,59 @@ import Layout from '@/Components/Layout'
 import Link from 'next/link';
 import React, { useState } from 'react'
 
-const MatchSquad = () => {
+const UpcomingMatchSquads = () => {
 
 
     return (
         <Layout>
 
-            
-<section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
+            <section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
                 <div className="lg:w-[1000px] mx-auto">
                     <div className="md:flex justify-between items-center md:py-0 py-4">
-                        <div className="flex items-center text-1xl text-[#FE4848] font-bold uppercase relative">
-                            <img src="/assets/img/home/blinking-dot.gif" className="h-[20px]" alt="" />
-                            LIVE NOW
-
+                        <div className=" text-1xl text-[#FF912C] font-bold uppercase w-full">
+                            <span className="h-[10px] w-[10px] inline-block	bg-[#FF912C] rounded-full" />
+                            upcoming
                         </div>
-                        <div className="text-[#8192B4] font-normal  text-1xl md:text-center md:mx-0 my-3">
-                            Bangladesh in India August,&nbsp;2nd Test,{" "}
-                            <span className="font-semibold text-[#b9b9b9]"> Day 4-Session 3</span>
+                        <div className="text-[#8192B4] font-normal w-full text-1xl md:text-center md:mx-0 my-3">
+                            Bangladesh in India August,&nbsp;3rd Test
                         </div>
-                        <div className="flex text-[#8192B4] text-1xl font-normal  md:justify-end md:justify-start">
+                        <div className="flex text-[#8192B4] text-1xl font-normal w-full md:justify-end md:justify-start">
                             <img src="/assets/img/clander.png" className="mr-2" alt="" />
                             1-5 oct 2024
                         </div>
                     </div>
                 </div>
-                <div className="border-t-[1px] border-[#E4E9F01A]">
-                    <div className="lg:w-[1000px] mx-auto md:py-9 tracking-[1px]">
-                        <div className="md:flex py-8 justify-between items-center">
-                            <div className="flex gap-2 flex-row text-[#BDCCECA8] uppercase items-center w-full">
+                <div className="border-t-[1px] border-[#E4E9F01A] h-48">
+                    <div className="lg:w-[1000px] mx-auto md:py-8 tracking-[1px]">
+                        <div className="flex py-8 justify-between items-center">
+                            <div className="flex flex-col md:flex-row text-[#FF912C] font-bold uppercase  md:items-center items-start w-full">
                                 <img
-                                    className="lg:h-[42px] lg:w-[42px] h-[30px] w-[30px]"
+                                    className="md:h-[42px] md:w-[42px] h-[30px] w-[30px]"
                                     src="/assets/img/flg-1.png"
                                     alt="ind"
                                 />
-                                <div className="flex md:flex-col md:items-start items-center md:gap-0 gap-2">
-                                    <p className="text-[#BDCCECA8] font-bold md:text-[17px] lg:text-[19px] text-[14px] font-semibold uppercase">
-                                        IND
-                                    </p>
-                                    <p className="lg:text-[18px] text-[16px] font-semibold">
-                                        139/4 <span className="text-[13px] font-medium">(42.0)</span>{" "}
-                                        &amp; 222 <span className="text-[13px] font-medium">(66.2)</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="text-[#8192B4] font-normal text-center w-full text-center md:my-0 my-4">
-                                <p className="text-[#FFBD71] lg:text-[20px] text-[16px] font-semibold">
-                                    Day 4-Session 3
-                                </p>
-                                <p className="text-[#C1CEEA] text-[14px] ">
-                                    CRR: 3.8 IND trail by 299 runs.
+                                <p className="text-[#BDCCECA8] md:mx-3 mx-0 md:text-[19px] text-[14px] font-semibold uppercase">
+                                    IND
                                 </p>
                             </div>
-                            <div className="flex gap-2 flex-row flex-row-reverse md:flex-row  items-center text-[#8192B4] font-normal w-full justify-end">
-                                <div className="flex md:flex-col md:items-end items-center md:gap-0 gap-2">
-                                    <p className="text-[#BDCCECA8] font-bold md:text-[17px] lg:text-[19px] text-[14px] font-semibold uppercase">
-                                        BAN
-                                    </p>
-                                    <p className="lg:text-[18px] text-[16px] font-semibold">
-                                        160<span className="text-[14px] font-medium"> (63.0)</span>{" "}
-                                        &amp; Yet To Bet
-                                    </p>
-                                </div>
+                            <div className="text-[#8192B4] font-normal text-center w-full text-center">
+                                <p className="text-[#C1CEEA] text-1xl">7:00 PM</p>
+                                <p className="text-[#FFBD71] md:text-[24px] text-[16px] font-semibold">
+                                    1 October
+                                </p>
+                            </div>
+                            <div className="flex flex-col md:flex-row md:items-center items-end text-[#8192B4] font-normal w-full justify-end">
+                                <p className="text-[#BDCCECA8] md:block hidden md:text-[19px] text-[14px] md:mx-3 mx-0 font-semibold uppercase">
+                                    BAN
+                                </p>
                                 <img
                                     src="/assets/img/ban.png"
-                                    className="lg:h-[42px] lg:w-[42px] h-[30px] w-[30px]"
+                                    className="md:h-[42px] md:w-[42px] h-[30px] w-[30px]"
                                     alt="ban"
                                 />
+                                <p className="text-[#BDCCECA8] md:hidden md:text-[19px] text-[14px] md:mx-3 mx-0 font-semibold uppercase">
+                                    BAN
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -81,7 +67,7 @@ const MatchSquad = () => {
             <section className="lg:w-[1000px] mx-auto md:mb-0 mb-4 px-2 lg:px-0">
                 <div id="tabs" className="my-4">
                     <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
-                        <Link href="/match-moreinfo">
+                        <Link href="/scheduled/infoUpcoming-match">
                             <button
                                 onclick="handleTabClick(event, 'info')"
                                 className="font-medium py-2 px-3 whitespace-nowrap"
@@ -89,15 +75,15 @@ const MatchSquad = () => {
                                 More Info
                             </button>
                         </Link>
-                        <Link href="/match-live-now">
+                        <Link href="">
                             <button
                                 onclick="handleTabClick(event, 'live')"
-                                className="font-medium py-2 px-3 whitespace-nowrap "
+                                className="font-medium py-2 px-3 whitespace-nowrap"
                             >
                                 Live
                             </button>
                         </Link>
-                        <Link href="/match-scorecard">
+                        <Link href="">
                             <button
                                 onclick="handleTabClick(event, 'scorecard')"
                                 className="font-medium py-2 px-3 whitespace-nowrap"
@@ -105,30 +91,37 @@ const MatchSquad = () => {
                                 Scorecard
                             </button>
                         </Link>
-                        <Link href="/match-squad">
+                        <Link href="/scheduled/upcoming-matchSquads">
                             <button
                                 onclick="handleTabClick(event, 'overs')"
                                 className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
                             >
-                                Squad
+                                Squads
                             </button>
                         </Link>
-
-                        <Link href="/matchpoints">
-                        <button
-                            onclick="handleTabClick(event, 'points')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Points Table
-                        </button>
+                        <Link href="/scheduled/upcoming-pointsTable">
+                            <button
+                                onclick="handleTabClick(event, 'points')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Points Table
+                            </button>
                         </Link>
-                        <Link href="/live-stats/most-runs-stats">
-                        <button
-                            onclick="handleTabClick(event, 'stats')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Stats
-                        </button>
+                        <Link href="/scheduled/upcoming-Stats">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Stats
+                            </button>
+                        </Link>
+                        <Link href="/scheduled/upcoming-Fantasy-Tips">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Fantasy Tips
+                            </button>
                         </Link>
                     </div>
                 </div>
@@ -145,31 +138,31 @@ const MatchSquad = () => {
                             <div className="rounded-lg p-2 mb-4 bg-[#ffffff]">
                                 <div id="team-buttons" className="">
                                     <Link href="#">
-                                    <button
-                                        className="team-btn border-b px-2 mb-1 py-3 w-full text-[#394351] bg-[#eaeaea] rounded-md font-medium flex items-center"
-                                        data-target="aus-team"
-                                    >
-                                        <img
-                                            src="/assets/img/flag/1.png"
-                                            className="mr-3"
-                                            alt="Afghanistan Flag"
-                                        />
-                                        Australia-W
-                                    </button>
+                                        <button
+                                            className="team-btn border-b px-2 mb-1 py-3 w-full text-[#394351] bg-[#eaeaea] rounded-md font-medium flex items-center"
+                                            data-target="aus-team"
+                                        >
+                                            <img
+                                                src="/assets/img/flag/1.png"
+                                                className="mr-3"
+                                                alt="Afghanistan Flag"
+                                            />
+                                            Australia-W
+                                        </button>
                                     </Link>
 
                                     <Link href="/match-squad-india">
-                                    <button
-                                        className="team-btn px-2 py-3 w-full text-[#394351] font-medium hover:bg-[#eaeaea] rounded-md flex items-center"
-                                        data-target="ind-team"
-                                    >
-                                        <img
-                                            src="/assets/img/flag/1.png"
-                                            className="mr-3"
-                                            alt="Bangladesh Flag"
-                                        />
-                                        India-W
-                                    </button>
+                                        <button
+                                            className="team-btn px-2 py-3 w-full text-[#394351] font-medium hover:bg-[#eaeaea] rounded-md flex items-center"
+                                            data-target="ind-team"
+                                        >
+                                            <img
+                                                src="/assets/img/flag/1.png"
+                                                className="mr-3"
+                                                alt="Bangladesh Flag"
+                                            />
+                                            India-W
+                                        </button>
                                     </Link>
                                 </div>
                             </div>
@@ -518,7 +511,7 @@ const MatchSquad = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -538,4 +531,4 @@ const MatchSquad = () => {
 
 }
 
-export default MatchSquad;
+export default UpcomingMatchSquads;

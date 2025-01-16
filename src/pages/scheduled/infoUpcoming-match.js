@@ -1,81 +1,70 @@
+
+
 import Layout from '@/Components/Layout'
 import Link from 'next/link';
 import React, { useState } from 'react'
 
 
-const Matchmoreinfo = () => {
+export default function UpcomingInfo() {
 
-    const [activeTab, setActiveTab] = useState('cust-box-click-firview');
+        const [activeTab, setActiveTab] = useState('cust-box-click-firview');
+    
+        const handleProbabilityTab = (event, tabName) => {
+            setActiveTab(tabName);
+          };
 
-    const handleProbabilityTab = (event, tabName) => {
-        setActiveTab(tabName);
-      };
 
 
     return (
+
         <Layout>
-
-
             <section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
                 <div className="lg:w-[1000px] mx-auto">
                     <div className="md:flex justify-between items-center md:py-0 py-4">
-                        <div className="flex items-center text-1xl text-[#FE4848] font-bold uppercase relative">
-                            <img src="/assets/img/home/blinking-dot.gif" className="h-[20px]" alt="" />
-                            LIVE NOW
-
+                        <div className=" text-1xl text-[#FF912C] font-bold uppercase w-full">
+                            <span className="h-[10px] w-[10px] inline-block	bg-[#FF912C] rounded-full" />
+                            upcoming
                         </div>
-                        <div className="text-[#8192B4] font-normal  text-1xl md:text-center md:mx-0 my-3">
-                            Bangladesh in India August,&nbsp;2nd Test,{" "}
-                            <span className="font-semibold text-[#b9b9b9]"> Day 4-Session 3</span>
+                        <div className="text-[#8192B4] font-normal w-full text-1xl md:text-center md:mx-0 my-3">
+                            Bangladesh in India August,&nbsp;3rd Test
                         </div>
-                        <div className="flex text-[#8192B4] text-1xl font-normal  md:justify-end md:justify-start">
+                        <div className="flex text-[#8192B4] text-1xl font-normal w-full md:justify-end md:justify-start">
                             <img src="/assets/img/clander.png" className="mr-2" alt="" />
                             1-5 oct 2024
                         </div>
                     </div>
                 </div>
-                <div className="border-t-[1px] border-[#E4E9F01A]">
-                    <div className="lg:w-[1000px] mx-auto md:py-9 tracking-[1px]">
-                        <div className="md:flex py-8 justify-between items-center">
-                            <div className="flex gap-2 flex-row text-[#BDCCECA8] uppercase items-center w-full">
+                <div className="border-t-[1px] border-[#E4E9F01A] h-48">
+                    <div className="lg:w-[1000px] mx-auto md:py-8 tracking-[1px]">
+                        <div className="flex py-8 justify-between items-center">
+                            <div className="flex flex-col md:flex-row text-[#FF912C] font-bold uppercase  md:items-center items-start w-full">
                                 <img
-                                    className="lg:h-[42px] lg:w-[42px] h-[30px] w-[30px]"
+                                    className="md:h-[42px] md:w-[42px] h-[30px] w-[30px]"
                                     src="/assets/img/flg-1.png"
                                     alt="ind"
                                 />
-                                <div className="flex md:flex-col md:items-start items-center md:gap-0 gap-2">
-                                    <p className="text-[#BDCCECA8] font-bold md:text-[17px] lg:text-[19px] text-[14px] font-semibold uppercase">
-                                        IND
-                                    </p>
-                                    <p className="lg:text-[18px] text-[16px] font-semibold">
-                                        139/4 <span className="text-[13px] font-medium">(42.0)</span>{" "}
-                                        &amp; 222 <span className="text-[13px] font-medium">(66.2)</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="text-[#8192B4] font-normal text-center w-full text-center md:my-0 my-4">
-                                <p className="text-[#FFBD71] lg:text-[20px] text-[16px] font-semibold">
-                                    Day 4-Session 3
-                                </p>
-                                <p className="text-[#C1CEEA] text-[14px] ">
-                                    CRR: 3.8 IND trail by 299 runs.
+                                <p className="text-[#BDCCECA8] md:mx-3 mx-0 md:text-[19px] text-[14px] font-semibold uppercase">
+                                    IND
                                 </p>
                             </div>
-                            <div className="flex gap-2 flex-row flex-row-reverse md:flex-row  items-center text-[#8192B4] font-normal w-full justify-end">
-                                <div className="flex md:flex-col md:items-end items-center md:gap-0 gap-2">
-                                    <p className="text-[#BDCCECA8] font-bold md:text-[17px] lg:text-[19px] text-[14px] font-semibold uppercase">
-                                        BAN
-                                    </p>
-                                    <p className="lg:text-[18px] text-[16px] font-semibold">
-                                        160<span className="text-[14px] font-medium"> (63.0)</span>{" "}
-                                        &amp; Yet To Bet
-                                    </p>
-                                </div>
+                            <div className="text-[#8192B4] font-normal text-center w-full text-center">
+                                <p className="text-[#C1CEEA] text-1xl">7:00 PM</p>
+                                <p className="text-[#FFBD71] md:text-[24px] text-[16px] font-semibold">
+                                    1 October
+                                </p>
+                            </div>
+                            <div className="flex flex-col md:flex-row md:items-center items-end text-[#8192B4] font-normal w-full justify-end">
+                                <p className="text-[#BDCCECA8] md:block hidden md:text-[19px] text-[14px] md:mx-3 mx-0 font-semibold uppercase">
+                                    BAN
+                                </p>
                                 <img
                                     src="/assets/img/ban.png"
-                                    className="lg:h-[42px] lg:w-[42px] h-[30px] w-[30px]"
+                                    className="md:h-[42px] md:w-[42px] h-[30px] w-[30px]"
                                     alt="ban"
                                 />
+                                <p className="text-[#BDCCECA8] md:hidden md:text-[19px] text-[14px] md:mx-3 mx-0 font-semibold uppercase">
+                                    BAN
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -86,7 +75,7 @@ const Matchmoreinfo = () => {
             <section className="lg:w-[1000px] mx-auto md:mb-0 mb-4 px-2 lg:px-0">
                 <div id="tabs" className="my-4">
                     <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
-                        <Link href="/match-moreinfo">
+                        <Link href="/scheduled/infoUpcoming-match">
                             <button
                                 onclick="handleTabClick(event, 'info')"
                                 className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
@@ -94,7 +83,7 @@ const Matchmoreinfo = () => {
                                 More Info
                             </button>
                         </Link>
-                        <Link href="/match-live-now">
+                        <Link href="">
                             <button
                                 onclick="handleTabClick(event, 'live')"
                                 className="font-medium py-2 px-3 whitespace-nowrap"
@@ -102,7 +91,7 @@ const Matchmoreinfo = () => {
                                 Live
                             </button>
                         </Link>
-                        <Link href="/match-scorecard">
+                        <Link href="">
                             <button
                                 onclick="handleTabClick(event, 'scorecard')"
                                 className="font-medium py-2 px-3 whitespace-nowrap"
@@ -110,68 +99,89 @@ const Matchmoreinfo = () => {
                                 Scorecard
                             </button>
                         </Link>
-                        <Link href="/match-squad">
-                        <button
-                            onclick="handleTabClick(event, 'overs')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Squad
-                        </button>
+                        <Link href="/scheduled/upcoming-matchSquads">
+                            <button
+                                onclick="handleTabClick(event, 'overs')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Squads
+                            </button>
                         </Link>
-                        <Link href="/matchpoints">
-                        <button
-                            onclick="handleTabClick(event, 'points')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Points Table
-                        </button>
+                        <Link href="/scheduled/upcoming-pointsTable">
+                            <button
+                                onclick="handleTabClick(event, 'points')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Points Table
+                            </button>
                         </Link>
-                        <Link href="/live-stats/most-runs-stats">
-                        <button
-                            onclick="handleTabClick(event, 'stats')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Stats
-                        </button>
+                        <Link href="/scheduled/upcoming-Stats">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Stats
+                            </button>
+                        </Link>
+                        <Link href="/scheduled/upcoming-Fantasy-Tips">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Fantasy Tips
+                            </button>
                         </Link>
                     </div>
                 </div>
-
                 <div id="tab-content">
-                    {/*------------------------  More Info Seaction Start ---------------------------*/}
-                    <div id="info" className="tab-content">
+
+                    <div id="info">
                         <div className="md:grid grid-cols-12 gap-4">
                             {/* Match Detail */}
                             <div className="lg:col-span-8 md:col-span-7">
                                 <div className="rounded-lg bg-white">
                                     <div className="p-4">
-                                        <div className="md:flex items-center justify-between">
-                                            <div className="flex gap-4 items-center md:mb-0 mb-[15px]">
-                                                <div>
-                                                    <img
-                                                        src="/assets/img/vs-img.png"
-                                                        className="md:h-[auto] h-[56px]"
-                                                        alt=""
-                                                    />
-                                                </div>
-                                                <div>
-                                                    <p className="text-[16px] text-[#909090] font-medium mb-1">
-                                                        2nd Test
-                                                    </p>
-                                                    <p className="text-[16px] text-[#272B47] font-medium mb-2">
-                                                        Bangladesh tour of India
-                                                    </p>
-                                                </div>
+                                        <h3 className="text-[15px] font-semibold mb-2 pl-[7px] border-l-[3px] border-[#229ED3]">
+                                            Match Detail
+                                        </h3>
+                                        <div className="border-t border-[#E4E9F0]" />
+                                        {/* Responsive Grid Section */}
+                                        <div className="grid md:gap-6 gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-3 px-2">
+                                            <div>
+                                                <h2 className="text-[15px] font-medium">Series :</h2>
+                                                <p className="font-normal text-[#586577]">
+                                                    Bangladesh tour of India
+                                                </p>
                                             </div>
-                                            <div className="md:text-end">
-                                                <p className="text-[14px] mb-1 text-[#272B47] font-medium">
-                                                    <span className="text-[14px] text-[#909090]">Date :</span> 27
-                                                    Sep 2024, Fri, 9:30 AM IST
+                                            <div>
+                                                <h2 className="text-[15px] font-medium">Date :</h2>
+                                                <p className="font-normal text-[#586577]">
+                                                    27 Sep 2024, Fri, 9:30 AM IST
                                                 </p>
-                                                <p className="text-[14px] text-[#272B47] font-medium">
-                                                    <span className="text-[14px] text-[#909090]">Toss :</span> IND
-                                                    won the toss &amp; elected to bowl
+                                            </div>
+                                            <div>
+                                                <h2 className="text-[15px] font-medium">Stadium :</h2>
+                                                <p className="font-normal text-[#586577]">
+                                                    IND won the toss &amp; elected to bowl
                                                 </p>
+                                            </div>
+                                        </div>
+                                        <div className="border-t border-[#E4E9F0]" />
+                                        {/* Responsive Grid Section */}
+                                        <div className="grid md:gap-6 gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-3 px-2">
+                                            <div>
+                                                <h2 className="text-[15px] font-medium">Third Umpire :</h2>
+                                                <p className="font-normal text-[#586577]">Sue Redfern</p>
+                                            </div>
+                                            <div>
+                                                <h2 className="text-[15px] font-medium">On-field Umpire :</h2>
+                                                <p className="font-normal text-[#586577]">
+                                                    Claire Polosak, Lauren Agenbag
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <h2 className="text-[15px] font-medium">Referee :</h2>
+                                                <p className="font-normal text-[#586577]">GS Lakshmi</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1448,7 +1458,6 @@ const Matchmoreinfo = () => {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div className="rounded-lg bg-[#ffffff] my-4 p-4">
                                     <div className="cust-box-click-container">
                                         <div className="md:flex justify-between items-center  mb-3">
@@ -1456,12 +1465,6 @@ const Matchmoreinfo = () => {
                                                 Team Comparison (Last 10 matches)
                                             </h3>
                                             <div className="flex items-center md:justify-center justify-end md:mt-0 mt-4">
-                                                <button
-                                                    className="cust-box-click-button bg-[#ffffff] font-medium text-[#6A7586] px-5 py-1 rounded-full"
-                                                    onclick="showCustomBox(this, 'cust-box-click-overall1')"
-                                                >
-                                                    <span></span>
-                                                </button>
 
                                                 <button
 
@@ -1482,7 +1485,6 @@ const Matchmoreinfo = () => {
                                             </div>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
-
                                         <div className={`cust-box-click-content cust-box-click-firview mt-4 ${activeTab === 'cust-box-click-firview' ? "" : "hidden"}`}>
                                             <div className="cust-box-click-content cust-box-click-overall1 mt-4">
                                                 <div>
@@ -1828,7 +1830,9 @@ const Matchmoreinfo = () => {
                                             <div className="col-span-1 relative">
                                                 <div className="flex items-center space-x-8 mb-4">
                                                     <p className="text-[13px] text-[#3E436D]">Win Bat first </p>
-                                                    <p className="text-[#13b76dbd] font-semibold text-1xl">43%</p>
+                                                    <p className="text-[#13b76dbd] font-semibold text-1xl">
+                                                        43%
+                                                    </p>
                                                 </div>
                                                 <div className="flex items-center space-x-8">
                                                     <p className="text-[13px] text-[#3E436D]">Win Bat first </p>
@@ -1895,9 +1899,9 @@ const Matchmoreinfo = () => {
                                             </h3>
                                         </div>
                                         <div className="w-full">
-                                            <div className="bg-[#B7132B] h-[4px] mr-2 mb-2">
+                                            <div className="bg-[#B7132B] h-[8px] mr-2 mb-2">
                                                 <div
-                                                    className="bg-[#13b76dbd] h-[4px]"
+                                                    className="bg-[#13b76dbd] h-[8px]"
                                                     style={{ width: "40%" }}
                                                 />
                                             </div>
@@ -1922,41 +1926,385 @@ const Matchmoreinfo = () => {
                                 </div>
                                 <div className="rounded-lg bg-[#ffffff] my-4 p-4">
                                     <h3 className="text-1xl font-semibold mb-2 pl-[7px] border-l-[3px] border-[#229ED3]">
-                                        Umpires
+                                        Recent Matches on Venue
                                     </h3>
+                                    {/* Recent Matches on Venue desktop view  */}
                                     <div className="border-t-[1px] border-[#E4E9F0]" />
-                                    <div className="py-2 flex justify-between items-center">
-                                        <div className="">
-                                            <p className="mx-2 font-medium">On-field Umpire :</p>
+                                    <div className="hidden lg:block">
+                                        <div className="py-4 flex justify-between items-center">
+                                            <div className="font-medium	w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/flag/18.png"
+                                                                className="h-[24px] rounded-full"
+                                                                alt="aus"
+                                                            />
+                                                            <span className="text-[#909090]">AUS</span>
+                                                        </div>
+                                                        <p className="">274/10 &amp; 170/10</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div className=" font-semibold text-center w-full">
+                                                <p className="text-[#3D4DCF]">IND Won</p>
+                                                <p className="text-[#909090] text-[12px] font-normal">
+                                                    1st test,Duleep Thropy 2024
+                                                </p>
+                                            </div>
+                                            <div className="font-medium text-right w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2 font-medium	justify-end">
+                                                        <p>280/10 &amp; 190/10</p>
+                                                        <div className="flex items-center space-x-1">
+                                                            <span className="text-[#909090]">IND</span>
+                                                            <img
+                                                                src="/assets/img/flag/17.png"
+                                                                className="h-[24px]"
+                                                                alt="aus"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
                                         </div>
-                                        <div className="">
-                                            <p className="mx-2 text-[#586577] font-medium ">
-                                                Claire Polosak, Lauren Agenbag
+                                        <div className="border-t-[1px] border-[#E4E9F0]" />
+                                        <div className="py-4 flex justify-between items-center">
+                                            <div className=" font-medium	w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/flag/18.png"
+                                                                className="h-[24px] rounded-full"
+                                                                alt="aus"
+                                                            />
+                                                            <span className="text-[#909090]">AUS</span>
+                                                        </div>
+                                                        <p className="">274/10 &amp; 170/10</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div className=" font-semibold text-center w-full">
+                                                <p className=" text-[#3D4DCF]">IND Won</p>
+                                                <p className="text-[#909090] text-[12px] font-normal">
+                                                    1st test,Duleep Thropy 2024
+                                                </p>
+                                            </div>
+                                            <div className="font-medium text-right w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2 font-medium	justify-end">
+                                                        <p>280/10 &amp; 190/10</p>
+                                                        <div className="flex items-center space-x-1">
+                                                            <span className="text-[#909090]">IND</span>
+                                                            <img
+                                                                src="/assets/img/flag/17.png"
+                                                                className="h-[24px]"
+                                                                alt="aus"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="border-t-[1px] border-[#E4E9F0]" />
+                                        <div className="py-4 flex justify-between items-center">
+                                            <div className=" font-medium	w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/up.png"
+                                                                className="h-[24px] rounded-full"
+                                                                alt="up"
+                                                            />
+                                                            <span className="text-[#909090]">UP</span>
+                                                        </div>
+                                                        <p className="">548/10 &amp; 170/10</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div className=" font-semibold text-center w-full">
+                                                <p className="text-[#FF9C12] uppercase">up won</p>
+                                                <p className="text-[#909090] text-[12px] font-normal">
+                                                    11st test,Ranji Trophy 2024
+                                                </p>
+                                            </div>
+                                            <div className="font-medium text-right w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2 font-medium	justify-end">
+                                                        <p>318/10 &amp; 190/10</p>
+                                                        <div className="flex items-center space-x-1">
+                                                            <span className="text-[#909090]">ASM</span>
+                                                            <img src="/assets/img/asm.png" className="h-[24px]" alt="asm" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="border-t-[1px] border-[#E4E9F0]" />
+                                        <div className="py-4 flex justify-between items-center">
+                                            <div className=" font-medium	w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/up.png"
+                                                                className="h-[24px] rounded-full"
+                                                                alt="up"
+                                                            />
+                                                            <span className="text-[#909090]">UP</span>
+                                                        </div>
+                                                        <p className="">253/10 &amp; 548/10</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div className=" font-semibold text-center w-full">
+                                                <p className=" text-[#FF9C12] uppercase">up won</p>
+                                                <p className="text-[#909090] text-[12px] font-normal">
+                                                    12st test,Ranji Trophy 2024
+                                                </p>
+                                            </div>
+                                            <div className="font-medium text-right w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2 font-medium	justify-end">
+                                                        <p>417/10 &amp; 264/10</p>
+                                                        <div className="flex items-center space-x-1">
+                                                            <span className="text-[#909090]">ASM</span>
+                                                            <img src="/assets/img/asm.png" className="h-[24px]" alt="asm" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div className="border-t-[1px] border-[#E4E9F0]" />
+                                        <div className="py-4 flex justify-between items-center">
+                                            <div className=" font-medium w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/up.png"
+                                                                className="h-[24px] rounded-full"
+                                                                alt="up"
+                                                            />
+                                                            <span className="text-[#909090]">UP</span>
+                                                        </div>
+                                                        <p className="">274/10 &amp; 170/10</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div className=" font-semibold text-center w-full">
+                                                <p className=" text-[#FF9C12] uppercase">up won</p>
+                                                <p className="text-[#909090] text-[12px] font-normal">
+                                                    13st test,Ranji Trophy 2024
+                                                </p>
+                                            </div>
+                                            <div className="font-medium text-right w-full">
+                                                <a href="#">
+                                                    <div className="flex items-center space-x-2 font-medium	justify-end">
+                                                        <p>172/10 &amp; 135/10</p>
+                                                        <div className="flex items-center space-x-1">
+                                                            <span className="text-[#909090]">UKT</span>
+                                                            <img src="/assets/img/utk.png" className="h-[24px]" alt="ukt" />
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* Recent Matches on Venue responsive view view  */}
+                                    <div className="lg:hidden">
+                                        <div className="py-4 px-3 bg-[#f7faff] rounded-lg my-3 border-b-[1px] border-[#E4E9F0]">
+                                            <p className="text-[#909090] text-[12px] mb-4 font-normal">
+                                                1st test,Duleep Thropy 2024
                                             </p>
+                                            <div className="flex justify-between items-center">
+                                                <div className="">
+                                                    <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full mb-3">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/flag/18.png"
+                                                                className="h-[18px] rounded-full"
+                                                                alt="aus"
+                                                            />
+                                                            <span className="text-[#909090]">AUS</span>
+                                                        </div>
+                                                        <p>274/10 &amp; 170/10</p>
+                                                    </div>
+                                                    <div>
+                                                        <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
+                                                            <div className="flex items-center space-x-1">
+                                                                <img
+                                                                    src="/assets/img/flag/17.png"
+                                                                    className="h-[18px]"
+                                                                    alt="ind"
+                                                                />
+                                                                <span className="text-[#909090]">IND</span>
+                                                            </div>
+                                                            <p>280/10 &amp; 190/10</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="h-[35px] border-l-[1px] border-[#d0d3d7]" />
+                                                <div className=" font-semibold text-right">
+                                                    <p className="text-[#3D4DCF]">IND Won</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="border-t-[1px] border-[#E4E9F0]" />
-                                    <div className="py-2 flex justify-between items-center">
-                                        <div className="">
-                                            <p className="mx-2 font-medium">Third Umpire :</p>
+                                        <div className="py-4 px-3 bg-[#f7faff] rounded-lg my-3 border-b-[1px] border-[#E4E9F0]">
+                                            <p className="text-[#909090] text-[12px] mb-4 font-normal">
+                                                1st test,Duleep Thropy 2024
+                                            </p>
+                                            <div className="flex justify-between items-center">
+                                                <div className="">
+                                                    <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full mb-3">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/flag/18.png"
+                                                                className="h-[18px] rounded-full"
+                                                                alt="aus"
+                                                            />
+                                                            <span className="text-[#909090]">AUS</span>
+                                                        </div>
+                                                        <p>274/10 &amp; 170/10</p>
+                                                    </div>
+                                                    <div>
+                                                        <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
+                                                            <div className="flex items-center space-x-1">
+                                                                <img
+                                                                    src="/assets/img/flag/17.png"
+                                                                    className="h-[18px]"
+                                                                    alt="ind"
+                                                                />
+                                                                <span className="text-[#909090]">IND</span>
+                                                            </div>
+                                                            <p>280/10 &amp; 190/10</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="h-[35px] border-l-[1px] border-[#d0d3d7]" />
+                                                <div className=" font-semibold text-right">
+                                                    <p className="text-[#3D4DCF]">IND Won</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="">
-                                            <p className="mx-2 text-[#586577] font-medium ">Sue Redfern</p>
+                                        <div className="py-4 px-3 bg-[#f7faff] rounded-lg my-3 border-b-[1px] border-[#E4E9F0]">
+                                            <p className="text-[#909090] text-[12px] mb-4 font-normal">
+                                                11st test,Ranji Trophy 2024
+                                            </p>
+                                            <div className="flex justify-between items-center">
+                                                <div className="">
+                                                    <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full mb-3">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/up.png"
+                                                                className="h-[21px] rounded-full"
+                                                                alt="up"
+                                                            />
+                                                            <span className="text-[#909090]">UP</span>
+                                                        </div>
+                                                        <p>548/10 &amp; 170/10</p>
+                                                    </div>
+                                                    <div>
+                                                        <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
+                                                            <div className="flex items-center space-x-1">
+                                                                <img
+                                                                    src="/assets/img/asm.png"
+                                                                    className="h-[18px]"
+                                                                    alt="asm"
+                                                                />
+                                                                <span className="text-[#909090]">ASM</span>
+                                                            </div>
+                                                            <p>318/10 &amp; 190/10</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="h-[35px] border-l-[1px] border-[#d0d3d7]" />
+                                                <div className=" font-semibold text-right">
+                                                    <p className="text-[#FF9C12] uppercase">up won</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="border-t-[1px] border-[#E4E9F0]" />
-                                    <div className="py-2 pb-0 flex justify-between items-center">
-                                        <div className="">
-                                            <p className="mx-2 font-medium">Referee :</p>
+                                        <div className="py-4 px-3 bg-[#f7faff] rounded-lg my-3 border-b-[1px] border-[#E4E9F0]">
+                                            <p className="text-[#909090] text-[12px] mb-4 font-normal">
+                                                12st test,Ranji Trophy 2024
+                                            </p>
+                                            <div className="flex justify-between items-center">
+                                                <div className="">
+                                                    <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full mb-3">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/up.png"
+                                                                className="h-[21px] rounded-full"
+                                                                alt="up"
+                                                            />
+                                                            <span className="text-[#909090]">UP</span>
+                                                        </div>
+                                                        <p>253/10 &amp; 548/10</p>
+                                                    </div>
+                                                    <div>
+                                                        <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
+                                                            <div className="flex items-center space-x-1">
+                                                                <img
+                                                                    src="/assets/img/asm.png"
+                                                                    className="h-[18px]"
+                                                                    alt="asm"
+                                                                />
+                                                                <span className="text-[#909090]">ASM</span>
+                                                            </div>
+                                                            <p>417/10 &amp; 264/10</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="h-[35px] border-l-[1px] border-[#d0d3d7]" />
+                                                <div className=" font-semibold text-right">
+                                                    <p className="text-[#FF9C12] uppercase">up won</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="">
-                                            <p className="mx-2 text-[#586577] font-medium ">GS Lakshmi</p>
+                                        <div className="py-4 px-3 bg-[#f7faff] rounded-lg my-3 border-b-[1px] border-[#E4E9F0]">
+                                            <p className="text-[#909090] text-[12px] mb-4 font-normal">
+                                                13st test,Ranji Trophy 2024
+                                            </p>
+                                            <div className="flex justify-between items-center">
+                                                <div className="">
+                                                    <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full mb-3">
+                                                        <div className="flex items-center space-x-1">
+                                                            <img
+                                                                src="/assets/img/up.png"
+                                                                className="h-[21px] rounded-full"
+                                                                alt="up"
+                                                            />
+                                                            <span className="text-[#909090]">UP</span>
+                                                        </div>
+                                                        <p>274/10 &amp; 170/10</p>
+                                                    </div>
+                                                    <div>
+                                                        <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
+                                                            <div className="flex items-center space-x-1">
+                                                                <img
+                                                                    src="/assets/img/asm.png"
+                                                                    className="h-[18px]"
+                                                                    alt="asm"
+                                                                />
+                                                                <span className="text-[#909090]">ASM</span>
+                                                            </div>
+                                                            <p>172/10 &amp; 135/10</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="h-[35px] border-l-[1px] border-[#d0d3d7]" />
+                                                <div className=" font-semibold text-right">
+                                                    <p className="text-[#FF9C12] uppercase">up won</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                         
+                            {/* right section */}
                             <div className="lg:col-span-4 md:col-span-5">
                                 <div className="rounded-lg bg-[#ffffff]">
                                     <div className="p-4 cust-box-click-container">
@@ -1965,11 +2313,13 @@ const Matchmoreinfo = () => {
                                         </h3>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="flex items-center justify-around py-4">
-                                            <button
+
+                                        <button
                                                 className="cust-box-click-button  font-medium px-5 py-1 rounded-full bg-[#081736] text-white"
                                             >
                                                 <span>India</span>
                                             </button>
+
                                             <Link href="/playing-bangladesh">
                                             <button
                                                 className="cust-box-click-button bg-[#ffffff] font-medium text-[#6A7586] px-5 py-1 rounded-full"
@@ -1978,11 +2328,12 @@ const Matchmoreinfo = () => {
                                                 <span>Bangladesh</span>
                                             </button>
                                             </Link>
+
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
-                                        <div className="cust-box-click-content cust-box-click-india mt-4">
+                                        <div className="">
                                             <div>
-                                            <Link href="/profile">
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="R sharma (c)" />
@@ -1992,8 +2343,8 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Batter</p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                                <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="S Gill" />
@@ -2003,8 +2354,8 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Batter</p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                                <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="L Rahul" />
@@ -2014,19 +2365,21 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Batter</p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                                <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="R Jadeja" />
                                                         </div>
                                                         <div className="font-medium">
                                                             <h2 className="text-[15px]"> R Jadeja </h2>
-                                                            <p className="text-[#909090] font-normal">All Rounder </p>
+                                                            <p className="text-[#909090] font-normal">
+                                                                All Rounder{" "}
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                                <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="J Bumrah" />
@@ -2036,8 +2389,8 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Bowler</p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                                <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="A Deep" />
@@ -2047,8 +2400,8 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Bowler </p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                                <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="Y Jaiswal" />
@@ -2058,8 +2411,8 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Batter</p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                                <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="V Kholi" />
@@ -2069,8 +2422,8 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Batter</p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                                <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="M Siraj" />
@@ -2080,8 +2433,8 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Bowler</p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                                <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="R Pant (WK)" />
@@ -2091,21 +2444,23 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Batter</p>
                                                         </div>
                                                     </div>
-                                               </Link>
-                                               <Link href="/profile">
+                                                </a>
+                                                <a href="#">
                                                     <div className="flex items-center space-x-3 py-3 pb-0">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="R Ashwin" />
                                                         </div>
                                                         <div className="font-medium">
                                                             <h2 className="text-[15px]"> R Ashwin </h2>
-                                                            <p className="text-[#909090] font-normal">All Rounder </p>
+                                                            <p className="text-[#909090] font-normal">
+                                                                All Rounder{" "}
+                                                            </p>
                                                         </div>
                                                     </div>
-                                                </Link>
+                                                </a>
                                             </div>
                                         </div>
-                                        <div className="cust-box-click-content cust-box-click-bangladesh mt-4 hidden">
+                                        <div className="">
                                             <p>View Content</p>
                                         </div>
                                     </div>
@@ -2152,11 +2507,9 @@ const Matchmoreinfo = () => {
                         </div>
                     </div>
                 </div>
-
             </section>
-
         </Layout>
+
+
     )
 }
-
-export default Matchmoreinfo;

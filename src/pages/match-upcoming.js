@@ -2902,6 +2902,7 @@ const MatchUpcoming = () => {
                         </div>
 
                     </div>
+                    
                     <div id="points" className={`tab-content ${activeTab === 'points' ? '' : 'hidden'}`}>
                         <div className="md:grid grid-cols-12 gap-4">
                             <div className="lg:col-span-8 md:col-span-7">

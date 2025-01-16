@@ -3,13 +3,13 @@ import Link from 'next/link';
 import React, { useState } from 'react'
 
 
-const Matchmoreinfo = () => {
+const ResultMatchmoreinfo = () => {
 
     const [activeTab, setActiveTab] = useState('cust-box-click-firview');
 
     const handleProbabilityTab = (event, tabName) => {
         setActiveTab(tabName);
-      };
+    };
 
 
     return (
@@ -19,14 +19,13 @@ const Matchmoreinfo = () => {
             <section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
                 <div className="lg:w-[1000px] mx-auto">
                     <div className="md:flex justify-between items-center md:py-0 py-4">
-                        <div className="flex items-center text-1xl text-[#FE4848] font-bold uppercase relative">
-                            <img src="/assets/img/home/blinking-dot.gif" className="h-[20px]" alt="" />
-                            LIVE NOW
-
+                        <div className=" text-1xl text-[#13b76dbd] font-bold uppercase ">
+                            <span className="h-[10px] w-[10px] inline-block	bg-[#13b76dbd] rounded-full" />
+                            RESULT
                         </div>
                         <div className="text-[#8192B4] font-normal  text-1xl md:text-center md:mx-0 my-3">
                             Bangladesh in India August,&nbsp;2nd Test,{" "}
-                            <span className="font-semibold text-[#b9b9b9]"> Day 4-Session 3</span>
+                            <span className="font-semibold"> Day 4-Session 3 </span>
                         </div>
                         <div className="flex text-[#8192B4] text-1xl font-normal  md:justify-end md:justify-start">
                             <img src="/assets/img/clander.png" className="mr-2" alt="" />
@@ -35,7 +34,7 @@ const Matchmoreinfo = () => {
                     </div>
                 </div>
                 <div className="border-t-[1px] border-[#E4E9F01A]">
-                    <div className="lg:w-[1000px] mx-auto md:py-9 tracking-[1px]">
+                    <div className="lg:w-[1000px] mx-auto md:py-8 tracking-[1px]">
                         <div className="md:flex py-8 justify-between items-center">
                             <div className="flex gap-2 flex-row text-[#BDCCECA8] uppercase items-center w-full">
                                 <img
@@ -47,27 +46,26 @@ const Matchmoreinfo = () => {
                                     <p className="text-[#BDCCECA8] font-bold md:text-[17px] lg:text-[19px] text-[14px] font-semibold uppercase">
                                         IND
                                     </p>
-                                    <p className="lg:text-[18px] text-[16px] font-semibold">
-                                        139/4 <span className="text-[13px] font-medium">(42.0)</span>{" "}
-                                        &amp; 222 <span className="text-[13px] font-medium">(66.2)</span>
+                                    <p className="lg:text-[21px] text-[17px] font-semibold">
+                                        139/4 <span className="text-[14px] font-medium">(42.0)</span>{" "}
+                                        &amp; 222{" "}
+                                        <span className="text-[14px] font-medium">(66.2)</span>
                                     </p>
                                 </div>
                             </div>
-                            <div className="text-[#8192B4] font-normal text-center w-full text-center md:my-0 my-4">
-                                <p className="text-[#FFBD71] lg:text-[20px] text-[16px] font-semibold">
-                                    Day 4-Session 3
+                            <div className="text-[#8192B4] font-normal text-center w-full text-center md:my-0 my-4 flex gap-2 items-center">
+                                <p className="text-[#13b76dbd] lg:text-[24px] text-[16px] font-semibold">
+                                    IND WON BY 245 RUN
                                 </p>
-                                <p className="text-[#C1CEEA] text-[14px] ">
-                                    CRR: 3.8 IND trail by 299 runs.
-                                </p>
+                                <img src="/assets/img/home/win-2.png" alt="" />
                             </div>
-                            <div className="flex gap-2 flex-row flex-row-reverse md:flex-row  items-center text-[#8192B4] font-normal w-full justify-end">
+                            <div className="flex gap-2 flex-row flex-row-reverse md:flex-row   items-center text-[#8192B4] font-normal w-full justify-end">
                                 <div className="flex md:flex-col md:items-end items-center md:gap-0 gap-2">
                                     <p className="text-[#BDCCECA8] font-bold md:text-[17px] lg:text-[19px] text-[14px] font-semibold uppercase">
                                         BAN
                                     </p>
-                                    <p className="lg:text-[18px] text-[16px] font-semibold">
-                                        160<span className="text-[14px] font-medium"> (63.0)</span>{" "}
+                                    <p className="lg:text-[21px] text-[17px] font-semibold">
+                                        160<span className="text-[14px] font-medium"> (63.0)</span>
                                         &amp; Yet To Bet
                                     </p>
                                 </div>
@@ -86,7 +84,7 @@ const Matchmoreinfo = () => {
             <section className="lg:w-[1000px] mx-auto md:mb-0 mb-4 px-2 lg:px-0">
                 <div id="tabs" className="my-4">
                     <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
-                        <Link href="/match-moreinfo">
+                        <Link href="/result-more-info">
                             <button
                                 onclick="handleTabClick(event, 'info')"
                                 className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
@@ -94,7 +92,7 @@ const Matchmoreinfo = () => {
                                 More Info
                             </button>
                         </Link>
-                        <Link href="/match-live-now">
+                        <Link href="/match-live-result/result">
                             <button
                                 onclick="handleTabClick(event, 'live')"
                                 className="font-medium py-2 px-3 whitespace-nowrap"
@@ -102,7 +100,7 @@ const Matchmoreinfo = () => {
                                 Live
                             </button>
                         </Link>
-                        <Link href="/match-scorecard">
+                        <Link href="/resultMatch/result-scorecard">
                             <button
                                 onclick="handleTabClick(event, 'scorecard')"
                                 className="font-medium py-2 px-3 whitespace-nowrap"
@@ -110,29 +108,29 @@ const Matchmoreinfo = () => {
                                 Scorecard
                             </button>
                         </Link>
-                        <Link href="/match-squad">
-                        <button
-                            onclick="handleTabClick(event, 'overs')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Squad
-                        </button>
+                        <Link href="/result-Squad">
+                            <button
+                                onclick="handleTabClick(event, 'overs')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Squad
+                            </button>
                         </Link>
-                        <Link href="/matchpoints">
-                        <button
-                            onclick="handleTabClick(event, 'points')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Points Table
-                        </button>
+                        <Link href="/result-points-table">
+                            <button
+                                onclick="handleTabClick(event, 'points')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Points Table
+                            </button>
                         </Link>
-                        <Link href="/live-stats/most-runs-stats">
-                        <button
-                            onclick="handleTabClick(event, 'stats')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Stats
-                        </button>
+                        <Link href="/result-stats">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Stats
+                            </button>
                         </Link>
                     </div>
                 </div>
@@ -1448,7 +1446,6 @@ const Matchmoreinfo = () => {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div className="rounded-lg bg-[#ffffff] my-4 p-4">
                                     <div className="cust-box-click-container">
                                         <div className="md:flex justify-between items-center  mb-3">
@@ -1580,7 +1577,7 @@ const Matchmoreinfo = () => {
                                         </div>
 
                                         <div className={`cust-box-click-content cust-box-click-oddsview mt-4 ${activeTab === 'cust-box-click-oddsview' ? "" : "hidden"}`}>
-                                        <div className="cust-box-click-content cust-box-click-overall1 mt-4">
+                                            <div className="cust-box-click-content cust-box-click-overall1 mt-4">
                                                 <div>
                                                     <div className="py-4 flex justify-between items-center">
                                                         <div className="font-bold flex items-center">
@@ -1955,9 +1952,28 @@ const Matchmoreinfo = () => {
                                     </div>
                                 </div>
                             </div>
-
-                         
+                            {/* right section */}
                             <div className="lg:col-span-4 md:col-span-5">
+
+                                <div className="hidden md:block rounded-lg bg-[#ffffff] mb-4">
+                                    <div className="p-4">
+                                        <a href="#">
+                                            <div className="flex items-center justify-between">
+                                                <div className="flex items-center space-x-3 md:py-3">
+                                                    <div>
+                                                        <img src="/assets/img/player/12.png" alt="R sharma (c)" />
+                                                    </div>
+                                                    <div className="font-medium">
+                                                        <h2 className="text-[15px]"> Man of the match </h2>
+                                                        <p className="text-[#909090] font-normal">R Ashwin</p>
+                                                    </div>
+                                                </div>
+                                                <img src="/assets/img/home/win-2.png" alt="" />
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
                                 <div className="rounded-lg bg-[#ffffff]">
                                     <div className="p-4 cust-box-click-container">
                                         <h3 className="text-1xl font-semibold mb-2 pl-[7px] mb-3 border-l-[3px] border-[#229ED3]">
@@ -1971,18 +1987,18 @@ const Matchmoreinfo = () => {
                                                 <span>India</span>
                                             </button>
                                             <Link href="/playing-bangladesh">
-                                            <button
-                                                className="cust-box-click-button bg-[#ffffff] font-medium text-[#6A7586] px-5 py-1 rounded-full"
-                                                onclick="showCustomBox(this, 'cust-box-click-bangladesh')"
-                                            >
-                                                <span>Bangladesh</span>
-                                            </button>
+                                                <button
+                                                    className="cust-box-click-button bg-[#ffffff] font-medium text-[#6A7586] px-5 py-1 rounded-full"
+                                                    onclick="showCustomBox(this, 'cust-box-click-bangladesh')"
+                                                >
+                                                    <span>Bangladesh</span>
+                                                </button>
                                             </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="cust-box-click-content cust-box-click-india mt-4">
                                             <div>
-                                            <Link href="/profile">
+                                                <Link href="/profile">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="R sharma (c)" />
@@ -2091,8 +2107,8 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Batter</p>
                                                         </div>
                                                     </div>
-                                               </Link>
-                                               <Link href="/profile">
+                                                </Link>
+                                                <Link href="/profile">
                                                     <div className="flex items-center space-x-3 py-3 pb-0">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="R Ashwin" />
@@ -2159,4 +2175,4 @@ const Matchmoreinfo = () => {
     )
 }
 
-export default Matchmoreinfo;
+export default ResultMatchmoreinfo;

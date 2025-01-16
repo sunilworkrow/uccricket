@@ -157,6 +157,7 @@ const HighestScores = () => {
                                            Highest Scores 
                                         </button>
                                         </Link>
+                                        <Link href="/live-stats/best-batting-average">
                                         <button
                                             // className="state-btn new-class border-b px-2 py-3 w-full font-medium  text-left "
                                             // data-target="batting-average"
@@ -165,6 +166,7 @@ const HighestScores = () => {
                                         >
                                             Best Batting Average
                                         </button>
+                                        </Link>
                                         <button
                                             // className="state-btn new-class border-b px-2 py-3 w-full font-medium  text-left "
                                             // data-target="state-team"

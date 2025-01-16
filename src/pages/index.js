@@ -36,6 +36,10 @@ const index = () => {
         <Layout >
             <section className="lg:w-[1000px] mx-auto md:mb-0 mb-4 px-2 lg:px-0">
 
+
+
+
+
                 <div className="mt-2 mb-2">
                     <img src="/assets/img/home.png" className="w-[100%]" alt="" />
                 </div>
@@ -387,7 +391,7 @@ const index = () => {
                                         <div className="py-4 px-3">
 
                                             <div className="flex justify-between items-center text-[14px]">
-                                                <Link href="/match-result">
+                                            <Link href="/resultMatch/result-scorecard">
                                                     <div className="">
                                                         <p className="text-[#586577] text-[12px] mb-4 font-medium">1st ODI , Trent
                                                             Bridge,
@@ -618,7 +622,7 @@ const index = () => {
                                         </div>
 
                                         <div className="border-t-[1px] border-[#E7F2F4]"></div>
-                                        <Link href="/match-upcoming">
+                                        <Link href="/scheduled/infoUpcoming-match">
                                             <div className="py-4 px-3">
 
                                                 <div className="flex justify-between items-center text-[14px]">
@@ -727,7 +731,7 @@ const index = () => {
                                         </div>
 
                                         <div className="border-t-[1px] border-[#E7F2F4]"></div>
-                                        <Link href="/match-upcoming">
+                                        <Link href="/scheduled/infoUpcoming-match">
                                             <div className="open-Performance-data">
                                                 <div className="py-2 pb-3">
                                                     <p className="text-[#586577] text-[12px] mb-4 font-medium">2nd ODI, Sharjah
@@ -876,7 +880,7 @@ const index = () => {
                                         </div>
 
                                         <div className="border-t-[1px] border-[#E7F2F4]"></div>
-                                        <Link href="/match-upcoming">
+                                        <Link href="/scheduled/infoUpcoming-match">
                                             <div className="py-4 px-3">
 
                                                 <div className="flex justify-between items-center text-[14px]">
@@ -970,7 +974,7 @@ const index = () => {
                                         <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
                                         <div className="open-Performance-data">
-                                            <Link href="/match-upcoming">
+                                            <Link href="/scheduled/infoUpcoming-match">
                                                 <div className="py-2 pb-3">
                                                     <p className="text-[#586577] text-[12px] mb-4 font-medium">2nd ODI , Sharjah
                                                         Cricket
@@ -1379,7 +1383,7 @@ const index = () => {
                                         <div className="py-4 px-3">
 
                                             <div className="flex justify-between items-center text-[14px]">
-                                                <Link href="/match-result">
+                                                <Link href="/resultMatch/result-scorecard">
                                                     <div className="">
                                                         <p className="text-[#586577] text-[12px] mb-4 font-medium">1st ODI , Trent
                                                             Bridge,
@@ -1615,7 +1619,7 @@ const index = () => {
                                         </div>
 
                                         <div className="border-t-[1px] border-[#E7F2F4]"></div>
-                                        <Link href="/match-upcoming">
+                                        <Link href="/scheduled/infoUpcoming-match">
                                             <div className="py-4 px-3">
 
                                                 <div className="flex justify-between items-center text-[14px]">
@@ -1725,7 +1729,7 @@ const index = () => {
 
                                         <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                        <Link href="/match-upcoming">
+                                        <Link href="/scheduled/infoUpcoming-match">
                                             <div className="open-Performance-data">
                                                 <div className="py-2 pb-3">
                                                     <p className="text-[#586577] text-[12px] mb-4 font-medium">2nd ODI, Sharjah
@@ -1873,7 +1877,7 @@ const index = () => {
                                         </div>
 
                                         <div className="border-t-[1px] border-[#E7F2F4]"></div>
-                                        <Link href="/match-upcoming">
+                                        <Link href="/scheduled/infoUpcoming-match">
                                             <div className="py-4 px-3">
 
                                                 <div className="flex justify-between items-center text-[14px]">
@@ -1968,7 +1972,7 @@ const index = () => {
                                         <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
                                         <div className="open-Performance-data">
-                                            <Link href="/match-upcoming">
+                                            <Link href="/scheduled/infoUpcoming-match">
                                                 <div className="py-2 pb-3">
                                                     <p className="text-[#586577] text-[12px] mb-4 font-medium">2nd ODI , Sharjah
                                                         Cricket
@@ -4469,9 +4473,15 @@ const index = () => {
                                 <button className="font-medium py-2 px-5 bg-[#1A80F8] text-white rounded-md whitespace-nowrap">
                                     <span>Fixtures</span>
                                 </button>
+                                <Link href="/matchpoints">
                                 <button className="font-medium py-2 px-3 whitespace-nowrap">Points Table</button>
+                                </Link>
+                                <Link href="/live-stats/most-runs-stats">
                                 <button className="font-medium py-2 px-3 whitespace-nowrap">Stats</button>
+                                </Link>
+                                <Link href="/match-squad">
                                 <button className="font-medium py-2 px-3 whitespace-nowrap">Squads</button>
+                                </Link>
                                 <button className="font-medium py-2 px-3 whitespace-nowrap">Fantasy Tips</button>
                             </div>
                         </div>

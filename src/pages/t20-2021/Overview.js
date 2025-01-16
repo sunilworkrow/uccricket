@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useRouter } from 'next/router';
 
 
-const T20Series = () => {
+const Overview = () => {
 
   const router = useRouter();
 
@@ -50,16 +50,16 @@ const T20Series = () => {
                 />
                 <div>
                   <h2 className="lg:text-2xl md:text-[17px] font-semibold">
-                    Women's T20 World Cup 2020
+                    Women's T20 World Cup 2021
                   </h2>
                   <p className="lg:text-sm md:text-[14px] text-gray-300 mb-2">
                     T20 - 34 Matches - 10 Teams | Oct 3 - Oct 20
                   </p>
                   <select className="border border-gray-500 rounded px-2 bg-[#0e2149]" onChange={handleSelectChange}>
                     <option value="" disabled selected>
-                      2020
+                      2021
                     </option>
-                    <option value="/t20-2021/Overview">2021</option>
+                    <option value="/t20series">2020</option>
 
                   </select>
                 </div>
@@ -195,7 +195,7 @@ const T20Series = () => {
       <section className="lg:w-[1000px] mx-auto md:mb-0 mb-4 px-2 lg:px-0">
         <div id="tabs" className="my-4">
           <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
-            <Link href="/t20series">
+            <Link href="/Overview">
               <button
                 onclick="handleTabClick(event, 'info')"
                 className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
@@ -625,7 +625,7 @@ const T20Series = () => {
                   </h3>
                   <div className="border-t-[1px] border-[#E4E9F0]" />
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mt-5">
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-1.png"
@@ -634,8 +634,7 @@ const T20Series = () => {
                       />
                       <p className="font-medium">Pakistan-W</p>
                     </div>
-                    </Link>
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-2.png"
@@ -644,8 +643,7 @@ const T20Series = () => {
                       />
                       <p className="font-medium">West Indies-W</p>
                     </div>
-                    </Link>
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-3.png"
@@ -654,8 +652,7 @@ const T20Series = () => {
                       />
                       <p className="font-medium">Australia-W</p>
                     </div>
-                    </Link>
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-4.png"
@@ -664,8 +661,7 @@ const T20Series = () => {
                       />
                       <p className="font-medium">Scotland-W</p>
                     </div>
-                    </Link>
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-5.png"
@@ -674,8 +670,7 @@ const T20Series = () => {
                       />
                       <p className="font-medium">South Africa-W</p>
                     </div>
-                    </Link>
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-6.png"
@@ -684,8 +679,7 @@ const T20Series = () => {
                       />
                       <p className="font-medium">New Zealand-W</p>
                     </div>
-                    </Link>
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-7.png"
@@ -694,8 +688,7 @@ const T20Series = () => {
                       />
                       <p className="font-medium">Sri Lanka-W</p>
                     </div>
-                    </Link>
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-8.png"
@@ -704,8 +697,7 @@ const T20Series = () => {
                       />
                       <p className="font-medium">India-W</p>
                     </div>
-                    </Link>
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-9.png"
@@ -714,8 +706,7 @@ const T20Series = () => {
                       />
                       <p className="font-medium">England-W</p>
                     </div>
-                    </Link>
-                    <Link href="/team">
+                    {/* Card */}
                     <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                       <img
                         src="/assets/img/flag/b-10.png"
@@ -724,7 +715,6 @@ const T20Series = () => {
                       />
                       <p className="font-medium">Bangladesh-W</p>
                     </div>
-                    </Link>
                   </div>
                 </div>
                 <div className="rounded-lg bg-[#ffffff] p-4 mb-4">
@@ -1513,4 +1503,4 @@ const T20Series = () => {
   )
 }
 
-export default T20Series
+export default Overview
