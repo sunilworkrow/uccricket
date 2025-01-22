@@ -634,28 +634,28 @@ const MatchScoreCard = () => {
                           <tbody>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                R Sharma
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  R Sharma </Link>
                               </td>
                               <td className="px-4 py-3">15-1</td>
                               <td className="px-4 py-3">2.3</td>
                             </tr>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Shubman Gill
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Shubman Gill </Link>
                               </td>
                               <td className="px-4 py-3">28-2</td>
                               <td className="px-4 py-3">6.4</td>
                             </tr>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Yashasvi Jaiswal
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Yashasvi Jaiswal </Link>
                               </td>
                               <td className="px-4 py-3">67-3</td>
                               <td className="px-4 py-3">19.2</td>
                             </tr>
                             <tr>
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Virat Kohli
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Virat Kohli </Link>
                               </td>
                               <td className="px-4 py-3">234-4</td>
                               <td className="px-4 py-3">55.3</td>
@@ -665,6 +665,7 @@ const MatchScoreCard = () => {
                       </div>
                     </div>
                   </div>
+
                   <div className="rounded-lg bg-[#ffffff] mb-4 p-4">
                     <h3 className="text-1xl font-semibold mb-3 pl-[7px] border-l-[3px] border-[#229ED3]">
                       Partnership
@@ -677,7 +678,7 @@ const MatchScoreCard = () => {
                       <div className="w-full ">
                         <p className="text-[13px] text-[#909090]">1st Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          S Yadav
+                        <Link href="/profile" className='hover:text-[#0b59ff]'>  S Yadav </Link>
                           <p>
                             <span>10</span>
                             <span className="text-[13px] text-[#909090]">(8)</span>
@@ -696,7 +697,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:gap-2 items-end md:items-center  justify-end">
-                        <p>Y Jaiswal</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>Y Jaiswal</p> </Link>
                         <p>
                           10 <span className="text-[#909090]">(7)</span>
                         </p>
@@ -707,7 +708,7 @@ const MatchScoreCard = () => {
                       <div className="w-full ">
                         <p className="text-[13px] text-[#909090]">2nd Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          S Yadav
+                        <Link href="/profile" className='hover:text-[#0b59ff]'> S Yadav </Link>
                           <p>
                             {" "}
                             <span>10</span>{" "}
@@ -727,7 +728,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>S Gill</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'>  <p>S Gill</p> </Link>
                         <p>
                           0 <span className="text-[#909090]">(8)</span>
                         </p>
@@ -738,7 +739,7 @@ const MatchScoreCard = () => {
                       <div className="w-full">
                         <p className="text-[13px] text-[#909090]">3rd Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          R Jadeja
+                        <Link href="/profile" className='hover:text-[#0b59ff]'> R Jadeja </Link>
                           <p>
                             {" "}
                             <span>53</span>{" "}
@@ -758,7 +759,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>L Rahul</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>L Rahul</p> </Link>
                         <p>
                           16 <span className="text-[#909090]">(50)</span>
                         </p>
@@ -769,7 +770,7 @@ const MatchScoreCard = () => {
                       <div className="w-full">
                         <p className="text-[13px] text-[#909090]">3th Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          R Jadeja
+                        <Link href="/profile" className='hover:text-[#0b59ff]'>  R Jadeja </Link>
                           <p>
                             {" "}
                             <span>23</span>{" "}
@@ -789,7 +790,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>R Ashwin</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>R Ashwin</p> </Link>
                         <p>
                           106 <span className="text-[#909090]">(118)</span>
                         </p>
@@ -1183,28 +1184,28 @@ const MatchScoreCard = () => {
                           <tbody>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                R Sharma
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  R Sharma </Link>
                               </td>
                               <td className="px-4 py-3">15-1</td>
                               <td className="px-4 py-3">2.3</td>
                             </tr>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Shubman Gill
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Shubman Gill </Link>
                               </td>
                               <td className="px-4 py-3">28-2</td>
                               <td className="px-4 py-3">6.4</td>
                             </tr>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Yashasvi Jaiswal
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Yashasvi Jaiswal </Link>
                               </td>
                               <td className="px-4 py-3">67-3</td>
                               <td className="px-4 py-3">19.2</td>
                             </tr>
                             <tr>
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Virat Kohli
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Virat Kohli </Link>
                               </td>
                               <td className="px-4 py-3">234-4</td>
                               <td className="px-4 py-3">55.3</td>
@@ -1214,6 +1215,7 @@ const MatchScoreCard = () => {
                       </div>
                     </div>
                   </div>
+                  
                   <div className="rounded-lg bg-[#ffffff] mb-4 p-4">
                     <h3 className="text-1xl font-semibold mb-3 pl-[7px] border-l-[3px] border-[#229ED3]">
                       Partnership
@@ -1226,7 +1228,7 @@ const MatchScoreCard = () => {
                       <div className="w-full ">
                         <p className="text-[13px] text-[#909090]">1st Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          S Yadav
+                        <Link href="/profile" className='hover:text-[#0b59ff]'>  S Yadav </Link>
                           <p>
                             <span>10</span>
                             <span className="text-[13px] text-[#909090]">(8)</span>
@@ -1245,7 +1247,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:gap-2 items-end md:items-center  justify-end">
-                        <p>Y Jaiswal</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>Y Jaiswal</p> </Link>
                         <p>
                           10 <span className="text-[#909090]">(7)</span>
                         </p>
@@ -1256,7 +1258,7 @@ const MatchScoreCard = () => {
                       <div className="w-full ">
                         <p className="text-[13px] text-[#909090]">2nd Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          S Yadav
+                        <Link href="/profile" className='hover:text-[#0b59ff]'> S Yadav </Link>
                           <p>
                             {" "}
                             <span>10</span>{" "}
@@ -1276,7 +1278,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>S Gill</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'>  <p>S Gill</p> </Link>
                         <p>
                           0 <span className="text-[#909090]">(8)</span>
                         </p>
@@ -1287,7 +1289,7 @@ const MatchScoreCard = () => {
                       <div className="w-full">
                         <p className="text-[13px] text-[#909090]">3rd Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          R Jadeja
+                        <Link href="/profile" className='hover:text-[#0b59ff]'> R Jadeja </Link>
                           <p>
                             {" "}
                             <span>53</span>{" "}
@@ -1307,7 +1309,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>L Rahul</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>L Rahul</p> </Link>
                         <p>
                           16 <span className="text-[#909090]">(50)</span>
                         </p>
@@ -1318,7 +1320,7 @@ const MatchScoreCard = () => {
                       <div className="w-full">
                         <p className="text-[13px] text-[#909090]">3th Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          R Jadeja
+                        <Link href="/profile" className='hover:text-[#0b59ff]'>  R Jadeja </Link>
                           <p>
                             {" "}
                             <span>23</span>{" "}
@@ -1338,7 +1340,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>R Ashwin</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>R Ashwin</p> </Link>
                         <p>
                           106 <span className="text-[#909090]">(118)</span>
                         </p>
@@ -1856,28 +1858,28 @@ const MatchScoreCard = () => {
                           <tbody>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                R Sharma
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  R Sharma </Link>
                               </td>
                               <td className="px-4 py-3">15-1</td>
                               <td className="px-4 py-3">2.3</td>
                             </tr>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Shubman Gill
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Shubman Gill </Link>
                               </td>
                               <td className="px-4 py-3">28-2</td>
                               <td className="px-4 py-3">6.4</td>
                             </tr>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Yashasvi Jaiswal
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Yashasvi Jaiswal </Link>
                               </td>
                               <td className="px-4 py-3">67-3</td>
                               <td className="px-4 py-3">19.2</td>
                             </tr>
                             <tr>
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Virat Kohli
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Virat Kohli </Link>
                               </td>
                               <td className="px-4 py-3">234-4</td>
                               <td className="px-4 py-3">55.3</td>
@@ -1887,6 +1889,7 @@ const MatchScoreCard = () => {
                       </div>
                     </div>
                   </div>
+                  
                   <div className="rounded-lg bg-[#ffffff] mb-4 p-4">
                     <h3 className="text-1xl font-semibold mb-3 pl-[7px] border-l-[3px] border-[#229ED3]">
                       Partnership
@@ -1899,7 +1902,7 @@ const MatchScoreCard = () => {
                       <div className="w-full ">
                         <p className="text-[13px] text-[#909090]">1st Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          S Yadav
+                        <Link href="/profile" className='hover:text-[#0b59ff]'>  S Yadav </Link>
                           <p>
                             <span>10</span>
                             <span className="text-[13px] text-[#909090]">(8)</span>
@@ -1918,7 +1921,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:gap-2 items-end md:items-center  justify-end">
-                        <p>Y Jaiswal</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>Y Jaiswal</p> </Link>
                         <p>
                           10 <span className="text-[#909090]">(7)</span>
                         </p>
@@ -1929,7 +1932,7 @@ const MatchScoreCard = () => {
                       <div className="w-full ">
                         <p className="text-[13px] text-[#909090]">2nd Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          S Yadav
+                        <Link href="/profile" className='hover:text-[#0b59ff]'> S Yadav </Link>
                           <p>
                             {" "}
                             <span>10</span>{" "}
@@ -1949,7 +1952,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>S Gill</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'>  <p>S Gill</p> </Link>
                         <p>
                           0 <span className="text-[#909090]">(8)</span>
                         </p>
@@ -1960,7 +1963,7 @@ const MatchScoreCard = () => {
                       <div className="w-full">
                         <p className="text-[13px] text-[#909090]">3rd Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          R Jadeja
+                        <Link href="/profile" className='hover:text-[#0b59ff]'> R Jadeja </Link>
                           <p>
                             {" "}
                             <span>53</span>{" "}
@@ -1980,7 +1983,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>L Rahul</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>L Rahul</p> </Link>
                         <p>
                           16 <span className="text-[#909090]">(50)</span>
                         </p>
@@ -1991,7 +1994,7 @@ const MatchScoreCard = () => {
                       <div className="w-full">
                         <p className="text-[13px] text-[#909090]">3th Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          R Jadeja
+                        <Link href="/profile" className='hover:text-[#0b59ff]'>  R Jadeja </Link>
                           <p>
                             {" "}
                             <span>23</span>{" "}
@@ -2011,7 +2014,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>R Ashwin</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>R Ashwin</p> </Link>
                         <p>
                           106 <span className="text-[#909090]">(118)</span>
                         </p>
@@ -2382,28 +2385,28 @@ const MatchScoreCard = () => {
                           <tbody>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                R Sharma
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  R Sharma </Link>
                               </td>
                               <td className="px-4 py-3">15-1</td>
                               <td className="px-4 py-3">2.3</td>
                             </tr>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Shubman Gill
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Shubman Gill </Link>
                               </td>
                               <td className="px-4 py-3">28-2</td>
                               <td className="px-4 py-3">6.4</td>
                             </tr>
                             <tr className="border-b">
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Yashasvi Jaiswal
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Yashasvi Jaiswal </Link>
                               </td>
                               <td className="px-4 py-3">67-3</td>
                               <td className="px-4 py-3">19.2</td>
                             </tr>
                             <tr>
                               <td className="px-4 py-3 font-medium text-gray-800">
-                                Virat Kohli
+                              <Link href="/profile" className='hover:text-[#0b59ff]'>  Virat Kohli </Link>
                               </td>
                               <td className="px-4 py-3">234-4</td>
                               <td className="px-4 py-3">55.3</td>
@@ -2413,6 +2416,7 @@ const MatchScoreCard = () => {
                       </div>
                     </div>
                   </div>
+                  
                   <div className="rounded-lg bg-[#ffffff] mb-4 p-4">
                     <h3 className="text-1xl font-semibold mb-3 pl-[7px] border-l-[3px] border-[#229ED3]">
                       Partnership
@@ -2425,7 +2429,7 @@ const MatchScoreCard = () => {
                       <div className="w-full ">
                         <p className="text-[13px] text-[#909090]">1st Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          S Yadav
+                        <Link href="/profile" className='hover:text-[#0b59ff]'>  S Yadav </Link>
                           <p>
                             <span>10</span>
                             <span className="text-[13px] text-[#909090]">(8)</span>
@@ -2444,7 +2448,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:gap-2 items-end md:items-center  justify-end">
-                        <p>Y Jaiswal</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>Y Jaiswal</p> </Link>
                         <p>
                           10 <span className="text-[#909090]">(7)</span>
                         </p>
@@ -2455,7 +2459,7 @@ const MatchScoreCard = () => {
                       <div className="w-full ">
                         <p className="text-[13px] text-[#909090]">2nd Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          S Yadav
+                        <Link href="/profile" className='hover:text-[#0b59ff]'> S Yadav </Link>
                           <p>
                             {" "}
                             <span>10</span>{" "}
@@ -2475,7 +2479,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>S Gill</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'>  <p>S Gill</p> </Link>
                         <p>
                           0 <span className="text-[#909090]">(8)</span>
                         </p>
@@ -2486,7 +2490,7 @@ const MatchScoreCard = () => {
                       <div className="w-full">
                         <p className="text-[13px] text-[#909090]">3rd Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          R Jadeja
+                        <Link href="/profile" className='hover:text-[#0b59ff]'> R Jadeja </Link>
                           <p>
                             {" "}
                             <span>53</span>{" "}
@@ -2506,7 +2510,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>L Rahul</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>L Rahul</p> </Link>
                         <p>
                           16 <span className="text-[#909090]">(50)</span>
                         </p>
@@ -2517,7 +2521,7 @@ const MatchScoreCard = () => {
                       <div className="w-full">
                         <p className="text-[13px] text-[#909090]">3th Wicket</p>
                         <div className="flex md:flex-row flex-col md:gap-2">
-                          R Jadeja
+                        <Link href="/profile" className='hover:text-[#0b59ff]'>  R Jadeja </Link>
                           <p>
                             {" "}
                             <span>23</span>{" "}
@@ -2537,7 +2541,7 @@ const MatchScoreCard = () => {
                         </div>
                       </div>
                       <div className=" w-full flex md:flex-row flex-col md:items-center items-end md:gap-2 justify-end">
-                        <p>R Ashwin</p>
+                      <Link href="/profile" className='hover:text-[#0b59ff]'> <p>R Ashwin</p> </Link>
                         <p>
                           106 <span className="text-[#909090]">(118)</span>
                         </p>

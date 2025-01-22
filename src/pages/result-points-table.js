@@ -278,7 +278,7 @@ const ResultPointsTable = () => {
                                                 <tr className="hover:bg-[#fffae5]">
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">1</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
-                                                        <Link href="/kkrSeries">
+                                                        <Link href="/kkrseries">
                                                             <div className="flex items-center gap-[5px] w-[120px]">
                                                                 <div>
                                                                     <img
@@ -341,6 +341,7 @@ const ResultPointsTable = () => {
                                                 <tr>
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">2</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
+                                                    <Link href="/kkrseries">
                                                         <div className="flex items-center gap-[5px]">
                                                             <div>
                                                                 <img
@@ -353,6 +354,7 @@ const ResultPointsTable = () => {
                                                                 SH<span className="text-[#00B564]"> (Q)</span>
                                                             </p>
                                                         </div>
+                                                        </Link>
                                                     </td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
@@ -402,6 +404,7 @@ const ResultPointsTable = () => {
                                                 <tr>
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">3</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
+                                                    <Link href="/kkrseries">
                                                         <div className="flex items-center gap-[5px]">
                                                             <div>
                                                                 <img
@@ -414,6 +417,7 @@ const ResultPointsTable = () => {
                                                                 RR<span className="text-[#00B564]"> (Q)</span>
                                                             </p>
                                                         </div>
+                                                        </Link>
                                                     </td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
@@ -463,6 +467,7 @@ const ResultPointsTable = () => {
                                                 <tr>
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">4</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
+                                                    <Link href="/kkrseries">
                                                         <div className="flex items-center gap-[5px]">
                                                             <div>
                                                                 <img
@@ -475,6 +480,7 @@ const ResultPointsTable = () => {
                                                                 RCB<span className="text-[#00B564]"> (Q)</span>
                                                             </p>
                                                         </div>
+                                                        </Link>
                                                     </td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
@@ -524,6 +530,7 @@ const ResultPointsTable = () => {
                                                 <tr>
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
+                                                    <Link href="/kkrseries">
                                                         <div className="flex items-center gap-[5px]">
                                                             <div>
                                                                 <img
@@ -534,6 +541,7 @@ const ResultPointsTable = () => {
                                                             </div>
                                                             <p>CSK</p>
                                                         </div>
+                                                        </Link>
                                                     </td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
@@ -583,6 +591,7 @@ const ResultPointsTable = () => {
                                                 <tr>
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">6</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
+                                                    <Link href="/kkrseries">
                                                         <div className="flex items-center gap-[5px]">
                                                             <div>
                                                                 <img
@@ -593,6 +602,7 @@ const ResultPointsTable = () => {
                                                             </div>
                                                             <p>DC</p>
                                                         </div>
+                                                        </Link>
                                                     </td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
@@ -642,6 +652,7 @@ const ResultPointsTable = () => {
                                                 <tr>
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">7</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
+                                                    <Link href="/kkrseries">
                                                         <div className="flex items-center gap-[5px]">
                                                             <div>
                                                                 <img
@@ -652,6 +663,7 @@ const ResultPointsTable = () => {
                                                             </div>
                                                             <p>LSG</p>
                                                         </div>
+                                                        </Link>
                                                     </td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
@@ -701,6 +713,7 @@ const ResultPointsTable = () => {
                                                 <tr>
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">8</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
+                                                    <Link href="/kkrseries">
                                                         <div className="flex items-center gap-[5px]">
                                                             <div>
                                                                 <img
@@ -711,6 +724,7 @@ const ResultPointsTable = () => {
                                                             </div>
                                                             <p>GT</p>
                                                         </div>
+                                                        </Link>
                                                     </td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
@@ -760,6 +774,7 @@ const ResultPointsTable = () => {
                                                 <tr>
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">9</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
+                                                    <Link href="/kkrseries">
                                                         <div className="flex items-center gap-[5px]">
                                                             <div>
                                                                 <img
@@ -770,6 +785,7 @@ const ResultPointsTable = () => {
                                                             </div>
                                                             <p>PK</p>
                                                         </div>
+                                                        </Link>
                                                     </td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
@@ -819,6 +835,7 @@ const ResultPointsTable = () => {
                                                 <tr>
                                                     <td className="md:px-2 pl-[14px] py-3 w-[10px]">10</td>
                                                     <td className="md:px-2 pl-[14px] py-3 text-[#217AF7]">
+                                                    <Link href="/kkrseries">
                                                         <div className="flex items-center gap-[5px]">
                                                             <div>
                                                                 <img
@@ -829,6 +846,7 @@ const ResultPointsTable = () => {
                                                             </div>
                                                             <p>MI</p>
                                                         </div>
+                                                        </Link>
                                                     </td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
                                                     <td className="md:px-2 pl-[14px] py-3">5</td>
@@ -1033,92 +1051,96 @@ const ResultPointsTable = () => {
 
 
                             <div className=" pb-2 my-4">
-                                <div className="py-2">
-                                    <h3 className="text-1xl font-semibold pl-[3px] border-l-[3px] border-[#1a80f8]">
-                                        POPULAR
-                                    </h3>
-                                </div>
-                                <div className="">
-                                    <a href="#">
-                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2">
-                                            <div>
-                                                <img src="/assets/img/1.png" alt="" />
-                                            </div>
-                                            <div className="font-medium text-[#394351]">
-                                                ICC World cup
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                            <div>
-                                                <img src="/assets/img/2.png" alt="" />
-                                            </div>
-                                            <div className="font-medium text-[#394351]">
-                                                ICC Champion Trophy
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                            <div>
-                                                <img src="/assets/img/3.png" alt="" />
-                                            </div>
-                                            <div className="font-medium text-[#394351]">
-                                                T20 World Cup
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                            <div>
-                                                <img src="/assets/img/4.png" alt="" />
-                                            </div>
-                                            <div className="font-medium text-[#394351]">
-                                                Indian Premium League
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                            <div>
-                                                <img src="/assets/img/5.png" alt="" />
-                                            </div>
-                                            <div className="font-medium text-[#394351]">
-                                                Pakistan Super League
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                            <div>
-                                                <img src="/assets/img/6.png" alt="" />
-                                            </div>
-                                            <div className="font-medium text-[#394351]">
-                                                Bangladesh Premium Leaguge
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                            <div>
-                                                <img src="/assets/img/7.png" alt="" />
-                                            </div>
-                                            <div className="font-medium text-[#394351]">
-                                                Big Bash Leaguge
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3">
-                                            <div>
-                                                <img src="/assets/img/8.png" alt="" />
-                                            </div>
-                                            <div className="font-medium text-[#394351]">Super Smash</div>
-                                        </div>
-                                    </a>
-                                </div>
+                            <div className="py-2">
+                                <h3 className="text-1xl font-semibold pl-[3px] border-l-[3px] border-[#1a80f8]">
+                                    POPULAR</h3>
+
                             </div>
+                            <div className="">
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2">
+                                        <div>
+                                            <img src="/assets/img/1.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            ICC World cup
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/2.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            ICC Champion Trophy
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/3.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            T20 World Cup
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/4.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Indian Premium League
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/5.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Pakistan Super League
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/6.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Bangladesh Premium Leaguge
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/7.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Big Bash Leaguge
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3">
+                                        <div>
+                                            <img src="/assets/img/8.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Super Smash
+                                        </div>
+                                    </div>
+                                </Link>
+
+                            </div>
+
+                        </div>
                         </div>
                     </div>
                 </div>

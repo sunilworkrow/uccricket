@@ -1,5 +1,6 @@
 import Layout from '@/Components/Layout'
 import WeeklySlider from '@/Components/WeeklySlider';
+import CardSlider from '@/Components/CardSlider'
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -391,7 +392,7 @@ const index = () => {
                                         <div className="py-4 px-3">
 
                                             <div className="flex justify-between items-center text-[14px]">
-                                            <Link href="/resultMatch/result-scorecard">
+                                                <Link href="/resultMatch/result-scorecard">
                                                     <div className="">
                                                         <p className="text-[#586577] text-[12px] mb-4 font-medium">1st ODI , Trent
                                                             Bridge,
@@ -2172,7 +2173,7 @@ const index = () => {
                                                     a century; Haryana trounce
                                                 </h3>
                                                 <p className="text-gray-500 font-normal">India will go into the home Test series
-                                                    against New Zealand with pretty much the same squad that took on Bangladesh
+                                                    against  New Zealand with pretty much the same squad that took on Bangladesh
                                                     in September
                                                     - India's last red-ball action ahead of the five-Test...</p>
                                                 <a href="#">
@@ -2194,206 +2195,216 @@ const index = () => {
                                         <div className="lg:grid grid-cols-12 gap-4">
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                         </div>
 
-                                        <a href="#">
+                                        <Link href="#">
                                             <div
                                                 className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline">
                                                 More from News <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -2403,7 +2414,7 @@ const index = () => {
                                                         d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div id="fantasytips2" className={`tab-content ${activeTab === 'fantasytips2' ? '' : 'hidden'}`}>
@@ -2437,7 +2448,7 @@ const index = () => {
                                                     a century; Haryana trounce
                                                 </h3>
                                                 <p className="text-gray-500 font-normal">India will go into the home Test series
-                                                    against New Zealand with pretty much the same squad that took on Bangladesh
+                                                    against  New Zealand with pretty much the same squad that took on Bangladesh
                                                     in September
                                                     - India's last red-ball action ahead of the five-Test...</p>
                                                 <a href="#">
@@ -2459,206 +2470,216 @@ const index = () => {
                                         <div className="lg:grid grid-cols-12 gap-4">
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                         </div>
 
-                                        <a href="#">
+                                        <Link href="#">
                                             <div
                                                 className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline">
                                                 More from News <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -2668,7 +2689,7 @@ const index = () => {
                                                         d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div id="ipl2" className={`tab-content ${activeTab === 'ipl2' ? '' : 'hidden'}`}>
@@ -2702,7 +2723,7 @@ const index = () => {
                                                     a century; Haryana trounce
                                                 </h3>
                                                 <p className="text-gray-500 font-normal">India will go into the home Test series
-                                                    against New Zealand with pretty much the same squad that took on Bangladesh
+                                                    against  New Zealand with pretty much the same squad that took on Bangladesh
                                                     in September
                                                     - India's last red-ball action ahead of the five-Test...</p>
                                                 <a href="#">
@@ -2724,206 +2745,216 @@ const index = () => {
                                         <div className="lg:grid grid-cols-12 gap-4">
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                         </div>
 
-                                        <a href="#">
+                                        <Link href="#">
                                             <div
                                                 className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline">
                                                 More from News <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -2933,7 +2964,7 @@ const index = () => {
                                                         d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div id="dailyquiz2" className={`tab-content ${activeTab === 'dailyquiz2' ? '' : 'hidden'}`}>
@@ -2967,7 +2998,7 @@ const index = () => {
                                                     a century; Haryana trounce
                                                 </h3>
                                                 <p className="text-gray-500 font-normal">India will go into the home Test series
-                                                    against New Zealand with pretty much the same squad that took on Bangladesh
+                                                    against  New Zealand with pretty much the same squad that took on Bangladesh
                                                     in September
                                                     - India's last red-ball action ahead of the five-Test...</p>
                                                 <a href="#">
@@ -2989,206 +3020,216 @@ const index = () => {
                                         <div className="lg:grid grid-cols-12 gap-4">
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                         </div>
 
-                                        <a href="#">
+                                        <Link href="#">
                                             <div
                                                 className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline">
                                                 More from News <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -3198,7 +3239,7 @@ const index = () => {
                                                         d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div id="pointstable2" className={`tab-content ${activeTab === 'pointstable2' ? '' : 'hidden'}`}>
@@ -3232,7 +3273,7 @@ const index = () => {
                                                     a century; Haryana trounce
                                                 </h3>
                                                 <p className="text-gray-500 font-normal">India will go into the home Test series
-                                                    against New Zealand with pretty much the same squad that took on Bangladesh
+                                                    against  New Zealand with pretty much the same squad that took on Bangladesh
                                                     in September
                                                     - India's last red-ball action ahead of the five-Test...</p>
                                                 <a href="#">
@@ -3254,206 +3295,216 @@ const index = () => {
                                         <div className="lg:grid grid-cols-12 gap-4">
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                         </div>
 
-                                        <a href="#">
+                                        <Link href="#">
                                             <div
                                                 className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline">
                                                 More from News <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -3463,7 +3514,7 @@ const index = () => {
                                                         d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div id="socialtrends2" className={`tab-content ${activeTab === 'socialtrends2' ? '' : 'hidden'}`}>
@@ -3497,7 +3548,7 @@ const index = () => {
                                                     a century; Haryana trounce
                                                 </h3>
                                                 <p className="text-gray-500 font-normal">India will go into the home Test series
-                                                    against New Zealand with pretty much the same squad that took on Bangladesh
+                                                    against  New Zealand with pretty much the same squad that took on Bangladesh
                                                     in September
                                                     - India's last red-ball action ahead of the five-Test...</p>
                                                 <a href="#">
@@ -3519,206 +3570,216 @@ const index = () => {
                                         <div className="lg:grid grid-cols-12 gap-4">
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                             <div className="col-span-6">
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
-                                                            series in Australia to close out this year.into the home Test series
-                                                            against</h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-1.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Action ahead of the five-Test
+                                                                series in Australia to close out this year.into the home Test series
+                                                                against</h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024</p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024</p>
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
+
+                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
+                                                                opt
+                                                                central contract this is cricket
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
+                                                                </svg>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </Link>
 
                                                 <div className="border-t-[1px] border-[#E7F2F4]"></div>
 
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-2.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">Star South African spinner to
-                                                            opt
-                                                            central contract this is cricket
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
+                                                <Link href="#">
+                                                    <div className="flex gap-3 my-5">
+                                                        <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
+                                                            className="rounded-lg h-[90px]" />
+                                                        <div>
+                                                            <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
+                                                                really took off, they have some reflecting to do.
+                                                            </h4>
+                                                            <p className="text-[12px] text-gray-500 flex items-center">By <span
+                                                                className="ml-2 pr-[1px]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                    width="15" height="15" viewBox="0 0 48 48">
+                                                                    <polygon fill="#42a5f5"
+                                                                        points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
+                                                                    </polygon>
+                                                                    <polygon fill="#fff"
+                                                                        points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
+                                                                    </polygon>
                                                                 </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
+                                                            </span> Uc Team <span className="ml-2 pr-[1px]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                                        className="size-3">
+                                                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                                                            d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
+                                                                        </path>
+                                                                    </svg>
+                                                                </span> October 9, 2024
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                </div>
-
-                                                <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                                                <div className="flex gap-3 my-5">
-                                                    <img src="/assets/img/flag/p-3.png" alt="News thumbnail"
-                                                        className="rounded-lg h-[90px]" />
-                                                    <div>
-                                                        <h4 className="text-[13px] font-semibold mb-2">After a campaign that never
-                                                            really took off, they have some reflecting to do.
-                                                        </h4>
-                                                        <p className="text-[12px] text-gray-500 flex items-center">By <span
-                                                            className="ml-2 pr-[1px]">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                                                                width="15" height="15" viewBox="0 0 48 48">
-                                                                <polygon fill="#42a5f5"
-                                                                    points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884">
-                                                                </polygon>
-                                                                <polygon fill="#fff"
-                                                                    points="21.396,31.255 14.899,24.76 17.021,22.639 21.428,27.046 30.996,17.772 33.084,19.926">
-                                                                </polygon>
-                                                            </svg>
-                                                        </span> Uc Team <span className="ml-2 pr-[1px]">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                                                                    className="size-3">
-                                                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                                                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z">
-                                                                    </path>
-                                                                </svg>
-                                                            </span> October 9, 2024
-                                                        </p>
-                                                    </div>
-                                                </div>
+                                                </Link>
                                             </div>
 
                                         </div>
 
-                                        <a href="#">
+                                        <Link href="#">
                                             <div
                                                 className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline">
                                                 More from News <svg xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -3728,7 +3789,7 @@ const index = () => {
                                                         d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
                                                 </svg>
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
 
@@ -3773,71 +3834,86 @@ const index = () => {
 
                             </div>
                             <div className="">
-                                <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2">
-                                    <div>
-                                        <img src="/assets/img/1.png" alt="" />
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2">
+                                        <div>
+                                            <img src="/assets/img/1.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            ICC World cup
+                                        </div>
                                     </div>
-                                    <div className="font-medium text-[#394351]">
-                                        ICC World cup
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/2.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            ICC Champion Trophy
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                    <div>
-                                        <img src="/assets/img/2.png" alt="" />
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/3.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            T20 World Cup
+                                        </div>
                                     </div>
-                                    <div className="font-medium text-[#394351]">
-                                        ICC Champion Trophy
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/4.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Indian Premium League
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                    <div>
-                                        <img src="/assets/img/3.png" alt="" />
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/5.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Pakistan Super League
+                                        </div>
                                     </div>
-                                    <div className="font-medium text-[#394351]">
-                                        T20 World Cup
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/6.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Bangladesh Premium Leaguge
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                    <div>
-                                        <img src="/assets/img/4.png" alt="" />
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                        <div>
+                                            <img src="/assets/img/7.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Big Bash Leaguge
+                                        </div>
                                     </div>
-                                    <div className="font-medium text-[#394351]">
-                                        Indian Premium League
+                                </Link>
+                                <Link href="/t20series">
+                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3">
+                                        <div>
+                                            <img src="/assets/img/8.png" alt="" />
+                                        </div>
+                                        <div className="font-medium text-[#394351]">
+                                            Super Smash
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                    <div>
-                                        <img src="/assets/img/5.png" alt="" />
-                                    </div>
-                                    <div className="font-medium text-[#394351]">
-                                        Pakistan Super League
-                                    </div>
-                                </div>
-                                <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                    <div>
-                                        <img src="/assets/img/6.png" alt="" />
-                                    </div>
-                                    <div className="font-medium text-[#394351]">
-                                        Bangladesh Premium Leaguge
-                                    </div>
-                                </div>
-                                <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                    <div>
-                                        <img src="/assets/img/7.png" alt="" />
-                                    </div>
-                                    <div className="font-medium text-[#394351]">
-                                        Big Bash Leaguge
-                                    </div>
-                                </div>
-                                <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3">
-                                    <div>
-                                        <img src="/assets/img/8.png" alt="" />
-                                    </div>
-                                    <div className="font-medium text-[#394351]">
-                                        Super Smash
-                                    </div>
-                                </div>
-
+                                </Link>
 
                             </div>
 
@@ -3895,369 +3971,12 @@ const index = () => {
                                         </button>
                                         {open === index && (
                                             <div className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                                                <p>Bangabandhu T20 C</p>
+                                                <Link className="hover:text-[#1a80f8]" href=""> <p>Bangabandhu T20 C</p> </Link>
                                             </div>
                                         )}
                                     </div>
                                 ))}
                             </div>
-
-
-
-                            {/* <div className="bg-white rounded-lg px-4">
-
-        <div className="py-2 mb-3">
-            <form className="flex justify-between items-center border-2 p-1 px-3 rounded-lg">
-                <div>
-                    <input className="font-medium text-[15px] outline-none" type="text"
-                        placeholder="Filter.."/>
-                </div>
-                <div>
-                    <img src="/assets/img/flag/search.png" className="h-[14px]" alt=""/>
-                </div>
-            </form>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-           onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/1.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Afghanistan
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button
-            onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/2.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Australia
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-            onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/3.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Bangladesh
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p className="flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                        className="size-3 text-[#1A80F8] mr-1">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                    </svg>
-                    Bangabandhu T20 C</p>
-                <p className="flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                        className="size-3 text-[#1A80F8] mr-1">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                    </svg>
-                    Bangladesh Premier</p>
-                <p className="flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                        className="size-3 text-[#1A80F8] mr-1">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                    </svg>
-                    Bangladesh Tri-Series</p>
-                <p className="flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                        className="size-3 text-[#1A80F8] mr-1">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                    </svg>
-                    BCB Presidents Cup</p>
-                <p className="flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
-                        className="size-3 text-[#1A80F8] mr-1">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                    </svg>
-                    Dhaka Premier League</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button
-           onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/4.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Chinese Taipei
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-           onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/5.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Cyprus
-                </span>
-                <span
-                //  :className="{'rotate-180': open}"
-                  className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-           onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/6.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Czech
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button
-            onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/7.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    China
-                </span>
-                <span
-                //  :className="{'rotate-180': open}" 
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-            onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/8.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Colombia
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-            onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/9.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Croatia
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button
-            onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/10.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    England
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-           onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/11.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    South Africa
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-           onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/12.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    New Zealand
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-            onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/13.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Sri Lanka
-                </span>
-                <span 
-                // :className="{'rotate-180': open}"
-                 className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-        <div x-data="{ open: false }" className="border-b mb-4">
-            <button 
-           onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/14.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    West Indies
-                </span>
-                <span 
-                // :className="{'rotate-180': open}" 
-                className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-
-
-
-        <div x-data="{ open: false }" className=" mb-4">
-            <button 
-           onClick={() => setOpen(!open)} 
-                className="w-full flex text-[14px] justify-between items-center pb-3">
-                <span className="flex items-center font-medium text-[#394351]">
-                    <img src="/assets/img/flag/16.png" className=" mr-3" alt="Afghanistan Flag"/>
-                    Pakistan
-                </span>
-                <span 
-                // :className="{'rotate-180': open}" 
-                className="transform transition-transform ">
-                    <img src="/assets/img/arrow.png" className="h-[7px]" alt=""/>
-                </span>
-            </button>
-            <div x-show="open" className="pl-8 py-2 space-y-2 font-normal text-[14px] text-[#51555E]">
-                <p>Bangabandhu T20 C</p>
-
-            </div>
-        </div>
-    </div> */}
-
-
-
                         </div>
 
                     </div>
@@ -4300,40 +4019,48 @@ const index = () => {
                                 <div className="bg-cover bg-center py-3 rounded-md text-white" style={{
                                     backgroundImage: "linear-gradient(to right, rgba(20, 67, 158, 1), #14429e7a),url(img/home/bg-2.png)"
                                 }}>
-                                    <div className=" flex items-center space-x-2 justify-center">
-                                        <img src="/assets/img/flag/2.png" alt="" />
-                                        <p className="font-semibold">Australia</p>
-                                    </div>
+                                    <Link href="/team">
+                                        <div className=" flex items-center space-x-2 justify-center">
+                                            <img src="/assets/img/flag/2.png" alt="" />
+                                            <p className="font-semibold">Australia</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-span-1">
                                 <div className="bg-cover bg-center py-3 rounded-md text-white" style={{
                                     backgroundImage: "linear-gradient(to right, rgba(20, 67, 158, 1), #14429e7a), url(img/home/bg-3.png)"
                                 }}>
-                                    <div className=" flex items-center space-x-2 justify-center">
-                                        <img src="/assets/img/flag/16.png" alt="" />
-                                        <p className="font-semibold">Pakistan</p>
-                                    </div>
+                                    <Link href="/team">
+                                        <div className=" flex items-center space-x-2 justify-center">
+                                            <img src="/assets/img/flag/16.png" alt="" />
+                                            <p className="font-semibold">Pakistan</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-span-1">
                                 <div className="bg-cover bg-center py-3 rounded-md text-white" style={{
                                     backgroundImage: "linear-gradient(to right, rgba(20, 67, 158, 1), #14429e7a),url(img/home/bg-4.png)"
                                 }}>
-                                    <div className=" flex items-center space-x-2 justify-center">
-                                        <img src="/assets/img/flag/11.png" alt="" />
-                                        <p className="font-semibold">South Africa</p>
-                                    </div>
+                                    <Link href="/team">
+                                        <div className=" flex items-center space-x-2 justify-center">
+                                            <img src="/assets/img/flag/11.png" alt="" />
+                                            <p className="font-semibold">South Africa</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-span-1">
                                 <div className="bg-cover bg-center py-3 rounded-md text-white" style={{
                                     backgroundImage: "linear-gradient(to right, rgba(20, 67, 158, 1), #14429e7a),url(img/home/bg-5.png)"
                                 }}>
-                                    <div className=" flex items-center space-x-2 justify-center">
-                                        <img src="/assets/img/flag/12.png" alt="" />
-                                        <p className="font-semibold">New Zealand</p>
-                                    </div>
+                                    <Link href="/team">
+                                        <div className=" flex items-center space-x-2 justify-center">
+                                            <img src="/assets/img/flag/12.png" alt="" />
+                                            <p className="font-semibold">New Zealand</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -4341,72 +4068,78 @@ const index = () => {
                                 <div className="bg-cover bg-center py-3 rounded-md text-white" style={{
                                     backgroundImage: "linear-gradient(to right, rgba(20, 67, 158, 1), #14429e7a),url(img/home/bg-6.png)"
                                 }}>
-                                    <div className=" flex items-center space-x-2 justify-center">
-                                        <img src="/assets/img/flag/13.png" alt="" />
-                                        <p className="font-semibold">Sri Lanka</p>
-                                    </div>
+                                    <Link href="/team">
+                                        <div className=" flex items-center space-x-2 justify-center">
+                                            <img src="/assets/img/flag/13.png" alt="" />
+                                            <p className="font-semibold">Sri Lanka</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-span-1">
                                 <div className="bg-cover bg-center py-3 rounded-md text-white" style={{
                                     backgroundImage: "linear-gradient(to right, rgba(20, 67, 158, 1), #14429e7a),url(img/home/bg-7.png)"
                                 }}>
-                                    <div className=" flex items-center space-x-2 justify-center">
-                                        <img src="/assets/img/flag/10.png" alt="" />
-                                        <p className="font-semibold">England</p>
-                                    </div>
+                                    <Link href="/team">
+                                        <div className=" flex items-center space-x-2 justify-center">
+                                            <img src="/assets/img/flag/10.png" alt="" />
+                                            <p className="font-semibold">England</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-span-1">
                                 <div className="bg-cover bg-center py-3 rounded-md text-white" style={{
                                     backgroundImage: "linear-gradient(to right, rgba(20, 67, 158, 1), #14429e7a),url(img/home/bg-8.png)"
                                 }}>
-                                    <div className=" flex items-center space-x-2 justify-center">
-                                        <img src="/assets/img/flag/17.png" alt="" />
-                                        <p className="font-semibold">Afghanistan</p>
-                                    </div>
+                                    <Link href="/team">
+                                        <div className=" flex items-center space-x-2 justify-center">
+                                            <img src="/assets/img/flag/17.png" alt="" />
+                                            <p className="font-semibold">Afghanistan</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-span-1">
                                 <div className="bg-cover bg-center py-3 rounded-md text-white" style={{
                                     backgroundImage: "linear-gradient(to right, rgba(20, 67, 158, 1), #14429e7a),url(img/home/bg-9.png)"
                                 }}>
-                                    <div className=" flex items-center space-x-2 justify-center">
-                                        <img src="/assets/img/flag/13.png" alt="" />
-                                        <p className="font-semibold">Bangladesh</p>
-                                    </div>
+                                    <Link href="/team">
+                                        <div className=" flex items-center space-x-2 justify-center">
+                                            <img src="/assets/img/flag/13.png" alt="" />
+                                            <p className="font-semibold">Bangladesh</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-span-1">
                                 <div className="bg-cover bg-center py-3 rounded-md text-white" style={{
                                     backgroundImage: "linear-gradient(to right, rgba(20, 67, 158, 1), #14429e7a),url(img/home/bg-10.png)"
                                 }}>
-                                    <div className=" flex items-center space-x-2 justify-center">
-                                        <img src="/assets/img/flag/14.png" alt="" className="rounded-full" />
-                                        <p className="font-semibold">West Indies</p>
-                                    </div>
+                                    <Link href="/team">
+                                        <div className=" flex items-center space-x-2 justify-center">
+                                            <img src="/assets/img/flag/14.png" alt="" className="rounded-full" />
+                                            <p className="font-semibold">West Indies</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
 
                         </div>
                     </div>
 
+                    
 
                     <div className="flex justify-between items-center py-4">
                         <div>
                             <h3 className="text-1xl font-semibold pl-[4px] border-l-[3px] border-[#2182F8]">Web Stories
                             </h3>
                         </div>
-                        <div className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline">
-                            View More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                                stroke="currentColor" className="size-3 ml-2">
-                                <path strokeLinecap="round" strokeLinejoin="round"
-                                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                            </svg>
-                        </div>
-                    </div>
 
-                    <div className="grid md:grid-cols-5 grid-cols-2 gap-4">
+                    </div>
+                    <CardSlider></CardSlider>
+
+                    {/* <div className="grid md:grid-cols-5 grid-cols-2 gap-4">
 
                         <div className="col-span-1">
                             <div className="relative">
@@ -4445,7 +4178,7 @@ const index = () => {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
 
                     <div className="flex items-center justify-center py-4">
                         <div className="flex items-center space-x-4 w-full">
@@ -4474,13 +4207,13 @@ const index = () => {
                                     <span>Fixtures</span>
                                 </button>
                                 <Link href="/matchpoints">
-                                <button className="font-medium py-2 px-3 whitespace-nowrap">Points Table</button>
+                                    <button className="font-medium py-2 px-3 whitespace-nowrap">Points Table</button>
                                 </Link>
                                 <Link href="/live-stats/most-runs-stats">
-                                <button className="font-medium py-2 px-3 whitespace-nowrap">Stats</button>
+                                    <button className="font-medium py-2 px-3 whitespace-nowrap">Stats</button>
                                 </Link>
                                 <Link href="/match-squad">
-                                <button className="font-medium py-2 px-3 whitespace-nowrap">Squads</button>
+                                    <button className="font-medium py-2 px-3 whitespace-nowrap">Squads</button>
                                 </Link>
                                 <button className="font-medium py-2 px-3 whitespace-nowrap">Fantasy Tips</button>
                             </div>
@@ -4566,16 +4299,22 @@ const index = () => {
                             <div className="flex items-center justify-between space-x-5 mt-3">
 
                                 <div className="flex items-center">
-                                    <p className=" text-[#909090] font-medium"> Points Table</p>
+                                    <Link href="#">
+                                        <p className=" text-[#909090] font-medium"> Points Table</p>
+                                    </Link>
+
                                     <div className="h-[20px] border-l-[1px] mx-5 border-[#d0d3d7]"></div>
-                                    <p className="text-[#909090] font-medium">Schedule</p>
+                                    <Link href="#">
+                                        <p className="text-[#909090] font-medium">Schedule</p>
+                                    </Link>
                                 </div>
 
 
                                 <div className="flex mt-2 justify-end items-center space-x-2">
                                     <img src="/assets/img/home/handshake.png" alt="" />
-                                    <span className="text-[#909090] font-medium">H2H</span>
-
+                                    <Link href="#">
+                                        <span className="text-[#909090] font-medium">H2H</span>
+                                    </Link>
                                 </div>
 
 

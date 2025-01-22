@@ -9,7 +9,7 @@ const Matchmoreinfo = () => {
 
     const handleProbabilityTab = (event, tabName) => {
         setActiveTab(tabName);
-      };
+    };
 
 
     return (
@@ -111,28 +111,28 @@ const Matchmoreinfo = () => {
                             </button>
                         </Link>
                         <Link href="/match-squad">
-                        <button
-                            onclick="handleTabClick(event, 'overs')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Squad
-                        </button>
+                            <button
+                                onclick="handleTabClick(event, 'overs')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Squad
+                            </button>
                         </Link>
                         <Link href="/matchpoints">
-                        <button
-                            onclick="handleTabClick(event, 'points')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Points Table
-                        </button>
+                            <button
+                                onclick="handleTabClick(event, 'points')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Points Table
+                            </button>
                         </Link>
                         <Link href="/live-stats/most-runs-stats">
-                        <button
-                            onclick="handleTabClick(event, 'stats')"
-                            className="font-medium py-2 px-3 whitespace-nowrap"
-                        >
-                            Stats
-                        </button>
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Stats
+                            </button>
                         </Link>
                     </div>
                 </div>
@@ -186,16 +186,18 @@ const Matchmoreinfo = () => {
                                         <div className="md:px-2">
                                             <div className="performance-section">
                                                 <div className="flex items-center justify-between my-3">
-                                                    <div className="flex items-center space-x-3">
-                                                        <div>
-                                                            <img
-                                                                src="/assets/img/flag/17.png"
-                                                                className="h-[25px]"
-                                                                alt="india"
-                                                            />
+                                                    <Link href="">
+                                                        <div className="flex items-center space-x-3">
+                                                            <div>
+                                                                <img
+                                                                    src="/assets/img/flag/17.png"
+                                                                    className="h-[25px]"
+                                                                    alt="india"
+                                                                />
+                                                            </div>
+                                                            <h3 className="text-1xl font-medium">India</h3>
                                                         </div>
-                                                        <h3 className="text-1xl font-medium">India</h3>
-                                                    </div>
+                                                    </Link>
                                                     <div>
                                                         <div className="ml-auto flex gap-1 items-center">
                                                             <span className="bg-[#13b76dbd] text-white text-[13px] px-[6px] py-[3px] rounded">
@@ -233,7 +235,7 @@ const Matchmoreinfo = () => {
                                                             <tbody>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1 ">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -245,13 +247,13 @@ const Matchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p>274/10 &amp; 170/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
                                                                                 <p>274/10 &amp; 170/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -263,7 +265,7 @@ const Matchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -283,7 +285,7 @@ const Matchmoreinfo = () => {
                                                                 </tr>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -295,13 +297,13 @@ const Matchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p className="">540/10 &amp; 220/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <p>140/10 &amp; 420/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -313,7 +315,7 @@ const Matchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -333,7 +335,7 @@ const Matchmoreinfo = () => {
                                                                 </tr>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -345,13 +347,13 @@ const Matchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p className="">274/10 &amp; 170/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <p>250/10 &amp; 160/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -363,7 +365,7 @@ const Matchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -383,7 +385,7 @@ const Matchmoreinfo = () => {
                                                                 </tr>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -395,13 +397,13 @@ const Matchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p className="">274/10 &amp; 170/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <p>280/10 &amp; 190/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -413,7 +415,7 @@ const Matchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -433,7 +435,7 @@ const Matchmoreinfo = () => {
                                                                 </tr>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -445,13 +447,13 @@ const Matchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p className="">174/10 &amp; 160/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <p>380/10 &amp; 250/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -463,7 +465,7 @@ const Matchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -488,7 +490,7 @@ const Matchmoreinfo = () => {
                                                     <div className="lg:hidden block">
                                                         <div className="flex justify-between items-center py-4 px-2 bg-[#f7faff] rounded-lg my-3 border-b-[1px] border-[#E4E9F0]">
                                                             <div className="">
-                                                                <a href="#">
+                                                                <Link href="#">
                                                                     <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full mb-3">
                                                                         <div className="flex items-center space-x-1">
                                                                             <img
@@ -500,7 +502,7 @@ const Matchmoreinfo = () => {
                                                                         </div>
                                                                         <p>274/10 &amp; 170/10</p>
                                                                     </div>
-                                                                </a>
+                                                                </Link>
                                                                 {/* <div class="md:px-4 py-2 font-medium text-center text-[#6A7586]">
                                           VS
                                       </div> */}
@@ -776,16 +778,18 @@ const Matchmoreinfo = () => {
                                             <div className="performance-section">
                                                 <div className="mt-6">
                                                     <div className="flex items-center justify-between my-3">
-                                                        <div className="flex items-center space-x-3">
-                                                            <div>
-                                                                <img
-                                                                    src="/assets/img/flag/3.png"
-                                                                    alt="ban"
-                                                                    className="h-[25px]"
-                                                                />
+                                                        <Link href="">
+                                                            <div className="flex items-center space-x-3">
+                                                                <div>
+                                                                    <img
+                                                                        src="/assets/img/flag/3.png"
+                                                                        alt="ban"
+                                                                        className="h-[25px]"
+                                                                    />
+                                                                </div>
+                                                                <h3 className="text-1xl font-medium">Bangladesh</h3>
                                                             </div>
-                                                            <h3 className="text-1xl font-medium">Bangladesh</h3>
-                                                        </div>
+                                                        </Link>
                                                         <div>
                                                             <div className="ml-auto flex gap-1 items-center">
                                                                 <span className="bg-[#13b76dbd] text-white text-[13px] px-[6px] py-[3px] rounded">
@@ -1348,103 +1352,123 @@ const Matchmoreinfo = () => {
                                         </h3>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 text-1xl flex justify-between items-center">
-                                            <div className="font-bold uppercase flex items-center">
-                                                <img className="h-[30px]" src="/assets/img/flg-1.png" alt="" />
-                                                <p className="mx-2 font-semibold uppercase">IND</p>
-                                            </div>
+                                            <Link href="">
+                                                <div className="font-bold uppercase flex items-center">
+                                                    <img className="h-[30px]" src="/assets/img/flg-1.png" alt="" />
+                                                    <p className="mx-2 font-semibold uppercase">IND</p>
+                                                </div>
+                                            </Link>
                                             <div className=" font-normal text-center">
                                                 <p className="text-[#D28505] text-[17px] font-semibold">
                                                     10 <span className="text-[#009900]">- 10</span>
                                                 </p>
                                             </div>
-                                            <div className="font-bold uppercase flex items-center">
-                                                <p className="mx-2 font-semibold uppercase">BAN</p>
-                                                <img className="h-[30px]" src="/assets/img/ban.png" alt="ban" />
-                                            </div>
+                                            <Link href="">
+                                                <div className="font-bold uppercase flex items-center">
+                                                    <p className="mx-2 font-semibold uppercase">BAN</p>
+                                                    <img className="h-[30px]" src="/assets/img/ban.png" alt="ban" />
+                                                </div>
+                                            </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 flex justify-between items-center">
-                                            <div className="font-medium  w-full">
-                                                <p className="mx-2 font-semibold uppercase">BAN</p>
-                                                <p className="mx-2 font-medium uppercase text-[#586577]">
-                                                    227 &amp; 231
-                                                </p>
-                                            </div>
+                                            <Link href="">
+                                                <div className="font-medium  w-full">
+                                                    <p className="mx-2 font-semibold uppercase">BAN</p>
+                                                    <p className="mx-2 font-medium uppercase text-[#586577]">
+                                                        227 &amp; 231
+                                                    </p>
+                                                </div>
+                                            </Link>
                                             <div className=" font-semibold text-center w-full">
                                                 <p className="text-[#3D4DCF]">IND Won</p>
                                                 <p className="text-[#586577] font-medium">
                                                     2nd TEST, BAN vs IND 2022
                                                 </p>
                                             </div>
-                                            <div className="font-medium text-right w-full">
-                                                <p className="mx-2 font-semibold uppercase">IND</p>
-                                                <p className="mx-2 font-medium uppercase text-[#586577]">
-                                                    314 &amp; 145/7
-                                                </p>
-                                            </div>
+                                            <Link href="">
+                                                <div className="font-medium text-right w-full">
+                                                    <p className="mx-2 font-semibold uppercase">IND</p>
+                                                    <p className="mx-2 font-medium uppercase text-[#586577]">
+                                                        314 &amp; 145/7
+                                                    </p>
+                                                </div>
+                                            </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 flex justify-between items-center">
+                                        <Link href="#">
                                             <div className="font-medium w-full">
                                                 <p className="mx-2 font-semibold uppercase">BAN</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     150 &amp; 324
                                                 </p>
                                             </div>
+                                            </Link>
                                             <div className=" font-semibold text-center w-full">
                                                 <p className="text-[#3D4DCF]">IND Won</p>
                                                 <p className="text-[#586577] font-medium">
                                                     2nd TEST, BAN vs IND 2022
                                                 </p>
                                             </div>
+                                            <Link href="">
                                             <div className="font-medium text-right w-full">
                                                 <p className="mx-2 font-semibold uppercase">IND</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     404 &amp; 258/2
                                                 </p>
                                             </div>
+                                            </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 flex justify-between items-center">
+                                        <Link href="">
                                             <div className="font-medium w-full">
                                                 <p className="mx-2 font-semibold uppercase">IND</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     347/9 (89.2)
                                                 </p>
                                             </div>
+                                            </Link>
                                             <div className=" font-semibold text-center w-full">
                                                 <p className="text-[#3D4DCF]">IND Won</p>
                                                 <p className="text-[#586577] font-medium">
                                                     2nd TEST, BAN vs IND 2022
                                                 </p>
                                             </div>
+                                            <Link href="">
                                             <div className="font-medium text-right w-full">
                                                 <p className="mx-2 font-semibold uppercase">BAN</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     106 &amp; 195
                                                 </p>
                                             </div>
+                                            </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 flex justify-between items-center">
+                                        <Link href="">
                                             <div className="font-medium w-full">
                                                 <p className="mx-2 font-semibold uppercase">IND</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     493/6 (114.0)
                                                 </p>
                                             </div>
+                                            </Link>
                                             <div className=" font-semibold text-center w-full">
                                                 <p className="text-[#3D4DCF]">IND Won</p>
                                                 <p className="text-[#586577] font-medium">
                                                     2nd TEST, BAN vs IND 2022
                                                 </p>
                                             </div>
+                                            <Link href="">
                                             <div className="font-medium text-right w-full">
                                                 <p className="mx-2 font-semibold uppercase">BAN</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     150 &amp; 113
                                                 </p>
                                             </div>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -1487,6 +1511,7 @@ const Matchmoreinfo = () => {
                                             <div className="cust-box-click-content cust-box-click-overall1 mt-4">
                                                 <div>
                                                     <div className="py-4 flex justify-between items-center">
+                                                    <Link href="">
                                                         <div className="font-bold flex items-center">
                                                             <img className="h-[30px]" src="/assets/img/flg-1.png" alt="" />
                                                             <p className="mx-2 text-1xl font-semibold">
@@ -1496,6 +1521,8 @@ const Matchmoreinfo = () => {
                                                                 </span>
                                                             </p>
                                                         </div>
+                                                        </Link>
+                                                        <Link href="">
                                                         <div className="font-bold flex items-center">
                                                             <p className="mx-2 text-1xl font-semibold text-right">
                                                                 BAN
@@ -1505,6 +1532,7 @@ const Matchmoreinfo = () => {
                                                             </p>
                                                             <img className="h-[30px]" src="/assets/img/ban.png" alt="ban" />
                                                         </div>
+                                                        </Link>
                                                     </div>
                                                     <div className="border-t-[1px] border-[#E4E9F0]" />
                                                     <div className="py-2 flex justify-between items-center">
@@ -1580,7 +1608,7 @@ const Matchmoreinfo = () => {
                                         </div>
 
                                         <div className={`cust-box-click-content cust-box-click-oddsview mt-4 ${activeTab === 'cust-box-click-oddsview' ? "" : "hidden"}`}>
-                                        <div className="cust-box-click-content cust-box-click-overall1 mt-4">
+                                            <div className="cust-box-click-content cust-box-click-overall1 mt-4">
                                                 <div>
                                                     <div className="py-4 flex justify-between items-center">
                                                         <div className="font-bold flex items-center">
@@ -1956,7 +1984,7 @@ const Matchmoreinfo = () => {
                                 </div>
                             </div>
 
-                         
+
                             <div className="lg:col-span-4 md:col-span-5">
                                 <div className="rounded-lg bg-[#ffffff]">
                                     <div className="p-4 cust-box-click-container">
@@ -1971,18 +1999,18 @@ const Matchmoreinfo = () => {
                                                 <span>India</span>
                                             </button>
                                             <Link href="/playing-bangladesh">
-                                            <button
-                                                className="cust-box-click-button bg-[#ffffff] font-medium text-[#6A7586] px-5 py-1 rounded-full"
-                                                onclick="showCustomBox(this, 'cust-box-click-bangladesh')"
-                                            >
-                                                <span>Bangladesh</span>
-                                            </button>
+                                                <button
+                                                    className="cust-box-click-button bg-[#ffffff] font-medium text-[#6A7586] px-5 py-1 rounded-full"
+                                                    onclick="showCustomBox(this, 'cust-box-click-bangladesh')"
+                                                >
+                                                    <span>Bangladesh</span>
+                                                </button>
                                             </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="cust-box-click-content cust-box-click-india mt-4">
                                             <div>
-                                            <Link href="/profile">
+                                                <Link href="/profile">
                                                     <div className="flex items-center space-x-3 py-3 border-b-[1px] border-border-gray-700">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="R sharma (c)" />
@@ -2091,8 +2119,8 @@ const Matchmoreinfo = () => {
                                                             <p className="text-[#909090] font-normal">Batter</p>
                                                         </div>
                                                     </div>
-                                               </Link>
-                                               <Link href="/profile">
+                                                </Link>
+                                                <Link href="/profile">
                                                     <div className="flex items-center space-x-3 py-3 pb-0">
                                                         <div>
                                                             <img src="/assets/img/player/1.png" alt="R Ashwin" />

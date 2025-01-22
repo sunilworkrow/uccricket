@@ -3,9 +3,9 @@ import Link from 'next/link';
 import React, { useState } from 'react'
 
 
-const liveresult = ( ) => {
+const liveresult = () => {
 
- const [activeTab, setActiveTab] = useState('cust-box-click-all');
+  const [activeTab, setActiveTab] = useState('cust-box-click-all');
   const [activeTab1, setActiveTab1] = useState('cust-box-click-firview');
 
   const handleTabClick = (event, tabName) => {
@@ -20,7 +20,7 @@ const liveresult = ( ) => {
 
   return (
     <Layout>
-       <section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
+      <section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
         <div className="lg:w-[1000px] mx-auto">
           <div className="md:flex justify-between items-center md:py-0 py-4">
             <div className=" text-1xl text-[#13b76dbd] font-bold uppercase ">
@@ -128,14 +128,14 @@ const liveresult = ( ) => {
               >
                 Points Table
               </button>
-              </Link>
-              <Link href="/result-stats">
-            <button
-              onclick="handleTabClick(event, 'stats')"
-              className="font-medium py-2 px-3 whitespace-nowrap"
-            >
-              Stats
-            </button>
+            </Link>
+            <Link href="/result-stats">
+              <button
+                onclick="handleTabClick(event, 'stats')"
+                className="font-medium py-2 px-3 whitespace-nowrap"
+              >
+                Stats
+              </button>
             </Link>
           </div>
         </div>
@@ -2266,7 +2266,34 @@ const liveresult = ( ) => {
                       </div>
                     </div>
                     <div className={`cust-box-click-content cust-box-click-oddsview mt-4 ${activeTab1 === 'cust-box-click-oddsview' ? "" : "hidden"}`}>
-                      <p>Odds View</p>
+                      <div>
+                        <div className="flex justify-between items-center">
+                          <p className="font-semibol">Day 4 : Session 3</p>
+                          <p className="text-[#909090]">
+                            Overs left today:{" "}
+                            <span className="font-semibol text-black">40.0</span>
+                          </p>
+                        </div>
+                        <div className="relative mt-4 h-[4px] bg-gray-200 overflow-hidden">
+                          <div
+                            className="absolute h-full bg-[#13b76dbd]"
+                            style={{ width: "40%" }}
+                          />
+                          <div
+                            className="absolute h-full bg-[#EB9D29]"
+                            style={{ width: "20%", left: "40%" }}
+                          ></div>
+                          <div
+                            className="absolute h-full bg-[#B7132B]"
+                            style={{ width: "40%", left: "60%" }}
+                          ></div>
+                        </div>
+                        <div className="flex justify-between mt-2 text-sm">
+                          <p className="text-green-600 font-medium">Ind: 40%</p>
+                          <p className="text-yellow-600 font-medium">Drew: 20%</p>
+                          <p className="text-red-600 font-medium">Ban: 40%</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -3177,10 +3204,334 @@ const liveresult = ( ) => {
                 </div>
               </div>
               <div className={`cust-box-click-content cust-box-click-all mt-4 ${activeTab === 'cust-box-click-view' ? '' : 'hidden'}`}>
-                <p>View Content</p>
+                <div className="rounded-lg bg-white p-4 mb-4">
+                    <div className="flex md:flex-row flex-col justify-between md:items-center mb-4 gap-2">
+                      <div className="text-[14px] font-normal">
+                        IND 1st Innings : 235/4
+                      </div>
+                      <div className="text-[14px] font-normal">
+                        10{" "}
+                        <span className="text-[#909090] font-medium text-[13px]">
+                          End Of Over
+                        </span>
+                      </div>
+                      <div className="text-[14px] font-normal text-black">
+                        6 4 4 1 4 4
+                      </div>
+                      <div className="text-[14px] font-normal">
+                        R Sharma: 25 <span className="text-[#909090]">(46)</span> | S
+                        Gill: 98 <span className="text-[#909090]">(106) </span>
+                      </div>
+                      <div className="text-[14px] font-normal">
+                        Taskin Ahmed{" "}
+                        <span className="text-[#909090]">2.5-0-45-0</span>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.6</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#13b76dbd] rounded-lg">
+                          6{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed To Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Six
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Six !! With A Brilliant Fast Ball On The Stumps, Hardik
+                          Pandya Hangs In The Crease And Showcases Power-Hitting
+                          Prowess As Batter Unleashes A Spectacular Pull To Deep Mid
+                          Wicket For A Colossal Maximum!
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.5</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#EB9D29] rounded-lg">
+                          4{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Four
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Four !! fast ball, good length, on the off stump, Hardik
+                          Pandya hangs in the crease, plays cut in the air to deep
+                          point. Ball finds the ropes for four.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.4</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#EB9D29] rounded-lg">
+                          4{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Four
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Four !! fast ball, good length, on the stumps, Hardik Pandya
+                          hangs in the crease, plays uppercut in the air to deep fine
+                          leg. Ball finds the ropes for four.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.3</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#bec2d3] rounded-lg">
+                          1{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Nitish Kumar Reddy,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            1 Run
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Taskin Ahmed delivers fast ball at full length, Nitish Kumar
+                          Reddy hangs in the crease and plays the shot, but the ball
+                          goes straight to the fielder at deep mid wicket for 1 run.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.2</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#EB9D29] rounded-lg">
+                          4{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Four
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Four !! fast ball, good length, on the stumps, Hardik Pandya
+                          hangs in the crease, plays uppercut in the air to deep fine
+                          leg. Ball finds the ropes for four.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 px-3 pb-0 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.1</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#EB9D29] rounded-lg">
+                          4{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Four
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Four !! fast ball, good length, on the stumps, Hardik Pandya
+                          hangs in the crease, plays uppercut in the air to deep fine
+                          leg. Ball finds the ropes for four.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
               </div>
               <div className={`cust-box-click-content cust-box-click-all mt-4 ${activeTab === 'cust-box-click-result' ? '' : 'hidden'}`}>
-                <p>Result Content</p>
+                 <div className="rounded-lg bg-white p-4 mb-4">
+                    <div className="flex md:flex-row flex-col justify-between md:items-center mb-4 gap-2">
+                      <div className="text-[14px] font-normal">
+                        IND 1st Innings : 235/4
+                      </div>
+                      <div className="text-[14px] font-normal">
+                        10{" "}
+                        <span className="text-[#909090] font-medium text-[13px]">
+                          End Of Over
+                        </span>
+                      </div>
+                      <div className="text-[14px] font-normal text-black">
+                        6 4 4 1 4 4
+                      </div>
+                      <div className="text-[14px] font-normal">
+                        R Sharma: 25 <span className="text-[#909090]">(46)</span> | S
+                        Gill: 98 <span className="text-[#909090]">(106) </span>
+                      </div>
+                      <div className="text-[14px] font-normal">
+                        Taskin Ahmed{" "}
+                        <span className="text-[#909090]">2.5-0-45-0</span>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.6</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#13b76dbd] rounded-lg">
+                          6{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed To Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Six
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Six !! With A Brilliant Fast Ball On The Stumps, Hardik
+                          Pandya Hangs In The Crease And Showcases Power-Hitting
+                          Prowess As Batter Unleashes A Spectacular Pull To Deep Mid
+                          Wicket For A Colossal Maximum!
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.5</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#EB9D29] rounded-lg">
+                          4{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Four
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Four !! fast ball, good length, on the off stump, Hardik
+                          Pandya hangs in the crease, plays cut in the air to deep
+                          point. Ball finds the ropes for four.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.4</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#EB9D29] rounded-lg">
+                          4{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Four
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Four !! fast ball, good length, on the stumps, Hardik Pandya
+                          hangs in the crease, plays uppercut in the air to deep fine
+                          leg. Ball finds the ropes for four.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.3</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#bec2d3] rounded-lg">
+                          1{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Nitish Kumar Reddy,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            1 Run
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Taskin Ahmed delivers fast ball at full length, Nitish Kumar
+                          Reddy hangs in the crease and plays the shot, but the ball
+                          goes straight to the fielder at deep mid wicket for 1 run.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 md:px-3 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.2</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#EB9D29] rounded-lg">
+                          4{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Four
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Four !! fast ball, good length, on the stumps, Hardik Pandya
+                          hangs in the crease, plays uppercut in the air to deep fine
+                          leg. Ball finds the ropes for four.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-[1px] border-[#E7F2F4]" />
+                    <div className="md:flex items-start py-3 px-3 pb-0 gap-[21px]">
+                      <div className="flex items-center gap-[10px] md:py-4 pb-4">
+                        <p className="text-[16px] font-semibold">9.1</p>
+                        <p className="text-[16px] font-semibold px-[11px] py-[2px] text-white bg-[#EB9D29] rounded-lg">
+                          4{" "}
+                        </p>
+                      </div>
+                      <div>
+                        <div className="text-gray-500 font-normal text-[14px] mb-2">
+                          Taskin Ahmed to Hardik Pandya,{" "}
+                          <span className="text-[14px] font-normal text-black">
+                            {" "}
+                            Four
+                          </span>
+                        </div>
+                        <p className="text-[14px] font-normal">
+                          Four !! fast ball, good length, on the stumps, Hardik Pandya
+                          hangs in the crease, plays uppercut in the air to deep fine
+                          leg. Ball finds the ropes for four.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>

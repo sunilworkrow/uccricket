@@ -6,14 +6,14 @@ import React, { useState } from 'react'
 
 export default function UpcomingFantasyTips() {
 
- const [activeRecent, setActiveRecent] = useState("cust-box-click-mga");
+    const [activeRecent, setActiveRecent] = useState("cust-box-click-mga");
 
     const [show, setShow] = useState(false);
-     const [show1, setShow1] = useState(false);
+    const [show1, setShow1] = useState(false);
 
- const handleRecentChange = (team) => {
-    setActiveRecent(team);
-};
+    const handleRecentChange = (team) => {
+        setActiveRecent(team);
+    };
 
 
     return (
@@ -144,19 +144,23 @@ export default function UpcomingFantasyTips() {
                             </div>
                             <div className="rounded-lg bg-[#ffffff] p-4 mb-4">
                                 <div className="flex justify-between items-center pb-4">
-                                    <div className="font-bold flex items-center">
-                                        <img className="h-[30px]" src="/assets/img/flag/msg.png" alt="" />
-                                        <p className="mx-2 text-1xl font-semibold">MSG</p>
-                                    </div>
+                                    <Link href="#">
+                                        <div className="font-bold flex items-center">
+                                            <img className="h-[30px]" src="/assets/img/flag/msg.png" alt="" />
+                                            <p className="mx-2 text-1xl font-semibold">MSG</p>
+                                        </div>
+                                    </Link>
                                     <div className=" font-semibold">VS</div>
-                                    <div className="font-bold flex items-center">
-                                        <p className="mx-2 text-1xl font-semibold text-right">HAW</p>
-                                        <img className="h-[30px]" src="/assets/img/flag/haw.png" alt="ban" />
-                                    </div>
+                                    <Link href="#">
+                                        <div className="font-bold flex items-center">
+                                            <p className="mx-2 text-1xl font-semibold text-right">HAW</p>
+                                            <img className="h-[30px]" src="/assets/img/flag/haw.png" alt="ban" />
+                                        </div>
+                                    </Link>
                                 </div>
                                 <div className="border-t-[1px] border-[#E4E9F0]" />
                                 <div className="flex justify-between items-center">
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div>
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
@@ -166,9 +170,9 @@ export default function UpcomingFantasyTips() {
                                                 <p className="text-[#909090] font-normal">Batter</p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                     <div>-</div>
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div className="font-medium">
                                                 <h2 className="text-[15px]"> R sharma (c) </h2>
@@ -178,11 +182,11 @@ export default function UpcomingFantasyTips() {
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="border-t-[1px] border-[#eef5ff]" />
                                 <div className="flex justify-between items-center">
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div>
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
@@ -192,9 +196,9 @@ export default function UpcomingFantasyTips() {
                                                 <p className="text-[#909090] font-normal">Batter</p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                     <div>-</div>
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div className="font-medium">
                                                 <h2 className="text-[15px]"> R sharma (c) </h2>
@@ -204,11 +208,11 @@ export default function UpcomingFantasyTips() {
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="border-t-[1px] border-[#eef5ff]" />
                                 <div className="flex justify-between items-center">
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div>
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
@@ -218,9 +222,9 @@ export default function UpcomingFantasyTips() {
                                                 <p className="text-[#909090] font-normal">Batter</p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                     <div>-</div>
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div className="font-medium">
                                                 <h2 className="text-[15px]"> R sharma (c) </h2>
@@ -230,11 +234,11 @@ export default function UpcomingFantasyTips() {
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="border-t-[1px] border-[#eef5ff]" />
                                 <div className="flex justify-between items-center">
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div>
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
@@ -244,9 +248,9 @@ export default function UpcomingFantasyTips() {
                                                 <p className="text-[#909090] font-normal">Batter</p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                     <div>-</div>
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div className="font-medium">
                                                 <h2 className="text-[15px]"> R sharma (c) </h2>
@@ -256,11 +260,11 @@ export default function UpcomingFantasyTips() {
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="border-t-[1px] border-[#eef5ff]" />
                                 <div className="flex justify-between items-center">
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div>
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
@@ -270,9 +274,9 @@ export default function UpcomingFantasyTips() {
                                                 <p className="text-[#909090] font-normal">Batter</p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                     <div>-</div>
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div className="font-medium">
                                                 <h2 className="text-[15px]"> R sharma (c) </h2>
@@ -282,11 +286,11 @@ export default function UpcomingFantasyTips() {
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className="border-t-[1px] border-[#eef5ff]" />
                                 <div className="flex justify-between items-center">
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div>
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
@@ -296,9 +300,9 @@ export default function UpcomingFantasyTips() {
                                                 <p className="text-[#909090] font-normal">Batter</p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                     <div>-</div>
-                                    <a href="#">
+                                    <Link href="#">
                                         <div className="flex items-center space-x-3 py-3">
                                             <div className="font-medium">
                                                 <h2 className="text-[15px]"> R sharma (c) </h2>
@@ -308,7 +312,7 @@ export default function UpcomingFantasyTips() {
                                                 <img src="/assets/img/player/1.png" alt="R sharma (c)" />
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="">
@@ -352,7 +356,7 @@ export default function UpcomingFantasyTips() {
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="flex items-center justify-between py-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 ">
                                                                     <div className="flex items-center space-x-1 flex-col">
                                                                         <img
@@ -367,11 +371,11 @@ export default function UpcomingFantasyTips() {
                                                                         <p className="text-[#909090]">(20.0 overs)</p>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                             <div className="text-gray-500 text-2xl font-semibold">
                                                                 ↔
                                                             </div>
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 justify-end">
                                                                     <div className="mt-1 text-end">
                                                                         <p className="text-1xl font-semibold">128/9</p>
@@ -386,15 +390,15 @@ export default function UpcomingFantasyTips() {
                                                                         <span className="text-[#909090]">BAN</span>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="text-center mt-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <p className="text-green-600 font-semibold">
                                                                     IND won by 7 Wicket
                                                                 </p>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -410,7 +414,7 @@ export default function UpcomingFantasyTips() {
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="flex items-center justify-between py-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 ">
                                                                     <div className="flex items-center space-x-1 flex-col">
                                                                         <img
@@ -425,11 +429,11 @@ export default function UpcomingFantasyTips() {
                                                                         <p className="text-[#909090]">(20.0 overs)</p>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                             <div className="text-gray-500 text-2xl font-semibold">
                                                                 ↔
                                                             </div>
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 justify-end">
                                                                     <div className="mt-1 text-end">
                                                                         <p className="text-1xl font-semibold">128/9</p>
@@ -444,15 +448,15 @@ export default function UpcomingFantasyTips() {
                                                                         <span className="text-[#909090]">BAN</span>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="text-center mt-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <p className="text-green-600 font-semibold">
                                                                     IND won by 7 Wicket
                                                                 </p>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -468,7 +472,7 @@ export default function UpcomingFantasyTips() {
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="flex items-center justify-between py-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 ">
                                                                     <div className="flex items-center space-x-1 flex-col">
                                                                         <img
@@ -483,11 +487,11 @@ export default function UpcomingFantasyTips() {
                                                                         <p className="text-[#909090]">(20.0 overs)</p>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                             <div className="text-gray-500 text-2xl font-semibold">
                                                                 ↔
                                                             </div>
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 justify-end">
                                                                     <div className="mt-1 text-end">
                                                                         <p className="text-1xl font-semibold">128/9</p>
@@ -502,15 +506,15 @@ export default function UpcomingFantasyTips() {
                                                                         <span className="text-[#909090]">BAN</span>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="text-center mt-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <p className="text-green-600 font-semibold">
                                                                     IND won by 7 Wicket
                                                                 </p>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -526,7 +530,7 @@ export default function UpcomingFantasyTips() {
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="flex items-center justify-between py-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 ">
                                                                     <div className="flex items-center space-x-1 flex-col">
                                                                         <img
@@ -541,11 +545,11 @@ export default function UpcomingFantasyTips() {
                                                                         <p className="text-[#909090]">(20.0 overs)</p>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                             <div className="text-gray-500 text-2xl font-semibold">
                                                                 ↔
                                                             </div>
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 justify-end">
                                                                     <div className="mt-1 text-end">
                                                                         <p className="text-1xl font-semibold">128/9</p>
@@ -560,15 +564,15 @@ export default function UpcomingFantasyTips() {
                                                                         <span className="text-[#909090]">BAN</span>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="text-center mt-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <p className="text-green-600 font-semibold">
                                                                     IND won by 7 Wicket
                                                                 </p>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -584,7 +588,7 @@ export default function UpcomingFantasyTips() {
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="flex items-center justify-between py-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 ">
                                                                     <div className="flex items-center space-x-1 flex-col">
                                                                         <img
@@ -599,11 +603,11 @@ export default function UpcomingFantasyTips() {
                                                                         <p className="text-[#909090]">(20.0 overs)</p>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                             <div className="text-gray-500 text-2xl font-semibold">
                                                                 ↔
                                                             </div>
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 justify-end">
                                                                     <div className="mt-1 text-end">
                                                                         <p className="text-1xl font-semibold">128/9</p>
@@ -618,15 +622,15 @@ export default function UpcomingFantasyTips() {
                                                                         <span className="text-[#909090]">BAN</span>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="text-center mt-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <p className="text-green-600 font-semibold">
                                                                     IND won by 7 Wicket
                                                                 </p>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -642,7 +646,7 @@ export default function UpcomingFantasyTips() {
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="flex items-center justify-between py-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 ">
                                                                     <div className="flex items-center space-x-1 flex-col">
                                                                         <img
@@ -657,11 +661,11 @@ export default function UpcomingFantasyTips() {
                                                                         <p className="text-[#909090]">(20.0 overs)</p>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                             <div className="text-gray-500 text-2xl font-semibold">
                                                                 ↔
                                                             </div>
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 justify-end">
                                                                     <div className="mt-1 text-end">
                                                                         <p className="text-1xl font-semibold">128/9</p>
@@ -676,15 +680,15 @@ export default function UpcomingFantasyTips() {
                                                                         <span className="text-[#909090]">BAN</span>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="text-center mt-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <p className="text-green-600 font-semibold">
                                                                     IND won by 7 Wicket
                                                                 </p>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -700,7 +704,7 @@ export default function UpcomingFantasyTips() {
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="flex items-center justify-between py-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 ">
                                                                     <div className="flex items-center space-x-1 flex-col">
                                                                         <img
@@ -715,11 +719,11 @@ export default function UpcomingFantasyTips() {
                                                                         <p className="text-[#909090]">(20.0 overs)</p>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                             <div className="text-gray-500 text-2xl font-semibold">
                                                                 ↔
                                                             </div>
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 justify-end">
                                                                     <div className="mt-1 text-end">
                                                                         <p className="text-1xl font-semibold">128/9</p>
@@ -734,15 +738,15 @@ export default function UpcomingFantasyTips() {
                                                                         <span className="text-[#909090]">BAN</span>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="text-center mt-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <p className="text-green-600 font-semibold">
                                                                     IND won by 7 Wicket
                                                                 </p>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -758,7 +762,7 @@ export default function UpcomingFantasyTips() {
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="flex items-center justify-between py-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 ">
                                                                     <div className="flex items-center space-x-1 flex-col">
                                                                         <img
@@ -773,11 +777,11 @@ export default function UpcomingFantasyTips() {
                                                                         <p className="text-[#909090]">(20.0 overs)</p>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                             <div className="text-gray-500 text-2xl font-semibold">
                                                                 ↔
                                                             </div>
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <div className="flex space-x-2 justify-end">
                                                                     <div className="mt-1 text-end">
                                                                         <p className="text-1xl font-semibold">128/9</p>
@@ -792,15 +796,15 @@ export default function UpcomingFantasyTips() {
                                                                         <span className="text-[#909090]">BAN</span>
                                                                     </div>
                                                                 </div>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                                         <div className="text-center mt-3">
-                                                            <a href="#">
+                                                            <Link href="#">
                                                                 <p className="text-green-600 font-semibold">
                                                                     IND won by 7 Wicket
                                                                 </p>
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -844,16 +848,19 @@ export default function UpcomingFantasyTips() {
                                     <div className="md:px-2">
                                         <div className="performance-section">
                                             <div className="flex items-center justify-between my-3">
-                                                <div className="flex items-center space-x-3">
-                                                    <div>
-                                                        <img
-                                                            src="/assets/img/flag/msg.png"
-                                                            className="h-[25px]"
-                                                            alt="msg"
-                                                        />
+                                                <Link href="#">
+                                                    <div className="flex items-center space-x-3">
+                                                        <div>
+                                                            <img
+                                                                src="/assets/img/flag/msg.png"
+                                                                className="h-[25px]"
+                                                                alt="msg"
+                                                            />
+                                                        </div>
+
+                                                        <h3 className="text-1xl font-medium">MAG</h3>
                                                     </div>
-                                                    <h3 className="text-1xl font-medium">MAG</h3>
-                                                </div>
+                                                </Link>
                                                 <div>
                                                     <div className="ml-auto flex gap-1 items-center">
                                                         <span className="bg-[#13b76dbd] text-white text-[13px] px-[6px] py-[3px] rounded">
@@ -887,7 +894,7 @@ export default function UpcomingFantasyTips() {
                                                         <tbody>
                                                             <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                 <td className="px-4 pl-0 py-1 ">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
                                                                             <div className="flex items-center space-x-1">
                                                                                 <img
@@ -899,13 +906,13 @@ export default function UpcomingFantasyTips() {
                                                                             </div>
                                                                             <p>274/10 &amp; 170/10</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2 font-medium text-[#6A7586]">
                                                                     VS
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
                                                                             <p>274/10 &amp; 170/10</p>
                                                                             <div className="flex items-center space-x-1">
@@ -917,7 +924,7 @@ export default function UpcomingFantasyTips() {
                                                                                 />
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
                                                                     <div className="text-right leading-6">
@@ -937,7 +944,7 @@ export default function UpcomingFantasyTips() {
                                                             </tr>
                                                             <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                 <td className="px-4 pl-0 py-1">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                             <div className="flex items-center space-x-1">
                                                                                 <img
@@ -949,13 +956,13 @@ export default function UpcomingFantasyTips() {
                                                                             </div>
                                                                             <p className="">540/10 &amp; 220/10</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                     VS
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                             <p>140/10 &amp; 420/10</p>
                                                                             <div className="flex items-center space-x-1">
@@ -967,7 +974,7 @@ export default function UpcomingFantasyTips() {
                                                                                 />
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
                                                                     <div className="text-right leading-6">
@@ -987,7 +994,7 @@ export default function UpcomingFantasyTips() {
                                                             </tr>
                                                             <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                 <td className="px-4 pl-0 py-1">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                             <div className="flex items-center space-x-1">
                                                                                 <img
@@ -999,13 +1006,13 @@ export default function UpcomingFantasyTips() {
                                                                             </div>
                                                                             <p className="">274/10 &amp; 170/10</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                     VS
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                             <p>250/10 &amp; 160/10</p>
                                                                             <div className="flex items-center space-x-1">
@@ -1017,7 +1024,7 @@ export default function UpcomingFantasyTips() {
                                                                                 />
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
                                                                     <div className="text-right leading-6">
@@ -1037,7 +1044,7 @@ export default function UpcomingFantasyTips() {
                                                             </tr>
                                                             <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                 <td className="px-4 pl-0 py-1">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                             <div className="flex items-center space-x-1">
                                                                                 <img
@@ -1049,13 +1056,13 @@ export default function UpcomingFantasyTips() {
                                                                             </div>
                                                                             <p className="">274/10 &amp; 170/10</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                     VS
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                             <p>280/10 &amp; 190/10</p>
                                                                             <div className="flex items-center space-x-1">
@@ -1067,7 +1074,7 @@ export default function UpcomingFantasyTips() {
                                                                                 />
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
                                                                     <div className="text-right leading-6">
@@ -1087,7 +1094,7 @@ export default function UpcomingFantasyTips() {
                                                             </tr>
                                                             <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                 <td className="px-4 pl-0 py-1">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                             <div className="flex items-center space-x-1">
                                                                                 <img
@@ -1099,13 +1106,13 @@ export default function UpcomingFantasyTips() {
                                                                             </div>
                                                                             <p className="">174/10 &amp; 160/10</p>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                     VS
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
-                                                                    <a href="#">
+                                                                    <Link href="#">
                                                                         <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                             <p>380/10 &amp; 250/10</p>
                                                                             <div className="flex items-center space-x-1">
@@ -1117,7 +1124,7 @@ export default function UpcomingFantasyTips() {
                                                                                 />
                                                                             </div>
                                                                         </div>
-                                                                    </a>
+                                                                    </Link>
                                                                 </td>
                                                                 <td className="md:px-4 py-2">
                                                                     <div className="text-right leading-6">
@@ -1425,19 +1432,22 @@ export default function UpcomingFantasyTips() {
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div className="performance-section">
                                             <div className="mt-6">
                                                 <div className="flex items-center justify-between my-3">
-                                                    <div className="flex items-center space-x-3">
-                                                        <div>
-                                                            <img
-                                                                src="/assets/img/flag/haw.png"
-                                                                alt="haw"
-                                                                className="h-[25px]"
-                                                            />
+                                                    <Link href="#">
+                                                        <div className="flex items-center space-x-3">
+                                                            <div>
+                                                                <img
+                                                                    src="/assets/img/flag/haw.png"
+                                                                    alt="haw"
+                                                                    className="h-[25px]"
+                                                                />
+                                                            </div>
+                                                            <h3 className="text-1xl font-medium">HAW</h3>
                                                         </div>
-                                                        <h3 className="text-1xl font-medium">HAW</h3>
-                                                    </div>
+                                                    </Link>
                                                     <div>
                                                         <div className="ml-auto flex gap-1 items-center">
                                                             <span className="bg-[#13b76dbd] text-white text-[13px] px-[6px] py-[3px] rounded">
@@ -2004,28 +2014,32 @@ export default function UpcomingFantasyTips() {
                                     <div className="">
                                         <div>
                                             <div className="py-4 flex justify-between items-center">
-                                                <div className="font-bold flex items-center">
-                                                    <img className="h-[30px]" src="/assets/img/flag/msg.png" alt="" />
-                                                    <p className="mx-2 text-1xl font-semibold">
-                                                        MSG
-                                                        <span className="text-[13px] text-[#9094b6] font-medium block">
-                                                            vs all teams
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                                <div className="font-bold flex items-center">
-                                                    <p className="mx-2 text-1xl font-semibold text-right">
-                                                        HAW
-                                                        <span className="text-[13px] text-[#9094b6] font-medium block">
-                                                            vs all teams
-                                                        </span>
-                                                    </p>
-                                                    <img
-                                                        className="h-[30px]"
-                                                        src="/assets/img/flag/haw.png"
-                                                        alt="ban"
-                                                    />
-                                                </div>
+                                                <Link href="#">
+                                                    <div className="font-bold flex items-center">
+                                                        <img className="h-[30px]" src="/assets/img/flag/msg.png" alt="" />
+                                                        <p className="mx-2 text-1xl font-semibold">
+                                                            MSG
+                                                            <span className="text-[13px] text-[#9094b6] font-medium block">
+                                                                vs all teams
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                </Link>
+                                                <Link href="#">
+                                                    <div className="font-bold flex items-center">
+                                                        <p className="mx-2 text-1xl font-semibold text-right">
+                                                            HAW
+                                                            <span className="text-[13px] text-[#9094b6] font-medium block">
+                                                                vs all teams
+                                                            </span>
+                                                        </p>
+                                                        <img
+                                                            className="h-[30px]"
+                                                            src="/assets/img/flag/haw.png"
+                                                            alt="ban"
+                                                        />
+                                                    </div>
+                                                </Link>
                                             </div>
                                             <div className="border-t-[1px] border-[#E4E9F0]" />
                                             <div className="py-2 flex justify-between items-center">
@@ -2118,6 +2132,7 @@ export default function UpcomingFantasyTips() {
                                     backgroundPosition: "center"
                                 }}
                             >
+                                <Link href="#">
                                 <div className="text-center">
                                     <div className="relative">
                                         <img
@@ -2134,6 +2149,8 @@ export default function UpcomingFantasyTips() {
                                     </p>
                                     <p className="text-sm font-bold text-white">9.0</p>
                                 </div>
+                                </Link>
+                                <Link href="#">
                                 <div className="text-center">
                                     <div className="relative">
                                         <img
@@ -2150,6 +2167,7 @@ export default function UpcomingFantasyTips() {
                                     </p>
                                     <p className="text-sm font-bold text-white">8.5</p>
                                 </div>
+                                </Link>
                                 <button
                                     className="bg-white text-black font-medium text-sm px-4 py-2 rounded-lg shadow"
                                     style={{ boxShadow: "0px 5px 0px 0px #000000" }}
@@ -2164,6 +2182,7 @@ export default function UpcomingFantasyTips() {
                                     backgroundPosition: "center"
                                 }}
                             >
+                                <Link href="#">
                                 <div className="text-center">
                                     <div className="relative">
                                         <img
@@ -2180,6 +2199,8 @@ export default function UpcomingFantasyTips() {
                                     </p>
                                     <p className="text-sm font-bold text-white">9.0</p>
                                 </div>
+                                </Link>
+                                <Link href="#">
                                 <div className="text-center">
                                     <div className="relative">
                                         <img
@@ -2196,6 +2217,7 @@ export default function UpcomingFantasyTips() {
                                     </p>
                                     <p className="text-sm font-bold text-white">8.5</p>
                                 </div>
+                                </Link>
                                 <button
                                     className="bg-white text-black font-medium text-sm px-4 py-2 rounded-lg"
                                     style={{ boxShadow: "0px 5px 0px 0px #000000" }}
@@ -2211,19 +2233,23 @@ export default function UpcomingFantasyTips() {
                             </div>
                             <div className="bg-[#ffffff] rounded-lg p-4 mb-2">
                                 <div className="flex justify-between items-center">
-                                    <div className="font-bold flex items-center">
-                                        <img className="h-[30px]" src="/assets/img/flag/msg.png" alt="" />
-                                        <p className="mx-2 text-1xl font-semibold">MSG</p>
-                                    </div>
+                                    <Link href="#">
+                                        <div className="font-bold flex items-center">
+                                            <img className="h-[30px]" src="/assets/img/flag/msg.png" alt="" />
+                                            <p className="mx-2 text-1xl font-semibold">MSG</p>
+                                        </div>
+                                    </Link>
                                     <div className=" font-normal text-center">
                                         <p className="text-[#D28505] text-[17px] font-semibold">
                                             0 <span className="text-[#009900]">- 0</span>
                                         </p>
                                     </div>
-                                    <div className="font-bold flex items-center">
-                                        <p className="mx-2 text-1xl font-semibold text-right">HAW</p>
-                                        <img className="h-[30px]" src="/assets/img/flag/haw.png" alt="ban" />
-                                    </div>
+                                    <Link href="#">
+                                        <div className="font-bold flex items-center">
+                                            <p className="mx-2 text-1xl font-semibold text-right">HAW</p>
+                                            <img className="h-[30px]" src="/assets/img/flag/haw.png" alt="ban" />
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="py-2 mb-2">

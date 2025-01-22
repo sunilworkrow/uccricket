@@ -14,8 +14,6 @@ const ResultMatchmoreinfo = () => {
 
     return (
         <Layout>
-
-
             <section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
                 <div className="lg:w-[1000px] mx-auto">
                     <div className="md:flex justify-between items-center md:py-0 py-4">
@@ -184,16 +182,18 @@ const ResultMatchmoreinfo = () => {
                                         <div className="md:px-2">
                                             <div className="performance-section">
                                                 <div className="flex items-center justify-between my-3">
-                                                    <div className="flex items-center space-x-3">
-                                                        <div>
-                                                            <img
-                                                                src="/assets/img/flag/17.png"
-                                                                className="h-[25px]"
-                                                                alt="india"
-                                                            />
+                                                    <Link href="">
+                                                        <div className="flex items-center space-x-3">
+                                                            <div>
+                                                                <img
+                                                                    src="/assets/img/flag/17.png"
+                                                                    className="h-[25px]"
+                                                                    alt="india"
+                                                                />
+                                                            </div>
+                                                            <h3 className="text-1xl font-medium">India</h3>
                                                         </div>
-                                                        <h3 className="text-1xl font-medium">India</h3>
-                                                    </div>
+                                                    </Link>
                                                     <div>
                                                         <div className="ml-auto flex gap-1 items-center">
                                                             <span className="bg-[#13b76dbd] text-white text-[13px] px-[6px] py-[3px] rounded">
@@ -231,7 +231,7 @@ const ResultMatchmoreinfo = () => {
                                                             <tbody>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1 ">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -243,13 +243,13 @@ const ResultMatchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p>274/10 &amp; 170/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
                                                                                 <p>274/10 &amp; 170/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -261,7 +261,7 @@ const ResultMatchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -281,7 +281,7 @@ const ResultMatchmoreinfo = () => {
                                                                 </tr>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -293,13 +293,13 @@ const ResultMatchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p className="">540/10 &amp; 220/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <p>140/10 &amp; 420/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -311,7 +311,7 @@ const ResultMatchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -331,7 +331,7 @@ const ResultMatchmoreinfo = () => {
                                                                 </tr>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -343,13 +343,13 @@ const ResultMatchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p className="">274/10 &amp; 170/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <p>250/10 &amp; 160/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -361,7 +361,7 @@ const ResultMatchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -381,7 +381,7 @@ const ResultMatchmoreinfo = () => {
                                                                 </tr>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -393,13 +393,13 @@ const ResultMatchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p className="">274/10 &amp; 170/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <p>280/10 &amp; 190/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -411,7 +411,7 @@ const ResultMatchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -431,7 +431,7 @@ const ResultMatchmoreinfo = () => {
                                                                 </tr>
                                                                 <tr className="whitespace-nowrap bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-[13px]">
                                                                     <td className="px-4 pl-0 py-1">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <div className="flex items-center space-x-1">
                                                                                     <img
@@ -443,13 +443,13 @@ const ResultMatchmoreinfo = () => {
                                                                                 </div>
                                                                                 <p className="">174/10 &amp; 160/10</p>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2 font-medium	 text-[#6A7586]">
                                                                         VS
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
-                                                                        <a href="#">
+                                                                        <Link href="#">
                                                                             <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full	">
                                                                                 <p>380/10 &amp; 250/10</p>
                                                                                 <div className="flex items-center space-x-1">
@@ -461,7 +461,7 @@ const ResultMatchmoreinfo = () => {
                                                                                     />
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
+                                                                        </Link>
                                                                     </td>
                                                                     <td className="md:px-4 py-2">
                                                                         <div className="text-right leading-6">
@@ -486,7 +486,7 @@ const ResultMatchmoreinfo = () => {
                                                     <div className="lg:hidden block">
                                                         <div className="flex justify-between items-center py-4 px-2 bg-[#f7faff] rounded-lg my-3 border-b-[1px] border-[#E4E9F0]">
                                                             <div className="">
-                                                                <a href="#">
+                                                                <Link href="#">
                                                                     <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full mb-3">
                                                                         <div className="flex items-center space-x-1">
                                                                             <img
@@ -498,7 +498,7 @@ const ResultMatchmoreinfo = () => {
                                                                         </div>
                                                                         <p>274/10 &amp; 170/10</p>
                                                                     </div>
-                                                                </a>
+                                                                </Link>
                                                                 {/* <div class="md:px-4 py-2 font-medium text-center text-[#6A7586]">
                                           VS
                                       </div> */}
@@ -774,16 +774,18 @@ const ResultMatchmoreinfo = () => {
                                             <div className="performance-section">
                                                 <div className="mt-6">
                                                     <div className="flex items-center justify-between my-3">
-                                                        <div className="flex items-center space-x-3">
-                                                            <div>
-                                                                <img
-                                                                    src="/assets/img/flag/3.png"
-                                                                    alt="ban"
-                                                                    className="h-[25px]"
-                                                                />
+                                                        <Link href="">
+                                                            <div className="flex items-center space-x-3">
+                                                                <div>
+                                                                    <img
+                                                                        src="/assets/img/flag/3.png"
+                                                                        alt="ban"
+                                                                        className="h-[25px]"
+                                                                    />
+                                                                </div>
+                                                                <h3 className="text-1xl font-medium">Bangladesh</h3>
                                                             </div>
-                                                            <h3 className="text-1xl font-medium">Bangladesh</h3>
-                                                        </div>
+                                                        </Link>
                                                         <div>
                                                             <div className="ml-auto flex gap-1 items-center">
                                                                 <span className="bg-[#13b76dbd] text-white text-[13px] px-[6px] py-[3px] rounded">
@@ -1346,103 +1348,123 @@ const ResultMatchmoreinfo = () => {
                                         </h3>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 text-1xl flex justify-between items-center">
-                                            <div className="font-bold uppercase flex items-center">
-                                                <img className="h-[30px]" src="/assets/img/flg-1.png" alt="" />
-                                                <p className="mx-2 font-semibold uppercase">IND</p>
-                                            </div>
+                                            <Link href="">
+                                                <div className="font-bold uppercase flex items-center">
+                                                    <img className="h-[30px]" src="/assets/img/flg-1.png" alt="" />
+                                                    <p className="mx-2 font-semibold uppercase">IND</p>
+                                                </div>
+                                            </Link>
                                             <div className=" font-normal text-center">
                                                 <p className="text-[#D28505] text-[17px] font-semibold">
                                                     10 <span className="text-[#009900]">- 10</span>
                                                 </p>
                                             </div>
-                                            <div className="font-bold uppercase flex items-center">
-                                                <p className="mx-2 font-semibold uppercase">BAN</p>
-                                                <img className="h-[30px]" src="/assets/img/ban.png" alt="ban" />
-                                            </div>
+                                            <Link href="">
+                                                <div className="font-bold uppercase flex items-center">
+                                                    <p className="mx-2 font-semibold uppercase">BAN</p>
+                                                    <img className="h-[30px]" src="/assets/img/ban.png" alt="ban" />
+                                                </div>
+                                            </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 flex justify-between items-center">
-                                            <div className="font-medium  w-full">
-                                                <p className="mx-2 font-semibold uppercase">BAN</p>
-                                                <p className="mx-2 font-medium uppercase text-[#586577]">
-                                                    227 &amp; 231
-                                                </p>
-                                            </div>
+                                            <Link href="">
+                                                <div className="font-medium  w-full">
+                                                    <p className="mx-2 font-semibold uppercase">BAN</p>
+                                                    <p className="mx-2 font-medium uppercase text-[#586577]">
+                                                        227 &amp; 231
+                                                    </p>
+                                                </div>
+                                            </Link>
                                             <div className=" font-semibold text-center w-full">
                                                 <p className="text-[#3D4DCF]">IND Won</p>
                                                 <p className="text-[#586577] font-medium">
                                                     2nd TEST, BAN vs IND 2022
                                                 </p>
                                             </div>
-                                            <div className="font-medium text-right w-full">
-                                                <p className="mx-2 font-semibold uppercase">IND</p>
-                                                <p className="mx-2 font-medium uppercase text-[#586577]">
-                                                    314 &amp; 145/7
-                                                </p>
-                                            </div>
+                                            <Link href="">
+                                                <div className="font-medium text-right w-full">
+                                                    <p className="mx-2 font-semibold uppercase">IND</p>
+                                                    <p className="mx-2 font-medium uppercase text-[#586577]">
+                                                        314 &amp; 145/7
+                                                    </p>
+                                                </div>
+                                            </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 flex justify-between items-center">
+                                        <Link href="#">
                                             <div className="font-medium w-full">
                                                 <p className="mx-2 font-semibold uppercase">BAN</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     150 &amp; 324
                                                 </p>
                                             </div>
+                                            </Link>
                                             <div className=" font-semibold text-center w-full">
                                                 <p className="text-[#3D4DCF]">IND Won</p>
                                                 <p className="text-[#586577] font-medium">
                                                     2nd TEST, BAN vs IND 2022
                                                 </p>
                                             </div>
+                                            <Link href="">
                                             <div className="font-medium text-right w-full">
                                                 <p className="mx-2 font-semibold uppercase">IND</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     404 &amp; 258/2
                                                 </p>
                                             </div>
+                                            </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 flex justify-between items-center">
+                                        <Link href="">
                                             <div className="font-medium w-full">
                                                 <p className="mx-2 font-semibold uppercase">IND</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     347/9 (89.2)
                                                 </p>
                                             </div>
+                                            </Link>
                                             <div className=" font-semibold text-center w-full">
                                                 <p className="text-[#3D4DCF]">IND Won</p>
                                                 <p className="text-[#586577] font-medium">
                                                     2nd TEST, BAN vs IND 2022
                                                 </p>
                                             </div>
+                                            <Link href="">
                                             <div className="font-medium text-right w-full">
                                                 <p className="mx-2 font-semibold uppercase">BAN</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     106 &amp; 195
                                                 </p>
                                             </div>
+                                            </Link>
                                         </div>
                                         <div className="border-t-[1px] border-[#E4E9F0]" />
                                         <div className="py-4 flex justify-between items-center">
+                                        <Link href="">
                                             <div className="font-medium w-full">
                                                 <p className="mx-2 font-semibold uppercase">IND</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     493/6 (114.0)
                                                 </p>
                                             </div>
+                                            </Link>
                                             <div className=" font-semibold text-center w-full">
                                                 <p className="text-[#3D4DCF]">IND Won</p>
                                                 <p className="text-[#586577] font-medium">
                                                     2nd TEST, BAN vs IND 2022
                                                 </p>
                                             </div>
+                                            <Link href="">
                                             <div className="font-medium text-right w-full">
                                                 <p className="mx-2 font-semibold uppercase">BAN</p>
                                                 <p className="mx-2 font-medium uppercase text-[#586577]">
                                                     150 &amp; 113
                                                 </p>
                                             </div>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -1484,6 +1506,7 @@ const ResultMatchmoreinfo = () => {
                                             <div className="cust-box-click-content cust-box-click-overall1 mt-4">
                                                 <div>
                                                     <div className="py-4 flex justify-between items-center">
+                                                        <Link href=""> 
                                                         <div className="font-bold flex items-center">
                                                             <img className="h-[30px]" src="/assets/img/flg-1.png" alt="" />
                                                             <p className="mx-2 text-1xl font-semibold">
@@ -1493,6 +1516,8 @@ const ResultMatchmoreinfo = () => {
                                                                 </span>
                                                             </p>
                                                         </div>
+                                                        </Link>
+                                                        <Link href=""> 
                                                         <div className="font-bold flex items-center">
                                                             <p className="mx-2 text-1xl font-semibold text-right">
                                                                 BAN
@@ -1502,6 +1527,7 @@ const ResultMatchmoreinfo = () => {
                                                             </p>
                                                             <img className="h-[30px]" src="/assets/img/ban.png" alt="ban" />
                                                         </div>
+                                                        </Link>
                                                     </div>
                                                     <div className="border-t-[1px] border-[#E4E9F0]" />
                                                     <div className="py-2 flex justify-between items-center">
