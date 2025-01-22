@@ -3,7 +3,7 @@ import Layout from '@/Components/Layout'
 import Link from 'next/link';
 import React, { useState } from 'react'
 
-const MostRunStats = () => {
+const MostFours = () => {
 
 
     return (
@@ -144,7 +144,7 @@ const MostRunStats = () => {
                                     <Link href="/live-stats/most-runs-stats">
                                         <button
                                             
-                                            className="state-btn new-class border-t px-2 py-3 w-full font-medium active text-left bg-[#ecf2fd] text-[#1a80f8] rounded-md "
+                                            className="state-btn new-class border-t px-2 py-3 w-full font-medium active text-left rounded-md hover:bg-[#ecf2fd] hover:text-[#1a80f8] "
                                             onClick={() => handleStatsChange("most-runs")}
                                         >
                                           Most Runs 
@@ -169,7 +169,7 @@ const MostRunStats = () => {
                                         </Link>
                                         <button
                                             
-                                           className= " state-btn new-class border-t px-2 py-3 w-full font-medium active text-left rounded-md hover:bg-[#ecf2fd] hover:text-[#1a80f8]"
+                                           className= "state-btn new-class border-t px-2 py-3 w-full font-medium active text-left rounded-md hover:bg-[#ecf2fd] hover:text-[#1a80f8]"
                                             
                                         >
                                             Best Batting Strike Rate
@@ -192,7 +192,7 @@ const MostRunStats = () => {
 
                                     <Link href="/live-stats/most-fours">
                                         <button
-                                            className="state-btn new-class border-t px-2 py-3 w-full font-medium active text-left rounded-md hover:bg-[#ecf2fd] hover:text-[#1a80f8]"
+                                            className="state-btn new-class border-t px-2 py-3 w-full font-medium active text-left bg-[#ecf2fd] text-[#1a80f8] rounded-md"
                                         >
                                             Most Fours
                                         </button>
@@ -551,4 +551,4 @@ const MostRunStats = () => {
     )
 }
 
-export default MostRunStats;
+export default MostFours;

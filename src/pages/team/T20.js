@@ -1,16 +1,14 @@
 import Layout from '@/Components/Layout'
-import React, { useState } from 'react'
 import Link from 'next/link';
+import React, { useState } from 'react'
 
-const Team = () => {
-
+const T20 = () => {
 
     const [batterTab, setBatterTab] = useState('cust-box-click-batters');
     const [batter1Tab, setBatter1Tab] = useState('cust-box-click-batters1');
     const [homeRecordTab, setHomeRecordTab] = useState('test');
          const [show, setShow] = useState(false);
 
-         
 
             const handleBatterTabClick = (tab) => {
                 setBatterTab(tab);
@@ -49,7 +47,7 @@ const Team = () => {
                                 <Link href="/team">
                                 <button
                                     
-                                     className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
+                                     className="font-medium py-2 px-3 whitespace-nowrap "
                                    
                                 >
                                     Test
@@ -68,7 +66,7 @@ const Team = () => {
                                 <Link href="/team/T20">
                                 <button
                                     
-                                     className="font-medium py-2 px-3 whitespace-nowrap"   
+                                     className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"   
                                 >
                                     T20
                                 </button>
@@ -93,32 +91,10 @@ const Team = () => {
                                 </Link>
                             </div>
                         </div>
-
                         <div id="tab-content">
                             <div id="test" className="">
                                 <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mb-4">
-                                    <div className="bg-white rounded-lg p-4">
-                                        <a href="#">
-                                            <div className="flex items-center space-x-3">
-                                                <div>
-                                                    <img
-                                                        src="/assets/img/player/t-1.png"
-                                                        className="h-[40] rounded-full"
-                                                        alt="R sharma (c)"
-                                                    />
-                                                </div>
-                                                <div className="font-medium">
-                                                    <h2 className="text-[15px]">
-                                                        {" "}
-                                                        Gautam Gambhir{" "}
-                                                        <span className="text-[#909090] font-normal">
-                                                            (Coach)
-                                                        </span>{" "}
-                                                    </h2>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                    
                                     <div className="bg-white rounded-lg p-4">
                                         <a href="#">
                                             <div className="flex items-center space-x-3">
@@ -135,6 +111,28 @@ const Team = () => {
                                                         Rohit Sharma{" "}
                                                         <span className="text-[#909090] font-normal">
                                                             (India&nbsp;Captain)
+                                                        </span>{" "}
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div className="bg-white rounded-lg p-4">
+                                        <a href="#">
+                                            <div className="flex items-center space-x-3">
+                                                <div>
+                                                    <img
+                                                        src="/assets/img/player/t-1.png"
+                                                        className="h-[40] rounded-full"
+                                                        alt="R sharma (c)"
+                                                    />
+                                                </div>
+                                                <div className="font-medium">
+                                                    <h2 className="text-[15px]">
+                                                        {" "}
+                                                        Gautam Gambhir{" "}
+                                                        <span className="text-[#909090] font-normal">
+                                                            (Coach)
                                                         </span>{" "}
                                                     </h2>
                                                 </div>
@@ -166,19 +164,7 @@ const Team = () => {
                                                 </h3>
                                                 <p className="text-xs text-gray-600">Batsman</p>
                                             </div>
-                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
-                                                <div className="relative">
-                                                    <img
-                                                        src="/assets/img/player/t-4.png"
-                                                        alt="Player Image"
-                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-semibold text-gray-800">
-                                                    Abhishek Sharma
-                                                </h3>
-                                                <p className="text-xs text-gray-600">All-Rounder</p>
-                                            </div>
+                                           
                                             <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
                                                 <div className="relative">
                                                     <img
@@ -192,6 +178,21 @@ const Team = () => {
                                                 </h3>
                                                 <p className="text-xs text-gray-600">Bowler</p>
                                             </div>
+
+                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
+                                                <div className="relative">
+                                                    <img
+                                                        src="/assets/img/player/t-4.png"
+                                                        alt="Player Image"
+                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
+                                                    />
+                                                </div>
+                                                <h3 className="text-sm font-semibold text-gray-800">
+                                                    Abhishek Sharma
+                                                </h3>
+                                                <p className="text-xs text-gray-600">All-Rounder</p>
+                                            </div>
+
                                             <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
                                                 <div className="relative">
                                                     <img
@@ -1464,4 +1465,4 @@ const Team = () => {
     )
 }
 
-export default Team
+export default T20

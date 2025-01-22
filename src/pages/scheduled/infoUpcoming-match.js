@@ -83,7 +83,7 @@ export default function UpcomingInfo() {
                                 More Info
                             </button>
                         </Link>
-                        <Link href="">
+                        <Link href="/scheduled/live-matches">
                             <button
                                 onclick="handleTabClick(event, 'live')"
                                 className="font-medium py-2 px-3 whitespace-nowrap"
@@ -91,7 +91,7 @@ export default function UpcomingInfo() {
                                 Live
                             </button>
                         </Link>
-                        <Link href="">
+                        <Link href="/scheduled/upcoming-scorecard">
                             <button
                                 onclick="handleTabClick(event, 'scorecard')"
                                 className="font-medium py-2 px-3 whitespace-nowrap"
