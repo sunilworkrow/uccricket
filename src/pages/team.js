@@ -8,21 +8,19 @@ const Team = () => {
     const [batterTab, setBatterTab] = useState('cust-box-click-batters');
     const [batter1Tab, setBatter1Tab] = useState('cust-box-click-batters1');
     const [homeRecordTab, setHomeRecordTab] = useState('test');
-         const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false);
 
-         
+    const handleBatterTabClick = (tab) => {
+        setBatterTab(tab);
+    };
 
-            const handleBatterTabClick = (tab) => {
-                setBatterTab(tab);
-              };
+    const handleBatter1TabClick = (tab) => {
+        setBatter1Tab(tab);
+    };
 
-              const handleBatter1TabClick = (tab) => {
-                setBatter1Tab(tab);
-              };
-
-              const handleHomeRecordTabClick = (tab) => {
-                setHomeRecordTab(tab);
-              };
+    const handleHomeRecordTabClick = (tab) => {
+        setHomeRecordTab(tab);
+    };
 
     return (
         <Layout>
@@ -30,10 +28,12 @@ const Team = () => {
                 <div className="md:grid grid-cols-12 gap-4">
                     <div className="lg:col-span-8 md:col-span-7">
                         <div className="rounded-lg bg-[#ffffff] p-4 mb-4">
-                            <div className="flex items-center gap-2 mb-2">
-                                <img src="/assets/img/flag/b-8.png" className="h-[30px]" alt="" />
-                                <h3 className="text-1xl font-semibold ">India Cricket Team</h3>
-                            </div>
+                            <Link href="#">
+                                <div className="flex items-center gap-2 mb-2">
+                                    <img src="/assets/img/flag/b-8.png" className="h-[30px]" alt="" />
+                                    <h3 className="text-1xl font-semibold ">India Cricket Team</h3>
+                                </div>
+                            </Link>
                             <div className="border-t-[1px] border-[#E4E9F0]" />
                             <p className="text-gray-500 font-normal pt-2">
                                 The Indian Cricket Team is governed by the Board of Control for
@@ -47,49 +47,49 @@ const Team = () => {
                         <div id="tabs" className="mb-4">
                             <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
                                 <Link href="/team">
-                                <button
-                                    
-                                     className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
-                                   
-                                >
-                                    Test
-                                </button>
+                                    <button
+
+                                        className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
+
+                                    >
+                                        Test
+                                    </button>
                                 </Link>
 
                                 <Link href="/team/ODI">
-                                <button
-                                    
-                                    className="font-medium py-2 px-3 whitespace-nowrap "
-                                   
-                                >
-                                    ODI
-                                </button>
+                                    <button
+
+                                        className="font-medium py-2 px-3 whitespace-nowrap "
+
+                                    >
+                                        ODI
+                                    </button>
                                 </Link>
                                 <Link href="/team/T20">
-                                <button
-                                    
-                                     className="font-medium py-2 px-3 whitespace-nowrap"   
-                                >
-                                    T20
-                                </button>
+                                    <button
+
+                                        className="font-medium py-2 px-3 whitespace-nowrap"
+                                    >
+                                        T20
+                                    </button>
                                 </Link>
                                 <Link href="/team/Ipl">
-                                <button
-                                    // onclick="handleTabClick(event, ' iccworldtwenty20')"
-                                     className="font-medium py-2 px-3 whitespace-nowrap"
-                                   
-                                >
-                                    Icc world twenty 20
-                                </button>
+                                    <button
+                                        // onclick="handleTabClick(event, ' iccworldtwenty20')"
+                                        className="font-medium py-2 px-3 whitespace-nowrap"
+
+                                    >
+                                        Icc world twenty 20
+                                    </button>
                                 </Link>
                                 <Link href="/team/Worldcup">
-                                <button
-                                    // onclick="handleTabClick(event, 'iccworldcup')"
-                                    className="font-medium py-2 px-3 whitespace-nowrap"
-                                   
-                                >
-                                    Icc world cup
-                                </button>
+                                    <button
+                                        // onclick="handleTabClick(event, 'iccworldcup')"
+                                        className="font-medium py-2 px-3 whitespace-nowrap"
+
+                                    >
+                                        Icc world cup
+                                    </button>
                                 </Link>
                             </div>
                         </div>
@@ -153,136 +153,153 @@ const Team = () => {
                                     <div className="border-t border-[#E4E9F0] mb-3" />
                                     <div className="cust-tp-pera-card-section">
                                         <div className="grid md:grid-cols-12 grid-cols-6 gap-4">
+
                                             <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
-                                                <div className="relative">
-                                                    <img
-                                                        src="/assets/img/player/t-3.png"
-                                                        alt="Player Image"
-                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-semibold text-gray-800">
-                                                    Abhimanyu Easwaran
-                                                </h3>
-                                                <p className="text-xs text-gray-600">Batsman</p>
-                                            </div>
-                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
-                                                <div className="relative">
-                                                    <img
-                                                        src="/assets/img/player/t-4.png"
-                                                        alt="Player Image"
-                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-semibold text-gray-800">
-                                                    Abhishek Sharma
-                                                </h3>
-                                                <p className="text-xs text-gray-600">All-Rounder</p>
-                                            </div>
-                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
-                                                <div className="relative">
-                                                    <img
-                                                        src="/assets/img/player/t-5.png"
-                                                        alt="Player Image"
-                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-semibold text-gray-800">
-                                                    Akash Deep
-                                                </h3>
-                                                <p className="text-xs text-gray-600">Bowler</p>
-                                            </div>
-                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
-                                                <div className="relative">
-                                                    <img
-                                                        src="/assets/img/player/t-6.png"
-                                                        alt="Player Image"
-                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-semibold text-gray-800">
-                                                    Arshdeep Singh
-                                                </h3>
-                                                <p className="text-xs text-gray-600">Bowler</p>
-                                            </div>
-                                            {show && 
-                                            <>
-                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
-                                                <div className="relative">
-                                                    <img
-                                                        src="/assets/img/player/t-3.png"
-                                                        alt="Player Image"
-                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-semibold text-gray-800">
-                                                    Abhimanyu Easwaran
-                                                </h3>
-                                                <p className="text-xs text-gray-600">Batsman</p>
-                                            </div>
-                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
-                                                <div className="relative">
-                                                    <img
-                                                        src="/assets/img/player/t-4.png"
-                                                        alt="Player Image"
-                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-semibold text-gray-800">
-                                                    Abhishek Sharma
-                                                </h3>
-                                                <p className="text-xs text-gray-600">All-Rounder</p>
-                                            </div>
-                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
-                                                <div className="relative">
-                                                    <img
-                                                        src="/assets/img/player/t-5.png"
-                                                        alt="Player Image"
-                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-semibold text-gray-800">
-                                                    Akash Deep
-                                                </h3>
-                                                <p className="text-xs text-gray-600">Bowler</p>
-                                            </div>
-                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
-                                                <div className="relative">
-                                                    <img
-                                                        src="/assets/img/player/t-6.png"
-                                                        alt="Player Image"
-                                                        className="w-16 h-16 mx-auto rounded-full mb-2"
-                                                    />
-                                                </div>
-                                                <h3 className="text-sm font-semibold text-gray-800">
-                                                    Arshdeep Singh
-                                                </h3>
-                                                <p className="text-xs text-gray-600">Bowler</p>
-                                            </div>
-                                            </>}
-                                            {!show &&
-                                            <div className="col-span-12 text-center flex justify-center cursor-pointer">
-                                                <button className="cust-tp-pera-load-more text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline"
-                                                onClick ={()=>setShow(true)}
-                                                >
-                                                    View More{" "}
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        fill="none"
-                                                        viewBox="0 0 24 24"
-                                                        strokeWidth="1.5"
-                                                        stroke="currentColor"
-                                                        className="size-3 ml-2"
-                                                    >
-                                                        <path
-                                                            strokeLinecap="round"
-                                                            strokeLinejoin="round"
-                                                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                                                <Link href="#">
+                                                    <div className="relative">
+                                                        <img
+                                                            src="/assets/img/player/t-3.png"
+                                                            alt="Player Image"
+                                                            className="w-16 h-16 mx-auto rounded-full mb-2"
                                                         />
-                                                    </svg>
-                                                </button>
+                                                    </div>
+                                                    <h3 className="text-sm font-semibold text-gray-800">
+                                                        Abhimanyu Easwaran
+                                                    </h3>
+                                                    <p className="text-xs text-gray-600">Batsman</p>
+                                                </Link>
                                             </div>
-}
+                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
+                                                <Link href="#">
+                                                    <div className="relative">
+                                                        <img
+                                                            src="/assets/img/player/t-4.png"
+                                                            alt="Player Image"
+                                                            className="w-16 h-16 mx-auto rounded-full mb-2"
+                                                        />
+                                                    </div>
+                                                    <h3 className="text-sm font-semibold text-gray-800">
+                                                        Abhishek Sharma
+                                                    </h3>
+                                                    <p className="text-xs text-gray-600">All-Rounder</p>
+                                                </Link>
+                                            </div>
+                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
+                                                <Link href="#">
+                                                    <div className="relative">
+                                                        <img
+                                                            src="/assets/img/player/t-5.png"
+                                                            alt="Player Image"
+                                                            className="w-16 h-16 mx-auto rounded-full mb-2"
+                                                        />
+                                                    </div>
+                                                    <h3 className="text-sm font-semibold text-gray-800">
+                                                        Akash Deep
+                                                    </h3>
+                                                    <p className="text-xs text-gray-600">Bowler</p>
+                                                </Link>
+                                            </div>
+                                            <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
+                                                <Link href="#">
+                                                    <div className="relative">
+                                                        <img
+                                                            src="/assets/img/player/t-6.png"
+                                                            alt="Player Image"
+                                                            className="w-16 h-16 mx-auto rounded-full mb-2"
+                                                        />
+                                                    </div>
+                                                    <h3 className="text-sm font-semibold text-gray-800">
+                                                        Arshdeep Singh
+                                                    </h3>
+                                                    <p className="text-xs text-gray-600">Bowler</p>
+                                                </Link>
+                                            </div>
+                                            {show &&
+                                                <>
+                                                    <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
+                                                        <Link href="#">
+                                                            <div className="relative">
+                                                                <img
+                                                                    src="/assets/img/player/t-3.png"
+                                                                    alt="Player Image"
+                                                                    className="w-16 h-16 mx-auto rounded-full mb-2"
+                                                                />
+                                                            </div>
+                                                            <h3 className="text-sm font-semibold text-gray-800">
+                                                                Abhimanyu Easwaran
+                                                            </h3>
+                                                            <p className="text-xs text-gray-600">Batsman</p>
+                                                        </Link>
+                                                    </div>
+                                                    <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
+                                                        <Link href="#">
+                                                            <div className="relative">
+                                                                <img
+                                                                    src="/assets/img/player/t-4.png"
+                                                                    alt="Player Image"
+                                                                    className="w-16 h-16 mx-auto rounded-full mb-2"
+                                                                />
+                                                            </div>
+                                                            <h3 className="text-sm font-semibold text-gray-800">
+                                                                Abhishek Sharma
+                                                            </h3>
+                                                            <p className="text-xs text-gray-600">All-Rounder</p>
+                                                        </Link>
+                                                    </div>
+                                                    <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
+                                                        <Link href="#">
+                                                            <div className="relative">
+                                                                <img
+                                                                    src="/assets/img/player/t-5.png"
+                                                                    alt="Player Image"
+                                                                    className="w-16 h-16 mx-auto rounded-full mb-2"
+                                                                />
+                                                            </div>
+                                                            <h3 className="text-sm font-semibold text-gray-800">
+                                                                Akash Deep
+                                                            </h3>
+                                                            <p className="text-xs text-gray-600">Bowler</p>
+                                                        </Link>
+                                                    </div>
+                                                    <div className="col-span-3 cust-tp-pera-card text-center py-4 px-2 rounded-md border-[1px] border-[##E2E2E2]">
+                                                        <Link href="#">
+                                                            <div className="relative">
+                                                                <img
+                                                                    src="/assets/img/player/t-6.png"
+                                                                    alt="Player Image"
+                                                                    className="w-16 h-16 mx-auto rounded-full mb-2"
+                                                                />
+                                                            </div>
+                                                            <h3 className="text-sm font-semibold text-gray-800">
+                                                                Arshdeep Singh
+                                                            </h3>
+                                                            <p className="text-xs text-gray-600">Bowler</p>
+                                                        </Link>
+                                                    </div>
+                                                </>}
+                                            {!show &&
+                                                <div className="col-span-12 text-center flex justify-center cursor-pointer">
+                                                    <button className="cust-tp-pera-load-more text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline"
+                                                        onClick={() => setShow(true)}
+                                                    >
+                                                        View More{" "}
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            fill="none"
+                                                            viewBox="0 0 24 24"
+                                                            strokeWidth="1.5"
+                                                            stroke="currentColor"
+                                                            className="size-3 ml-2"
+                                                        >
+                                                            <path
+                                                                strokeLinecap="round"
+                                                                strokeLinejoin="round"
+                                                                d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                                                            />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            }
                                         </div>
                                     </div>
                                 </div>
@@ -368,8 +385,8 @@ const Team = () => {
                                                     >
                                                         <span>Batters</span>
                                                     </button>
-                                                    
-                                                    
+
+
                                                     <button
                                                         // className="cust-box-click-button  font-medium px-5 py-1 bg-[#ffffff]  text-[#6A7586]  rounded-full"
                                                         // onclick="showCustomBox(this, 'cust-box-click-bowlers')"
@@ -380,7 +397,7 @@ const Team = () => {
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div className={`cust-box-click-content cust-box-click-batters mt-4 ${batterTab ==="cust-box-click-batters" ?"" : "hidden"}`}>
+                                            <div className={`cust-box-click-content cust-box-click-batters mt-4 ${batterTab === "cust-box-click-batters" ? "" : "hidden"}`}>
                                                 <div className="">
                                                     {/* Player 1 */}
                                                     <div className="flex items-center justify-between bg-white border-[1px] rounded-lg px-3 py-3 mb-4">
@@ -388,14 +405,17 @@ const Team = () => {
                                                             <div className="text-1xl font-bold text-gray-700 ">
                                                                 01
                                                             </div>
+
                                                             <img
                                                                 src="/assets/img/player/t-7.png"
                                                                 alt="Sachin Tendulkar"
                                                                 className="rounded-full w-10 h-10"
                                                             />
+                                                            <Link href="#">
                                                             <h3 className="text-1xl font-semibold text-gray-800">
                                                                 Sachin Tendulkar
                                                             </h3>
+                                                            </Link>
                                                         </div>
                                                         <div className="">
                                                             <div className="flex mt-2 text-sm text-gray-500">
@@ -420,9 +440,11 @@ const Team = () => {
                                                                 alt="Sachin Tendulkar"
                                                                 className="rounded-full w-10 h-10"
                                                             />
+                                                            <Link href="#">
                                                             <h3 className="text-1xl font-semibold text-gray-800">
                                                                 Rahul Dravid
                                                             </h3>
+                                                            </Link>
                                                         </div>
                                                         <div className="">
                                                             <div className="flex mt-2 text-sm text-gray-500">
@@ -447,9 +469,11 @@ const Team = () => {
                                                                 alt="Sachin Tendulkar"
                                                                 className="rounded-full w-10 h-10"
                                                             />
+                                                            <Link href="#">
                                                             <h3 className="text-1xl font-semibold text-gray-800">
                                                                 Sunil Gavaskar
                                                             </h3>
+                                                            </Link>
                                                         </div>
                                                         <div className="">
                                                             <div className="flex mt-2 text-sm text-gray-500">
@@ -466,7 +490,7 @@ const Team = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className={`cust-box-click-content cust-box-click-batters mt-4 ${batterTab ==="cust-box-click-bowlers" ?"" : "hidden"}`}>
+                                            <div className={`cust-box-click-content cust-box-click-batters mt-4 ${batterTab === "cust-box-click-bowlers" ? "" : "hidden"}`}>
                                                 dfghj
                                             </div>
                                         </div>
@@ -494,16 +518,16 @@ const Team = () => {
                                                         <span>Bowlers</span>
                                                     </button>
                                                     <button
-                                                     onClick={() => handleBatter1TabClick('cust-box-click-bowlers1')}
-                                                     className={`cust-box-click-button font-medium px-5 py-1 ${batter1Tab === 'cust-box-click-bowlers1' ? 'bg-[#081736] text-white' : 'bg-[#ffffff]  text-[#6A7586]'} rounded-full`}
-                                                        // className="cust-box-click-button bg-[#ffffff] font-medium text-[#6A7586] px-5 py-1 rounded-full"
-                                                        // onclick="showCustomBox(this, 'cust-box-click-batters1')"
+                                                        onClick={() => handleBatter1TabClick('cust-box-click-bowlers1')}
+                                                        className={`cust-box-click-button font-medium px-5 py-1 ${batter1Tab === 'cust-box-click-bowlers1' ? 'bg-[#081736] text-white' : 'bg-[#ffffff]  text-[#6A7586]'} rounded-full`}
+                                                    // className="cust-box-click-button bg-[#ffffff] font-medium text-[#6A7586] px-5 py-1 rounded-full"
+                                                    // onclick="showCustomBox(this, 'cust-box-click-batters1')"
                                                     >
                                                         <span>Batters</span>
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div className={`cust-box-click-content cust-box-click-bowlers1 mt-4 ${batter1Tab ==="cust-box-click-batters1" ?"" : "hidden"}`}>
+                                            <div className={`cust-box-click-content cust-box-click-bowlers1 mt-4 ${batter1Tab === "cust-box-click-batters1" ? "" : "hidden"}`}>
                                                 <div className="">
                                                     {/* Player 1 */}
                                                     <div className="flex items-center justify-between bg-white border-[1px] rounded-lg px-3 py-3 mb-4">
@@ -516,9 +540,11 @@ const Team = () => {
                                                                 alt="Sachin Tendulkar"
                                                                 className="rounded-full w-10 h-10"
                                                             />
+                                                            <Link href="#">
                                                             <h3 className="text-1xl font-semibold text-gray-800">
                                                                 Anil Kumble
                                                             </h3>
+                                                            </Link>
                                                         </div>
                                                         <div className="">
                                                             <div className="flex mt-2 text-sm text-gray-500">
@@ -552,9 +578,11 @@ const Team = () => {
                                                                 alt="Sachin Tendulkar"
                                                                 className="rounded-full w-10 h-10"
                                                             />
+                                                            <Link href="#">
                                                             <h3 className="text-1xl font-semibold text-gray-800">
                                                                 Jasubhai Patel
                                                             </h3>
+                                                            </Link>
                                                         </div>
                                                         <div className="">
                                                             <div className="flex mt-2 text-sm text-gray-500">
@@ -588,9 +616,11 @@ const Team = () => {
                                                                 alt="Sachin Tendulkar"
                                                                 className="rounded-full w-10 h-10"
                                                             />
+                                                            <Link href="#">
                                                             <h3 className="text-1xl font-semibold text-gray-800">
                                                                 Kapil Dev
                                                             </h3>
+                                                            </Link>
                                                         </div>
                                                         <div className="">
                                                             <div className="flex mt-2 text-sm text-gray-500">
@@ -616,7 +646,7 @@ const Team = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className={`cust-box-click-content cust-box-click-bowlers1 mt-4 ${batter1Tab ==="cust-box-click-bowlers1" ?"" : "hidden"}`}>
+                                            <div className={`cust-box-click-content cust-box-click-bowlers1 mt-4 ${batter1Tab === "cust-box-click-bowlers1" ? "" : "hidden"}`}>
                                                 dfghj
                                             </div>
                                         </div>
@@ -913,7 +943,7 @@ const Team = () => {
                                         <div className="border-t border-[#E4E9F0] mb-3" />
                                         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                                             {/* Card */}
-                                            <a href="/team">
+                                            <Link href="/team">
                                                 <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                                                     <img
                                                         src="/assets/img/flag/b-1.png"
@@ -923,7 +953,8 @@ const Team = () => {
                                                     <p className="font-medium">Pakistan-W</p>
                                                 </div>
                                                 {/* Card */}
-                                            </a>
+                                            </Link>
+                                            <Link href="/team">
                                             <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                                                 <img
                                                     src="/assets/img/flag/b-2.png"
@@ -932,7 +963,9 @@ const Team = () => {
                                                 />
                                                 <p className="font-medium">West Indies-W</p>
                                             </div>
+                                            </Link>
                                             {/* Card */}
+                                            <Link href="/team">
                                             <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                                                 <img
                                                     src="/assets/img/flag/b-3.png"
@@ -941,7 +974,9 @@ const Team = () => {
                                                 />
                                                 <p className="font-medium">Australia-W</p>
                                             </div>
+                                            </Link>
                                             {/* Card */}
+                                            <Link href="/team">
                                             <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                                                 <img
                                                     src="/assets/img/flag/b-4.png"
@@ -950,7 +985,9 @@ const Team = () => {
                                                 />
                                                 <p className="font-medium">Scotland-W</p>
                                             </div>
+                                            </Link>
                                             {/* Card */}
+                                            <Link href="/team">
                                             <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
                                                 <img
                                                     src="/assets/img/flag/b-5.png"
@@ -959,11 +996,12 @@ const Team = () => {
                                                 />
                                                 <p className="font-medium">South Africa-W</p>
                                             </div>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div className="lg:col-span-4 md:col-span-5">
@@ -983,9 +1021,11 @@ const Team = () => {
                                         alt="Sachin Tendulkar"
                                         className="rounded-full w-10 h-10"
                                     />
+                                    <Link href="#">
                                     <h3 className="text-[14px] font-semibold text-gray-800">
                                         S Tendulkar
                                     </h3>
+                                    </Link>
                                 </div>
                                 <div className="">
                                     <div className="flex mt-2 text-gray-500">
@@ -1008,7 +1048,9 @@ const Team = () => {
                                         alt="Sachin Tendulkar"
                                         className="rounded-full w-10 h-10"
                                     />
+                                    <Link href="#">
                                     <h3 className="text-[14px] font-semibold text-gray-800">A Kumar</h3>
+                                    </Link>
                                 </div>
                                 <div className="">
                                     <div className="flex mt-2 text-gray-500">
@@ -1031,9 +1073,11 @@ const Team = () => {
                                         alt="Sachin Tendulkar"
                                         className="rounded-full w-10 h-10"
                                     />
+                                    <Link href="#">
                                     <h3 className="text-[14px] font-semibold text-gray-800">
                                         R Ashwin
                                     </h3>
+                                    </Link>
                                 </div>
                                 <div className="">
                                     <div className="flex mt-2 text-gray-500">
@@ -1066,9 +1110,11 @@ const Team = () => {
                                         alt="Sachin Tendulkar"
                                         className="rounded-full w-10 h-10"
                                     />
+                                    <Link href="#">
                                     <h3 className="text-[14px] font-semibold text-gray-800">
                                         R Ashwin
                                     </h3>
+                                    </Link>
                                 </div>
                                 <div className="">
                                     <div className="flex mt-2 text-gray-500">
@@ -1091,9 +1137,11 @@ const Team = () => {
                                         alt="Sachin Tendulkar"
                                         className="rounded-full w-10 h-10"
                                     />
+                                    <Link href="#">
                                     <h3 className="text-[14px] font-semibold text-gray-800">
                                         S Tendulkar
                                     </h3>
+                                    </Link>
                                 </div>
                                 <div className="">
                                     <div className="flex mt-2 text-gray-500">
@@ -1116,9 +1164,11 @@ const Team = () => {
                                         alt="Sachin Tendulkar"
                                         className="rounded-full w-10 h-10"
                                     />
+                                    <Link href="#">
                                     <h3 className="text-[14px] font-semibold text-gray-800">
                                         V Sehwag
                                     </h3>
+                                    </Link>
                                 </div>
                                 <div className="">
                                     <div className="flex mt-2 text-gray-500">
@@ -1169,7 +1219,7 @@ const Team = () => {
                                                 // className="cust-box-click-button font-medium px-3 py-1 rounded-full bg-[#081736] text-white"
                                                 // onclick="showCustomBox(this, 'cust-box-click-homeground')"
                                                 onClick={() => handleHomeRecordTabClick('cust-box-click-homeground')}
-                                                        className={`cust-box-click-button font-medium px-3 py-1 ${homeRecordTab === 'cust-box-click-homeground' ? 'bg-[#081736] text-white' : 'bg-[#ffffff]  text-[#6A7586]'} rounded-full`}
+                                                className={`cust-box-click-button font-medium px-3 py-1 ${homeRecordTab === 'cust-box-click-homeground' ? 'bg-[#081736] text-white' : 'bg-[#ffffff]  text-[#6A7586]'} rounded-full`}
                                             >
                                                 <span>Home Ground</span>
                                             </button>
@@ -1251,15 +1301,15 @@ const Team = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div 
-                                    // className="cust-box-click-content cust-box-click-away mt-4 hidden"
-                                    className={`cust-box-click-content cust-box-click-away mt-4 ${homeRecordTab === 'cust-box-click-away' ? '' : 'hidden'}`}
+                                    <div
+                                        // className="cust-box-click-content cust-box-click-away mt-4 hidden"
+                                        className={`cust-box-click-content cust-box-click-away mt-4 ${homeRecordTab === 'cust-box-click-away' ? '' : 'hidden'}`}
                                     >
                                         dfghj
                                     </div>
-                                    <div 
-                                    // className="cust-box-click-content cust-box-click-neutral mt-4 hidden"
-                                    className={`cust-box-click-content cust-box-click-neutral mt-4 ${homeRecordTab === 'cust-box-click-neutral' ? '' : 'hidden'}`}
+                                    <div
+                                        // className="cust-box-click-content cust-box-click-neutral mt-4 hidden"
+                                        className={`cust-box-click-content cust-box-click-neutral mt-4 ${homeRecordTab === 'cust-box-click-neutral' ? '' : 'hidden'}`}
                                     >
                                         sdfghjkl
                                     </div>

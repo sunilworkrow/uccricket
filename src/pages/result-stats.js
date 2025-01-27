@@ -511,6 +511,24 @@ const ResultMostRunStats = () => {
                     </div>
                 </div>
 
+                
+                <div className="rounded-lg py-4 px-4 bg-[#ffffff] mb-4">
+                    <div className="lg:grid grid-cols-12 gap-4">            
+                        <div className="col-span-12">
+                           
+                            <h3 className="text-1xl font-semibold mb-1" style={{ lineHeight: "21px" }}>Live - Jagadeesan hits
+                                a century; Haryana trounce
+                            </h3>
+                            <p className="text-gray-500 font-normal">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias dicta maiores esse adipisci autem nesciunt placeat saepe corporis explicabo, enim tenetur non laboriosam ipsam nihil est aut. Odit nostrum dicta maiores, ipsam vero hic, recusandae, fugit doloribus voluptas a at! Quae recusandae est reprehenderit ratione. Nam, cupiditate quibusdam ab aut eos corporis omnis, culpa dolorum eligendi ea inventore! A, quo modi excepturi neque similique aliquam saepe quis, aut alias pariatur eligendi enim expedita doloremque ex recusandae distinctio. Ut mollitia adipisci soluta consequatur! Quisquam sit nemo doloremque illo libero sapiente facere minima, impedit maxime ut porro eius adipisci asperiores? Sit, architecto.
+                            </p>
+                            
+                        </div>
+                    </div>
+
+
+                </div>
+
             </section>
 
         </Layout>

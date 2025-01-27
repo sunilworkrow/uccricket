@@ -245,14 +245,14 @@ export default function Squads() {
                 Stats
               </button>
             </Link>
-            <Link href="">
+            {/* <Link href="">
               <button
                 onclick="handleTabClick(event, 'stats')"
                 className="font-medium py-2 px-3 whitespace-nowrap"
               >
                 Stadiums
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
 

@@ -8,13 +8,17 @@ const BestBowlingAverage = () => {
 
   return (
     <Layout>
-      <section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
+       <section className="bg-[#0E2149] border-[1px] border-[#E4E9F01A] lg:px-0 px-3">
         <div className="lg:w-[1000px] mx-auto">
           <div className="md:flex justify-between items-center md:py-0 py-4">
             <div className="flex items-center text-1xl text-[#FE4848] font-bold uppercase relative">
               <img src="/assets/img/home/blinking-dot.gif" className="h-[20px]" alt="" />
               LIVE NOW
-
+              {/* <svg>
+                  <circle fill="#ff0000" stroke="none" cx="60" cy="60" r="12">
+                    <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
+                  </circle>
+                </svg> */}
             </div>
             <div className="text-[#8192B4] font-normal  text-1xl md:text-center md:mx-0 my-3">
               Bangladesh in India August,&nbsp;2nd Test,{" "}
@@ -28,7 +32,8 @@ const BestBowlingAverage = () => {
         </div>
         <div className="border-t-[1px] border-[#E4E9F01A]">
           <div className="lg:w-[1000px] mx-auto md:py-9 tracking-[1px]">
-            <div className="md:flex py-8 justify-between items-center">
+
+            <div className="hidden md:flex py-8 justify-between items-center">
               <div className="flex gap-2 flex-row text-[#BDCCECA8] uppercase items-center w-full">
                 <img
                   className="lg:h-[42px] lg:w-[42px] h-[30px] w-[30px]"
@@ -70,6 +75,57 @@ const BestBowlingAverage = () => {
                 />
               </div>
             </div>
+
+            <div className="md:hidden block bg-[white] p-4 rounded-md mb-4">
+              <div>
+                <div>
+                  <div className="flex items-center text-[13px] text-[#FE4848] font-semibold  relative">
+                    <img src="/assets/img/home/blinking-dot.gif" className="h-[10px]" alt="" />
+                    Live
+
+                  </div>
+
+                  <div className="flex items-center justify-between">
+
+                    <div className="flex gap-2 flex-row  uppercase items-center w-full">
+                      <img
+                        className="lg:h-[42px] lg:w-[42px] h-[30px] w-[30px]"
+                        src="/assets/img/flg-1.png"
+                        alt="ind"
+                      />
+                      <div className="flex flex-col items-start gap-0 gap-2">
+                        <p className="text-[14px] font-semibold uppercase">
+                          IND
+                        </p>
+                        <p className="lg:text-[18px] text-[16px] font-semibold">
+                          139/4 <span className="text-[13px] font-medium">(42.0)</span>
+
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className='border-r-[1px] border-[#e5e5e5] h-[60px]'></div>
+
+                    <div className="w-full text-center">
+                      <h2 className="text-[24px] font-semibold text-[#342df2]">No Ball</h2>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between mt-2">
+                    <p>CRR : <span>8.69</span></p>
+                    <p>Over left Today : <span>36.0</span></p>
+                  </div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -544,6 +600,24 @@ const BestBowlingAverage = () => {
             </div>
           </div>
         </div>
+
+        
+        <div className="rounded-lg py-4 px-4 bg-[#ffffff] mb-4">
+                    <div className="lg:grid grid-cols-12 gap-4">            
+                        <div className="col-span-12">
+                           
+                            <h3 className="text-1xl font-semibold mb-1" style={{ lineHeight: "21px" }}>Live - Jagadeesan hits
+                                a century; Haryana trounce
+                            </h3>
+                            <p className="text-gray-500 font-normal">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias dicta maiores esse adipisci autem nesciunt placeat saepe corporis explicabo, enim tenetur non laboriosam ipsam nihil est aut. Odit nostrum dicta maiores, ipsam vero hic, recusandae, fugit doloribus voluptas a at! Quae recusandae est reprehenderit ratione. Nam, cupiditate quibusdam ab aut eos corporis omnis, culpa dolorum eligendi ea inventore! A, quo modi excepturi neque similique aliquam saepe quis, aut alias pariatur eligendi enim expedita doloremque ex recusandae distinctio. Ut mollitia adipisci soluta consequatur! Quisquam sit nemo doloremque illo libero sapiente facere minima, impedit maxime ut porro eius adipisci asperiores? Sit, architecto.
+                            </p>
+                            
+                        </div>
+                    </div>
+
+
+                </div>
 
       </section>
 

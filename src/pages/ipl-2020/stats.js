@@ -6,41 +6,41 @@ import { useRouter } from 'next/router';
 export default function stats() {
 
 
-  const router = useRouter();
+    const router = useRouter();
 
-  const handleSelectChange = (event) => {
-    const selectedValue = event.target.value;
-    if (selectedValue) {
-      router.push(selectedValue);
-    }
-  };
+    const handleSelectChange = (event) => {
+        const selectedValue = event.target.value;
+        if (selectedValue) {
+            router.push(selectedValue);
+        }
+    };
 
 
     return (
 
         <Layout>
-               <section className="bg-[#0E2149]">
+            <section className="bg-[#0E2149]">
                 <div className="lg:w-[1000px] mx-auto text-white pt-5 pb-10 " style={{ paddingTop: "37px" }}>
                     <div className="flex items-center justify-between md:p-4 max-w-6xl mx-auto">
                         {/* Left Arrow */}
                         <Link href="/iplseries">
-                        <button className="md:block hidden p-2 bg-gray-700 rounded-full hover:bg-gray-600">
-                            <svg
-                                className="w-6 h-6 text-white"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth={2}
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
+                            <button className="md:block hidden p-2 bg-gray-700 rounded-full hover:bg-gray-600">
+                                <svg
+                                    className="w-6 h-6 text-white"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth={2}
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
 
-                                    d="M15 19l-7-7 7-7"
-                                />
-                            </svg>
-                        </button>
+                                        d="M15 19l-7-7 7-7"
+                                    />
+                                </svg>
+                            </button>
                         </Link>
                         {/* Content Section */}
                         {/* Content Section full screen  */}
@@ -170,9 +170,9 @@ export default function stats() {
                                     T20 - 34 Matches - 10 Teams | Mar 22 to May 26
                                 </p>
                                 <select className="border border-gray-500 rounded px-2 bg-[#0e2149]">
-                                        <option>2020</option>
-                                        <option>2021</option> 
-                                        
+                                    <option>2020</option>
+                                    <option>2021</option>
+
                                 </select>
                             </div>
                         </div>
@@ -195,67 +195,67 @@ export default function stats() {
 
 
             <section className="lg:w-[1000px] mx-auto md:mb-0 mb-4 px-2 lg:px-0">
-            <div id="tabs" className="my-4">
-          <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
-            <Link href="/iplseries">
-              <button
-                onclick="handleTabClick(event, 'info')"
-                className="font-medium py-2 px-3 whitespace-nowrap "
-              >
-                Overview
-              </button>
-            </Link>
-            <Link href="/ipl-2020/schedule-results">
-              <button
-                onclick="handleTabClick(event, 'live')"
-                className="font-medium py-2 px-3 whitespace-nowrap "
-              >
-                Schedule & Results
+                <div id="tabs" className="my-4">
+                    <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
+                        <Link href="/iplseries">
+                            <button
+                                onclick="handleTabClick(event, 'info')"
+                                className="font-medium py-2 px-3 whitespace-nowrap "
+                            >
+                                Overview
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/schedule-results">
+                            <button
+                                onclick="handleTabClick(event, 'live')"
+                                className="font-medium py-2 px-3 whitespace-nowrap "
+                            >
+                                Schedule & Results
 
-              </button>
-            </Link>
-            <Link href="/ipl-2020/squads">
-              <button
-                onclick="handleTabClick(event, 'scorecard')"
-                className="font-medium py-2 px-3 whitespace-nowrap "
-              >
-                Squads
-              </button>
-            </Link>
-            <Link href="/ipl-2020/points-table">
-              <button
-                onclick="handleTabClick(event, 'overs')"
-                className="font-medium py-2 px-3 whitespace-nowrap"
-              >
-                Points Table
-              </button>
-            </Link>
-            <Link href="/ipl-2020/news">
-              <button
-                onclick="handleTabClick(event, 'points')"
-                className="font-medium py-2 px-3 whitespace-nowrap"
-              >
-                News
-              </button>
-            </Link>
-            <Link href="/ipl-2020/stats">
-              <button
-                onclick="handleTabClick(event, 'stats')"
-                className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
-              >
-                Stats
-              </button>
-            </Link>
-            <Link href="">
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/squads">
+                            <button
+                                onclick="handleTabClick(event, 'scorecard')"
+                                className="font-medium py-2 px-3 whitespace-nowrap "
+                            >
+                                Squads
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/points-table">
+                            <button
+                                onclick="handleTabClick(event, 'overs')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Points Table
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/news">
+                            <button
+                                onclick="handleTabClick(event, 'points')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                News
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/stats">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
+                            >
+                                Stats
+                            </button>
+                        </Link>
+                        {/* <Link href="">
               <button
                 onclick="handleTabClick(event, 'stats')"
                 className="font-medium py-2 px-3 whitespace-nowrap"
               >
                 Stadiums
               </button>
-            </Link>
-          </div>
-        </div>
+            </Link> */}
+                    </div>
+                </div>
 
 
 
@@ -640,6 +640,24 @@ export default function stats() {
 
                         </div>
                     </div>
+                </div>
+
+                
+                <div className="rounded-lg py-4 px-4 bg-[#ffffff] mb-4">
+                    <div className="lg:grid grid-cols-12 gap-4">            
+                        <div className="col-span-12">
+                           
+                            <h3 className="text-1xl font-semibold mb-1" style={{ lineHeight: "21px" }}>Live - Jagadeesan hits
+                                a century; Haryana trounce
+                            </h3>
+                            <p className="text-gray-500 font-normal">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias dicta maiores esse adipisci autem nesciunt placeat saepe corporis explicabo, enim tenetur non laboriosam ipsam nihil est aut. Odit nostrum dicta maiores, ipsam vero hic, recusandae, fugit doloribus voluptas a at! Quae recusandae est reprehenderit ratione. Nam, cupiditate quibusdam ab aut eos corporis omnis, culpa dolorum eligendi ea inventore! A, quo modi excepturi neque similique aliquam saepe quis, aut alias pariatur eligendi enim expedita doloremque ex recusandae distinctio. Ut mollitia adipisci soluta consequatur! Quisquam sit nemo doloremque illo libero sapiente facere minima, impedit maxime ut porro eius adipisci asperiores? Sit, architecto.
+                            </p>
+                            
+                        </div>
+                    </div>
+
+
                 </div>
 
 

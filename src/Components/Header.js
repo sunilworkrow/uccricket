@@ -110,9 +110,17 @@ const Header = () => {
     }
   };
 
-  
+
   return (
     <>
+
+      <div className='md:hidden flex items-center justify-between py-2 px-2 bg-[#3793ff] text-white' >
+
+        <p> Uc Cricket is better on App, Get now! </p>
+        <button className='border-[1px] border-white px-4 rounded-full py-1'>Use App</button>
+
+      </div>
+
       <header className="bg-[#081736] lg:px-0 px-3">
         <div className="lg:w-[1000px] w-full mx-auto text-white py-5 flex items-center justify-between">
           <div>
@@ -224,61 +232,60 @@ const Header = () => {
       </header>
 
       {isDropdownOpen &&
-  <div
-    id="drop-series-slider"
-    className="text-white w-full overflow-hidden transition-all duration-300 absolute z-[1] h-[200vh] bg-[#0000004f]"
-    onClick={() => setIsDropdownOpen(false)} // Close slider on background click
-  >
-    {/* Slider Navigation */}
-    <div 
-      className="bg-[#081736]"
-      onClick={(e) => e.stopPropagation()} // Prevent closing slider when clicking inside the slider content
-    >
-      <div className="flex items-center lg:w-[1000px] w-full mx-auto">
-        {/* Previous Button */}
-        <button
-          onClick={handlePrev}
-          className={`text-yellow-400 text-xl ${currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""}`}
-          disabled={currentIndex === 0}
-        >
-          ❮
-        </button>
-
-        {/* Slider Content */}
         <div
-          id="drop-slider"
-          className="flex gap-4 overflow-hidden scroll-smooth mx-[25px] my-4"
+          id="drop-series-slider"
+          className="text-white w-full overflow-hidden transition-all duration-300 absolute z-[1] h-[200vh] bg-[#0000004f]"
+          onClick={() => setIsDropdownOpen(false)} // Close slider on background click
         >
-          {items
-            .slice(currentIndex, currentIndex + itemsPerPage)
-            .map((item, index) => (
-              <Link href={item.href || "#"} key={index}>
-                <div className="flex-shrink-0 w-[125px] flex items-center flex-col">
-                  <img
-                    src={item.imgSrc}
-                    alt={item.alt}
-                    className="rounded-lg w-[80px]"
-                  />
-                  <p className="mt-2 text-center">{item.label}</p>
-                </div>
-              </Link>
-            ))}
-        </div>
+          {/* Slider Navigation */}
+          <div
+            className="bg-[#081736]"
+            onClick={(e) => e.stopPropagation()} // Prevent closing slider when clicking inside the slider content
+          >
+            <div className="flex items-center lg:w-[1000px] w-full mx-auto">
+              {/* Previous Button */}
+              <button
+                onClick={handlePrev}
+                className={`text-yellow-400 text-xl ${currentIndex === 0 ? "opacity-50 cursor-not-allowed" : ""}`}
+                disabled={currentIndex === 0}
+              >
+                ❮
+              </button>
 
-        {/* Next Button */}
-        <button
-          onClick={handleNext}
-          className={`text-yellow-400 text-xl ${
-            currentIndex + itemsPerPage >= items.length ? "opacity-50 cursor-not-allowed" : ""
-          }`}
-          disabled={currentIndex + itemsPerPage >= items.length}
-        >
-          ❯
-        </button>
-      </div>
-    </div>
-  </div>
-}
+              {/* Slider Content */}
+              <div
+                id="drop-slider"
+                className="flex gap-4 overflow-hidden scroll-smooth mx-[25px] my-4"
+              >
+                {items
+                  .slice(currentIndex, currentIndex + itemsPerPage)
+                  .map((item, index) => (
+                    <Link href={item.href || "#"} key={index}>
+                      <div className="flex-shrink-0 w-[125px] flex items-center flex-col">
+                        <img
+                          src={item.imgSrc}
+                          alt={item.alt}
+                          className="rounded-lg w-[80px]"
+                        />
+                        <p className="mt-2 text-center">{item.label}</p>
+                      </div>
+                    </Link>
+                  ))}
+              </div>
+
+              {/* Next Button */}
+              <button
+                onClick={handleNext}
+                className={`text-yellow-400 text-xl ${currentIndex + itemsPerPage >= items.length ? "opacity-50 cursor-not-allowed" : ""
+                  }`}
+                disabled={currentIndex + itemsPerPage >= items.length}
+              >
+                ❯
+              </button>
+            </div>
+          </div>
+        </div>
+      }
 
     </>
   )

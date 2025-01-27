@@ -37,10 +37,6 @@ const index = () => {
         <Layout >
             <section className="lg:w-[1000px] mx-auto md:mb-0 mb-4 px-2 lg:px-0">
 
-
-
-
-
                 <div className="mt-2 mb-2">
                     <img src="/assets/img/home.png" className="w-[100%]" alt="" />
                 </div>
@@ -48,7 +44,7 @@ const index = () => {
                 <div className="md:grid grid-cols-12 gap-4">
                     <div className="lg:col-span-8 md:col-span-7">
                         <div className="tab-section">
-                            <div className="tabs my-4">
+                            <div className="tabs my-3 md:my-4">
                                 <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto relative overflow-x-auto  [&::-webkit-scrollbar] [&::-webkit-scrollbar]:h-[5px] 
                                       [&::-webkit-scrollbar-track]:bg-gray-100 
                                       [&::-webkit-scrollbar-thumb]:bg-[#DFE9F6] 
@@ -3989,13 +3985,15 @@ const index = () => {
                             <h3 className="text-1xl font-semibold pl-[4px] border-l-[3px] border-[#2182F8]">TOP TEAMS
                             </h3>
                         </div>
-                        <div className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline">
-                            View More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                                stroke="currentColor" className="size-3 ml-2">
-                                <path strokeLinecap="round" strokeLinejoin="round"
-                                    d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
-                            </svg>
-                        </div>
+                        <Link href="#">
+                            <div className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] pt-2 underline">
+                                View More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                                    stroke="currentColor" className="size-3 ml-2">
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                                </svg>
+                            </div>
+                        </Link>
                     </div>
 
                     <div className="rounded-lg bg-[#ffffff] p-4">
@@ -4128,7 +4126,7 @@ const index = () => {
                         </div>
                     </div>
 
-                    
+
 
                     <div className="flex justify-between items-center py-4">
                         <div>
@@ -4137,6 +4135,10 @@ const index = () => {
                         </div>
 
                     </div>
+
+
+
+
                     <CardSlider></CardSlider>
 
                     {/* <div className="grid md:grid-cols-5 grid-cols-2 gap-4">
@@ -4221,106 +4223,112 @@ const index = () => {
 
                         {/* <!-- SCHEDULED match desktop view start --> */}
 
-                        <div className="lg:block hidden rounded-lg p-4 mb-4 bg-[#ffffff]">
-                            <div className="flex items-center justify-between mb-4">
-                                <div className="flex items-center space-x-2">
-                                    <div className="flex items-center text-[#A45B09] rounded-full pr-2 font-semibold"
-                                        style={{ gap: "3px" }}>
-                                        <span className="rounded-full">●</span> SCHEDULED
-                                    </div>
-                                    <div>
-                                        <h4 className="text-[15px] font-semibold pl-[10px] border-l-[1px] border-[#E4E9F0]">
-                                            Afghanistan tour of South Africa</h4>
-                                    </div>
-                                </div>
-                                <div className="flex items-center space-x-2">
-                                    <span className="text-[13px] font-medium">AFG</span>
-                                    <span
-                                        className="flex items-center bg-[#FAFFFC] border-[1px] border-[#0B773C] rounded-full text-[#0B773C] pr-2">
-                                        <span className="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                strokeWidth="1.5" stroke="currentColor" className="h-[14px] w-[17px]">
-                                                <path strokeLinecap="round" strokeLinejoin="round"
-                                                    d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
-                                            </svg>
-                                        </span>41</span>
-                                    <span
-                                        className="flex items-center bg-[#FFF7F7] border-[1px] border-[#A70B0B]  rounded-full text-[#A70B0B] pr-2"><span
-                                            className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                strokeWidth="1.5" stroke="currentColor" className="h-[14px] w-[17px]">
-                                                <path strokeLinecap="round" strokeLinejoin="round"
-                                                    d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
-                                            </svg>
-                                        </span>45</span>
-                                </div>
-
-                            </div>
-
-                            <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                            <div className="py-4 px-3">
-
-                                <div className="flex justify-between items-center text-[14px]">
-                                    <div className="">
-                                        <p className="text-[#586577] text-[12px] mb-4 font-medium">2nd ODI , Sharjah Cricket
-                                            Stadium, Sharjah</p>
-                                        <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full mb-4">
+                        <div className="lg:block hidden rounded-lg p-4 mb-4 bg-[#ffffff] hover:shadow-lg">
+                                        <div className="flex items-center justify-between mb-4">
                                             <div className="flex items-center space-x-2">
-                                                <img src="/assets/img/afg.png" className="h-[30px] rounded-full" alt="aus" />
-                                                <span className="font-semibold">Afghanistan</span>
+                                                <div className="flex items-center text-[#A45B09] rounded-full pr-2 font-semibold"
+                                                    style={{ gap: "3px" }}>
+                                                    <span className="rounded-full">●</span> SCHEDULED
+                                                </div>
+                                                <div>
+                                                    <h4
+                                                        className="text-[15px] font-semibold pl-[10px] border-l-[1px] border-[#E4E9F0]">
+                                                        Afghanistan tour of South Africa</h4>
+                                                </div>
+                                            </div>
+                                            <div className="flex items-center space-x-2">
+                                                <span className="text-[13px] font-medium">AFG</span>
+                                                <span
+                                                    className="flex items-center bg-[#FAFFFC] border-[1px] border-[#0B773C] rounded-full text-[#0B773C] pr-2">
+                                                    <span className="">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                            strokeWidth="1.5" stroke="currentColor" className="h-[14px] w-[17px]">
+                                                            <path strokeLinecap="round" strokeLinejoin="round"
+                                                                d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+                                                        </svg>
+                                                    </span>41</span>
+                                                <span
+                                                    className="flex items-center bg-[#FFF7F7] border-[1px] border-[#A70B0B]  rounded-full text-[#A70B0B] pr-2"><span
+                                                        className=""><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
+                                                            className="h-[14px] w-[17px]">
+                                                            <path strokeLinecap="round" strokeLinejoin="round"
+                                                                d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+                                                        </svg>
+                                                    </span>45</span>
                                             </div>
 
                                         </div>
 
-                                        <div>
-                                            <div className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
-                                                <div className="flex items-center space-x-2">
-                                                    <img src="/assets/img/sa.png" className="h-[30px]" alt="ind" />
-                                                    <span className="font-semibold">South Africa</span>
+                                        <div className="border-t-[1px] border-[#E7F2F4]"></div>
+                                        <Link href="/scheduled/infoUpcoming-match">
+                                            <div className="py-4 px-3">
+
+                                                <div className="flex justify-between items-center text-[14px]">
+                                                    <div className="">
+                                                        <p className="text-[#586577] text-[12px] mb-4 font-medium">2nd ODI , Sharjah
+                                                            Cricket
+                                                            Stadium, Sharjah</p>
+                                                        <div
+                                                            className="flex items-center space-x-2 font-medium w-[162px] md:w-full mb-4">
+                                                            <div className="flex items-center space-x-2">
+                                                                <img src="/assets/img/afg.png" className="h-[30px] rounded-full" alt="aus" />
+                                                                <span className="font-semibold">Afghanistan</span>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div>
+                                                            <div
+                                                                className="flex items-center space-x-2 font-medium w-[162px] md:w-full">
+                                                                <div className="flex items-center space-x-2">
+                                                                    <img src="/assets/img/sa.png" className="h-[30px]" alt="ind" />
+                                                                    <span className="font-semibold">South Africa</span>
+
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div className=" font-medium text-center">
+                                                        <p className="text-[#2F335C] text-[14px]">20th September - Fri, <br /> 5:30 PM
+                                                            GMT
+                                                        </p>
+                                                    </div>
 
                                                 </div>
-
-
                                             </div>
+                                        </Link>
+                                        <div className="border-t-[1px] border-[#E7F2F4]"></div>
+
+                                        <div className="flex items-center justify-between space-x-5 mt-3">
+
+                                            <div className="flex items-center">
+                                                <a href="#">
+                                                    <p className=" text-[#909090] font-medium"> Points Table</p>
+                                                </a>
+                                                <div className="h-[20px] border-l-[1px] mx-5 border-[#d0d3d7]"></div>
+                                                <a href="#">
+                                                    <p className="text-[#909090] font-medium">Schedule</p>
+                                                </a>
+                                            </div>
+
+                                            <a href="#">
+                                                <div className="flex mt-2 justify-end items-center space-x-2">
+
+                                                    <img src="/assets/img/home/handshake.png" alt="" />
+                                                    <span className="text-[#909090] font-medium">H2H</span>
+
+                                                </div>
+                                            </a>
+
+
                                         </div>
                                     </div>
-
-
-
-                                    <div className=" font-medium text-center">
-                                        <p className="text-[#2F335C] text-[14px]">20th September - Fri, <br /> 5:30 PM GMT</p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div className="border-t-[1px] border-[#E7F2F4]"></div>
-
-                            <div className="flex items-center justify-between space-x-5 mt-3">
-
-                                <div className="flex items-center">
-                                    <Link href="#">
-                                        <p className=" text-[#909090] font-medium"> Points Table</p>
-                                    </Link>
-
-                                    <div className="h-[20px] border-l-[1px] mx-5 border-[#d0d3d7]"></div>
-                                    <Link href="#">
-                                        <p className="text-[#909090] font-medium">Schedule</p>
-                                    </Link>
-                                </div>
-
-
-                                <div className="flex mt-2 justify-end items-center space-x-2">
-                                    <img src="/assets/img/home/handshake.png" alt="" />
-                                    <Link href="#">
-                                        <span className="text-[#909090] font-medium">H2H</span>
-                                    </Link>
-                                </div>
-
-
-
-                            </div>
-                        </div>
 
                         {/* <!-- SCHEDULED match desktop view end -->
 

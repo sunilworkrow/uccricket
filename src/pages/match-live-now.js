@@ -42,7 +42,8 @@ const MatchLiveNow = () => {
         </div>
         <div className="border-t-[1px] border-[#E4E9F01A]">
           <div className="lg:w-[1000px] mx-auto md:py-9 tracking-[1px]">
-            <div className="md:flex py-8 justify-between items-center">
+
+            <div className="hidden md:flex py-8 justify-between items-center">
               <div className="flex gap-2 flex-row text-[#BDCCECA8] uppercase items-center w-full">
                 <img
                   className="lg:h-[42px] lg:w-[42px] h-[30px] w-[30px]"
@@ -84,6 +85,57 @@ const MatchLiveNow = () => {
                 />
               </div>
             </div>
+
+            <div className="md:hidden block bg-[white] p-4 rounded-md mb-4">
+              <div>
+                <div>
+                  <div className="flex items-center text-[14px] text-[#FE4848] font-semibold  relative">
+                    <img src="/assets/img/home/blinking-dot.gif" className="h-[15px]" alt="" />
+                    Live
+
+                  </div>
+
+                  <div className="flex items-center justify-between">
+
+                    <div className="flex gap-2 flex-row  uppercase items-center w-full">
+                      <img
+                        className="lg:h-[42px] lg:w-[42px] h-[40px] w-[40px]"
+                        src="/assets/img/flg-1.png"
+                        alt="ind"
+                      />
+                      <div className="flex flex-col items-start gap-0">
+                        <p className="text-[14px] font-semibold uppercase">
+                          IND
+                        </p>
+                        <p className="lg:text-[18px] text-[18px] font-semibold">
+                          139/4 <span className="text-[13px] font-medium">(42.0)</span>
+
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className='border-r-[1px] border-[#e5e5e5] h-[60px]'></div>
+
+                    <div className="w-full text-center">
+                      <h2 className="text-[24px] font-semibold text-[#342df2]">No Ball</h2>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between mt-3 text-[14px]">
+                    <p>CRR : <span>8.69</span></p>
+                    <p>Over left Today : <span>36.0</span></p>
+                  </div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -2269,33 +2321,14 @@ const MatchLiveNow = () => {
                         </div>
                       </div>
                     </div>
-                    <div className={`cust-box-click-content cust-box-click-oddsview mt-4 ${activeTab1 === 'cust-box-click-oddsview' ? "" : "hidden"}`}>
-                      <div>
-                        <div className="flex justify-between items-center">
-                          <p className="font-semibol">Day 4 : Session 3</p>
-                          <p className="text-[#909090]">
-                            Overs left today:{" "}
-                            <span className="font-semibol text-black">40.0</span>
-                          </p>
+                    <div className={`cust-box-click-content cust-box-click-oddsview mt-2 ${activeTab1 === 'cust-box-click-oddsview' ? "" : "hidden"}`}>
+                      <div className="flex justify-between items-center border-t-[1px] pt-2">
+                        <div className='text-1xl font-medium'>
+                          RR
                         </div>
-                        <div className="relative mt-4 h-[4px] bg-gray-200 overflow-hidden">
-                          <div
-                            className="absolute h-full bg-[#13b76dbd]"
-                            style={{ width: "40%" }}
-                          />
-                          <div
-                            className="absolute h-full bg-[#EB9D29]"
-                            style={{ width: "20%", left: "40%" }}
-                          ></div>
-                          <div
-                            className="absolute h-full bg-[#B7132B]"
-                            style={{ width: "40%", left: "60%" }}
-                          ></div>
-                        </div>
-                        <div className="flex justify-between mt-2 text-sm">
-                          <p className="text-green-600 font-medium">Ind: 40%</p>
-                          <p className="text-yellow-600 font-medium">Drew: 20%</p>
-                          <p className="text-red-600 font-medium">Ban: 40%</p>
+                        <div className="flex items-center gap-2">
+                          <p className="py-1 px-4 bg-orange-500 rounded-md text-white">41</p>
+                          <p className="py-1 px-4 bg-orange-500 rounded-md text-white">42</p>
                         </div>
                       </div>
                     </div>
@@ -3537,7 +3570,7 @@ const MatchLiveNow = () => {
                   </div>
                 </div>
               </div>
-              
+
             </div>
           </div>
           {/*------------------------  LIVE Seaction End ---------------------------*/}

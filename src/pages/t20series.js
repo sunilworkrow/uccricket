@@ -244,14 +244,14 @@ const T20Series = () => {
                 Stats
               </button>
             </Link>
-            <Link href="">
+            {/* <Link href="">
               <button
                 onclick="handleTabClick(event, 'stats')"
                 className="font-medium py-2 px-3 whitespace-nowrap"
               >
                 Stadiums
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -304,6 +304,7 @@ const T20Series = () => {
                   <div className="hidden lg:block">
                     <div className="py-3 flex justify-between items-center">
                       <div className="flex space-x-2 font-medium	w-full">
+                      <Link href="#">
                         <div className="flex items-center space-x-1 flex-col">
                           <img
                             src="/assets/img/wiw.png"
@@ -312,6 +313,7 @@ const T20Series = () => {
                           />
                           <span className="text-[#909090]">WIW</span>
                         </div>
+                        </Link>
                         <div className="mt-1">
                           <p className="text-1xl font-semibold">120/8</p>
                           <p className="text-[#909090]">(20.0 overs)</p>
@@ -328,6 +330,7 @@ const T20Series = () => {
                           <p className="text-1xl font-semibold">128/9</p>
                           <p className="text-[#909090]">(20.0 overs)</p>
                         </div>
+                        <Link href="#">
                         <div className="flex items-center space-x-1 flex-col font-medium">
                           <img
                             src="/assets/img/nz.png"
@@ -336,11 +339,13 @@ const T20Series = () => {
                           />
                           <span className="text-[#909090]">NZ-W</span>
                         </div>
+                        </Link>
                       </div>
                     </div>
                     <div className="border-t-[1px] border-[#E4E9F0]" />
                     <div className="py-3 flex justify-between items-center">
                       <div className="flex space-x-2 font-medium	w-full">
+                      <Link href="#">
                         <div className="flex items-center space-x-1 flex-col">
                           <img
                             src="/assets/img/eng.png"
@@ -349,6 +354,7 @@ const T20Series = () => {
                           />
                           <span className="text-[#909090]">AUSW</span>
                         </div>
+                        </Link>
                         <div className="mt-1">
                           <p className="text-1xl font-semibold">134/5</p>
                           <p className="text-[#909090]">(20.0 overs)</p>
@@ -365,6 +371,7 @@ const T20Series = () => {
                           <p className="text-1xl font-semibold">135/2</p>
                           <p className="text-[#909090]">(17.2 overs)</p>
                         </div>
+                        <Link href="#">
                         <div className="flex items-center space-x-1 flex-col font-medium">
                           <img
                             src="/assets/img/sa.png"
@@ -373,11 +380,13 @@ const T20Series = () => {
                           />
                           <span className="text-[#909090]">SA-W</span>
                         </div>
+                        </Link>
                       </div>
                     </div>
                     <div className="border-t-[1px] border-[#E4E9F0]" />
                     <div className="py-3 pb-0 flex justify-between items-center">
                       <div className="flex space-x-2 font-medium	w-full">
+                      <Link href="#">
                         <div className="flex items-center space-x-1 flex-row">
                           <img
                             src="/assets/img/wiw.png"
@@ -386,6 +395,7 @@ const T20Series = () => {
                           />
                           <span className="text-[#909090]">SA-W</span>
                         </div>
+                        </Link>
                       </div>
                       <div className=" font-semibold text-center w-full">
                         <p className="text-[#414143] text-[14px]">Final T20 on</p>
@@ -394,6 +404,7 @@ const T20Series = () => {
                         </p>
                       </div>
                       <div className="flex space-x-2 font-medium justify-end w-full">
+                      <Link href="#">
                         <div className="flex items-center gap-1 flex-row-reverse font-medium">
                           <img
                             src="/assets/img/nz.png"
@@ -402,6 +413,7 @@ const T20Series = () => {
                           />
                           <span className="text-[#909090]">NZ-W</span>
                         </div>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -414,6 +426,7 @@ const T20Series = () => {
                       <div className="flex justify-between items-center">
                         <div className="">
                           <div className="flex space-x-2 items-start font-medium w-[162px] md:w-full mb-3">
+                          <Link href="#">
                             <div className="flex items-center space-x-1 flex-col">
                               <img
                                 src="/assets/img/wiw.png"
@@ -422,12 +435,14 @@ const T20Series = () => {
                               />
                               <span className="text-[#909090]">WIW</span>
                             </div>
+                            </Link>
                             <div className="flex items-center gap-2 mt-1">
                               <p className="text-1xl font-semibold">120/8</p>
                               <p className="text-[#909090]">(20.0 overs)</p>
                             </div>
                           </div>
                           <div className="flex space-x-2 items-start font-medium w-[162px] md:w-full">
+                          <Link href="#">
                             <div className="flex items-center space-x-1 flex-col">
                               <img
                                 src="/assets/img/nz.png"
@@ -436,6 +451,7 @@ const T20Series = () => {
                               />
                               <span className="text-[#909090]">NZ-W</span>
                             </div>
+                            </Link>
                             <div className="flex items-center gap-2 mt-1">
                               <p className="text-1xl font-semibold">128/9</p>
                               <p className="text-[#909090]">(20.0 overs)</p>
@@ -455,6 +471,7 @@ const T20Series = () => {
                       <div className="flex justify-between items-center">
                         <div className="">
                           <div className="flex space-x-2 items-start font-medium w-[162px] md:w-full mb-3">
+                          <Link href="#">
                             <div className="flex items-center space-x-1 flex-col">
                               <img
                                 src="/assets/img/eng.png"
@@ -463,12 +480,14 @@ const T20Series = () => {
                               />
                               <span className="text-[#909090]">AUSW</span>
                             </div>
+                            </Link>
                             <div className="flex items-center gap-2 mt-1">
                               <p className="text-1xl font-semibold">134/5</p>
                               <p className="text-[#909090]">(20.0 overs)</p>
                             </div>
                           </div>
                           <div className="flex space-x-2 items-start font-medium w-[162px] md:w-full">
+                          <Link href="#">
                             <div className="flex items-center space-x-1 flex-col">
                               <img
                                 src="/assets/img/sa.png"
@@ -477,6 +496,7 @@ const T20Series = () => {
                               />
                               <span className="text-[#909090]">SA-W</span>
                             </div>
+                            </Link>
                             <div className="flex items-center gap-2 mt-1">
                               <p className="text-1xl font-semibold">135/2</p>
                               <p className="text-[#909090]">(17.2 overs)</p>
@@ -530,23 +550,7 @@ const T20Series = () => {
                       Key Stats
                     </h3>
                   </div>
-                  <div className="text-[#1A80F8] font-semibold flex items-center justify-center text-[13px] underline">
-                    View All Stats{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="size-3 ml-2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </div>
+                  
                 </div>
                 <div className="mb-4">
                   <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 items-center gap-2">
@@ -558,9 +562,11 @@ const T20Series = () => {
                           className="h-[45px]"
                           alt="A Kerr"
                         />
+                        <Link href="#">
                         <h3 className="mt-2 text-[14px] font-semibold">
                           L Wolvaardt
                         </h3>
+                        </Link>
                         <p className="text-[#909090]">South Africa-W</p>
                         <div className="flex items-center gap-2 mt-2">
                           <p className="text-[18px] font-semibold">190</p>
@@ -576,9 +582,11 @@ const T20Series = () => {
                           className="h-[45px]"
                           alt="A Kerr"
                         />
+                        <Link href="#">
                         <h3 className="mt-2 text-[14px] font-semibold">
                           L Wolvaardt
                         </h3>
+                        </Link>
                         <p className="text-[#909090]">A Bosch - SA-W</p>
                         <div className="flex items-center gap-2 mt-2">
                           <p className="text-[18px] font-semibold">74</p>
@@ -594,7 +602,9 @@ const T20Series = () => {
                           className="h-[45px]"
                           alt="A Kerr"
                         />
+                        <Link href="#">
                         <h3 className="mt-2 text-[14px] font-semibold">A Kerr</h3>
+                        </Link>
                         <p className="text-[#909090]">New Zealand-W</p>
                         <div className="flex items-center gap-2 mt-2">
                           <p className="text-[18px] font-semibold">12</p>
@@ -610,7 +620,9 @@ const T20Series = () => {
                           className="h-[45px]"
                           alt="A Kerr"
                         />
+                        <Link href="#">
                         <h3 className="mt-2 text-[14px] font-semibold">K Ramhar</h3>
+                        </Link>
                         <p className="text-[#909090]">West Indies-W</p>
                         <div className="flex items-center gap-2 mt-2">
                           <p className="text-[18px] font-semibold">17/4</p>
@@ -737,6 +749,7 @@ const T20Series = () => {
                     tournament received excellent response from the fans worldwide and
                     the finals of the gran...
                   </p>
+                  <Link href="#">
                   <p className="text-[#1A80F8] font-semibold flex items-center text-[13px] pt-2 underline">
                     Read more{" "}
                     <svg
@@ -754,6 +767,7 @@ const T20Series = () => {
                       />
                     </svg>
                   </p>
+                  </Link>
                 </div>
                 <div className="rounded-lg bg-[#ffffff] p-4 mb-4">
                   <h3 className="text-1xl font-semibold mb-2 pl-[7px] border-l-[3px] border-[#229ED3]">
@@ -1462,6 +1476,7 @@ const T20Series = () => {
                   </div>
                   <div className="bg-[#ffffff] rounded-lg ">
                     <div className="p-4">
+                    <Link href="#">
                       <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
                         <p className="text-[13px] font-semibold">
                           NZ-W Vs WI-W Highlights: Eden Carson, Amelia Kerr Pummel
@@ -1469,6 +1484,8 @@ const T20Series = () => {
                         </p>
                         <p className="text-[#586577] pt-2">15 hrs ago</p>
                       </div>
+                      </Link>
+                      <Link href="#">
                       <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
                         <p className="text-[13px] font-semibold">
                           Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
@@ -1476,6 +1493,8 @@ const T20Series = () => {
                         </p>
                         <p className="text-[#586577] pt-2">17 hrs ago</p>
                       </div>
+                      </Link>
+                      <Link href="#">
                       <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
                         <p className="text-[13px] font-semibold">
                           Women's T20 World Cup, NZ vs WI: Unchanged New Zealand Opt
@@ -1483,6 +1502,8 @@ const T20Series = () => {
                         </p>
                         <p className="text-[#586577] pt-2">19 hrs ago</p>
                       </div>
+                      </Link>
+                      <Link href="#">
                       <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
                         <p className="text-[13px] font-semibold">
                           SA Cricketers Get Emotional After Historic Win Against
@@ -1490,6 +1511,8 @@ const T20Series = () => {
                         </p>
                         <p className="text-[#586577] pt-2">18 Oct 2024</p>
                       </div>
+                      </Link>
+                      <Link href="#">
                       <div className=" pb-2 mb-2">
                         <p className="text-[13px] font-semibold">
                           'Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
@@ -1497,6 +1520,7 @@ const T20Series = () => {
                         </p>
                         <p className="text-[#586577] pt-2">18 Oct 2024</p>
                       </div>
+                      </Link>
                     </div>
                   </div>
                 </div>

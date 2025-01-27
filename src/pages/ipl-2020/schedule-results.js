@@ -27,28 +27,28 @@ export default function ScheduleResults() {
     return (
 
         <Layout>
-             <section className="bg-[#0E2149]">
+            <section className="bg-[#0E2149]">
                 <div className="lg:w-[1000px] mx-auto text-white pt-5 pb-10 " style={{ paddingTop: "37px" }}>
                     <div className="flex items-center justify-between md:p-4 max-w-6xl mx-auto">
                         {/* Left Arrow */}
                         <Link href="/iplseries">
-                        <button className="md:block hidden p-2 bg-gray-700 rounded-full hover:bg-gray-600">
-                            <svg
-                                className="w-6 h-6 text-white"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth={2}
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
+                            <button className="md:block hidden p-2 bg-gray-700 rounded-full hover:bg-gray-600">
+                                <svg
+                                    className="w-6 h-6 text-white"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    strokeWidth={2}
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
 
-                                    d="M15 19l-7-7 7-7"
-                                />
-                            </svg>
-                        </button>
+                                        d="M15 19l-7-7 7-7"
+                                    />
+                                </svg>
+                            </button>
                         </Link>
                         {/* Content Section */}
                         {/* Content Section full screen  */}
@@ -178,9 +178,9 @@ export default function ScheduleResults() {
                                     T20 - 34 Matches - 10 Teams | Mar 22 to May 26
                                 </p>
                                 <select className="border border-gray-500 rounded px-2 bg-[#0e2149]">
-                                        <option>2020</option>
-                                        <option>2021</option> 
-                                        
+                                    <option>2020</option>
+                                    <option>2021</option>
+
                                 </select>
                             </div>
                         </div>
@@ -203,67 +203,67 @@ export default function ScheduleResults() {
 
 
             <section className="lg:w-[1000px] mx-auto md:mb-0 mb-4 px-2 lg:px-0">
-            <div id="tabs" className="my-4">
-          <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
-            <Link href="/iplseries">
-              <button
-                onclick="handleTabClick(event, 'info')"
-                className="font-medium py-2 px-3 whitespace-nowrap "
-              >
-                Overview
-              </button>
-            </Link>
-            <Link href="/ipl-2020/schedule-results">
-              <button
-                onclick="handleTabClick(event, 'live')"
-                className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
-              >
-                Schedule & Results
+                <div id="tabs" className="my-4">
+                    <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
+                        <Link href="/iplseries">
+                            <button
+                                onclick="handleTabClick(event, 'info')"
+                                className="font-medium py-2 px-3 whitespace-nowrap "
+                            >
+                                Overview
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/schedule-results">
+                            <button
+                                onclick="handleTabClick(event, 'live')"
+                                className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
+                            >
+                                Schedule & Results
 
-              </button>
-            </Link>
-            <Link href="/ipl-2020/squads">
-              <button
-                onclick="handleTabClick(event, 'scorecard')"
-                className="font-medium py-2 px-3 whitespace-nowrap "
-              >
-                Squads
-              </button>
-            </Link>
-            <Link href="/ipl-2020/points-table">
-              <button
-                onclick="handleTabClick(event, 'overs')"
-                className="font-medium py-2 px-3 whitespace-nowrap"
-              >
-                Points Table
-              </button>
-            </Link>
-            <Link href="/ipl-2020/news">
-              <button
-                onclick="handleTabClick(event, 'points')"
-                className="font-medium py-2 px-3 whitespace-nowrap"
-              >
-                News
-              </button>
-            </Link>
-            <Link href="/ipl-2020/stats">
-              <button
-                onclick="handleTabClick(event, 'stats')"
-                className="font-medium py-2 px-3 whitespace-nowrap"
-              >
-                Stats
-              </button>
-            </Link>
-            <Link href="">
-              <button
-                onclick="handleTabClick(event, 'stats')"
-                className="font-medium py-2 px-3 whitespace-nowrap"
-              >
-                Stadiums
-              </button>
-            </Link>
-          </div>
-        </div>
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/squads">
+                            <button
+                                onclick="handleTabClick(event, 'scorecard')"
+                                className="font-medium py-2 px-3 whitespace-nowrap "
+                            >
+                                Squads
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/points-table">
+                            <button
+                                onclick="handleTabClick(event, 'overs')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Points Table
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/news">
+                            <button
+                                onclick="handleTabClick(event, 'points')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                News
+                            </button>
+                        </Link>
+                        <Link href="/ipl-2020/stats">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Stats
+                            </button>
+                        </Link>
+                        {/* <Link href="">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Stadiums
+                            </button>
+                        </Link> */}
+                    </div>
+                </div>
 
 
                 <div id="live"
@@ -1860,7 +1860,6 @@ export default function ScheduleResults() {
                             </div>
 
                             <WeeklySlider />
-
                             <div className=" my-4">
                                 <div className="py-2 mb-2">
                                     <h3 className="text-1xl font-semibold pl-[3px] border-l-[3px] border-[#1a80f8]">
@@ -1869,110 +1868,144 @@ export default function ScheduleResults() {
                                 </div>
                                 <div className="bg-[#ffffff] rounded-lg ">
                                     <div className="p-4">
-                                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                                            <p className="text-[13px] font-semibold">
-                                                NZ-W Vs WI-W Highlights: Eden Carson, Amelia Kerr Pummel
-                                                West Indies In Semis As NZ Set Date With SA
-                                            </p>
-                                            <p className="text-[#586577] pt-2">15 hrs ago</p>
-                                        </div>
-                                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                                            <p className="text-[13px] font-semibold">
-                                                Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
-                                                As SA Stuns AUS In T20 WC
-                                            </p>
-                                            <p className="text-[#586577] pt-2">17 hrs ago</p>
-                                        </div>
-                                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                                            <p className="text-[13px] font-semibold">
-                                                Women's T20 World Cup, NZ vs WI: Unchanged New Zealand Opt
-                                                To Bat; Check Out The Playing XIs
-                                            </p>
-                                            <p className="text-[#586577] pt-2">19 hrs ago</p>
-                                        </div>
-                                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                                            <p className="text-[13px] font-semibold">
-                                                SA Cricketers Get Emotional After Historic Win Against
-                                                Australia To Enter T20 World Cup 2024 Final - Watch
-                                            </p>
-                                            <p className="text-[#586577] pt-2">18 Oct 2024</p>
-                                        </div>
-                                        <div className=" pb-2 mb-2">
-                                            <p className="text-[13px] font-semibold">
-                                                'Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
-                                                As SA Stuns AUS In T20 WC
-                                            </p>
-                                            <p className="text-[#586577] pt-2">18 Oct 2024</p>
-                                        </div>
+                                        <Link href="#">
+                                            <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                                                <p className="text-[13px] font-semibold">
+                                                    NZ-W Vs WI-W Highlights: Eden Carson, Amelia Kerr Pummel
+                                                    West Indies In Semis As NZ Set Date With SA
+                                                </p>
+                                                <p className="text-[#586577] pt-2">15 hrs ago</p>
+                                            </div>
+                                        </Link>
+                                        <Link href="#">
+                                            <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                                                <p className="text-[13px] font-semibold">
+                                                    Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
+                                                    As SA Stuns AUS In T20 WC
+                                                </p>
+                                                <p className="text-[#586577] pt-2">17 hrs ago</p>
+                                            </div>
+                                        </Link>
+                                        <Link href="#">
+                                            <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                                                <p className="text-[13px] font-semibold">
+                                                    Women's T20 World Cup, NZ vs WI: Unchanged New Zealand Opt
+                                                    To Bat; Check Out The Playing XIs
+                                                </p>
+                                                <p className="text-[#586577] pt-2">19 hrs ago</p>
+                                            </div>
+                                        </Link>
+                                        <Link href="#">
+                                            <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                                                <p className="text-[13px] font-semibold">
+                                                    SA Cricketers Get Emotional After Historic Win Against
+                                                    Australia To Enter T20 World Cup 2024 Final - Watch
+                                                </p>
+                                                <p className="text-[#586577] pt-2">18 Oct 2024</p>
+                                            </div>
+                                        </Link>
+                                        <Link href="#">
+                                            <div className=" pb-2 mb-2">
+                                                <p className="text-[13px] font-semibold">
+                                                    'Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
+                                                    As SA Stuns AUS In T20 WC
+                                                </p>
+                                                <p className="text-[#586577] pt-2">18 Oct 2024</p>
+                                            </div>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
                             <div className=" pb-2 my-4">
-                                <div className="py-2 mb-2">
+                                <div className="py-2">
                                     <h3 className="text-1xl font-semibold pl-[3px] border-l-[3px] border-[#1a80f8]">
-                                        POPULAR
-                                    </h3>
+                                        POPULAR</h3>
+
                                 </div>
                                 <div className="">
-                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2">
-                                        <div>
-                                            <img src="/assets/img/1.png" alt="" />
+                                    <Link href="/t20series">
+                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2">
+                                            <div>
+                                                <img src="/assets/img/1.png" alt="" />
+                                            </div>
+                                            <div className="font-medium text-[#394351]">
+                                                ICC World cup
+                                            </div>
                                         </div>
-                                        <div className="font-medium text-[#394351]">ICC World cup</div>
-                                    </div>
-                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                        <div>
-                                            <img src="/assets/img/2.png" alt="" />
+                                    </Link>
+                                    <Link href="/t20series">
+                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                            <div>
+                                                <img src="/assets/img/2.png" alt="" />
+                                            </div>
+                                            <div className="font-medium text-[#394351]">
+                                                ICC Champion Trophy
+                                            </div>
                                         </div>
-                                        <div className="font-medium text-[#394351]">
-                                            ICC Champion Trophy
+                                    </Link>
+                                    <Link href="/t20series">
+                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                            <div>
+                                                <img src="/assets/img/3.png" alt="" />
+                                            </div>
+                                            <div className="font-medium text-[#394351]">
+                                                T20 World Cup
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                        <div>
-                                            <img src="/assets/img/3.png" alt="" />
+                                    </Link>
+                                    <Link href="/t20series">
+                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                            <div>
+                                                <img src="/assets/img/4.png" alt="" />
+                                            </div>
+                                            <div className="font-medium text-[#394351]">
+                                                Indian Premium League
+                                            </div>
                                         </div>
-                                        <div className="font-medium text-[#394351]">T20 World Cup</div>
-                                    </div>
-                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                        <div>
-                                            <img src="/assets/img/4.png" alt="" />
+                                    </Link>
+                                    <Link href="/t20series">
+                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                            <div>
+                                                <img src="/assets/img/5.png" alt="" />
+                                            </div>
+                                            <div className="font-medium text-[#394351]">
+                                                Pakistan Super League
+                                            </div>
                                         </div>
-                                        <div className="font-medium text-[#394351]">
-                                            Indian Premium League
+                                    </Link>
+                                    <Link href="/t20series">
+                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                            <div>
+                                                <img src="/assets/img/6.png" alt="" />
+                                            </div>
+                                            <div className="font-medium text-[#394351]">
+                                                Bangladesh Premium Leaguge
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                        <div>
-                                            <img src="/assets/img/5.png" alt="" />
+                                    </Link>
+                                    <Link href="/t20series">
+                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
+                                            <div>
+                                                <img src="/assets/img/7.png" alt="" />
+                                            </div>
+                                            <div className="font-medium text-[#394351]">
+                                                Big Bash Leaguge
+                                            </div>
                                         </div>
-                                        <div className="font-medium text-[#394351]">
-                                            Pakistan Super League
+                                    </Link>
+                                    <Link href="/t20series">
+                                        <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3">
+                                            <div>
+                                                <img src="/assets/img/8.png" alt="" />
+                                            </div>
+                                            <div className="font-medium text-[#394351]">
+                                                Super Smash
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                        <div>
-                                            <img src="/assets/img/6.png" alt="" />
-                                        </div>
-                                        <div className="font-medium text-[#394351]">
-                                            Bangladesh Premium Leaguge
-                                        </div>
-                                    </div>
-                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
-                                        <div>
-                                            <img src="/assets/img/7.png" alt="" />
-                                        </div>
-                                        <div className="font-medium text-[#394351]">
-                                            Big Bash Leaguge
-                                        </div>
-                                    </div>
-                                    <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3">
-                                        <div>
-                                            <img src="/assets/img/8.png" alt="" />
-                                        </div>
-                                        <div className="font-medium text-[#394351]">Super Smash</div>
-                                    </div>
+                                    </Link>
+
                                 </div>
+
                             </div>
                         </div>
                     </div>

@@ -253,14 +253,14 @@ export default function ScheduleResults() {
                                 Stats
                             </button>
                         </Link>
-                        <Link href="">
+                        {/* <Link href="">
                             <button
                                 onclick="handleTabClick(event, 'stats')"
                                 className="font-medium py-2 px-3 whitespace-nowrap"
                             >
                                 Stadiums
                             </button>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
 
@@ -1861,64 +1861,79 @@ export default function ScheduleResults() {
                             <WeeklySlider />
 
                             <div className=" my-4">
-                                <div className="py-2 mb-2">
-                                    <h3 className="text-1xl font-semibold pl-[3px] border-l-[3px] border-[#1a80f8]">
-                                        Fantasy Tips
-                                    </h3>
-                                </div>
-                                <div className="bg-[#ffffff] rounded-lg ">
-                                    <div className="p-4">
-                                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                                            <p className="text-[13px] font-semibold">
-                                                NZ-W Vs WI-W Highlights: Eden Carson, Amelia Kerr Pummel
-                                                West Indies In Semis As NZ Set Date With SA
-                                            </p>
-                                            <p className="text-[#586577] pt-2">15 hrs ago</p>
-                                        </div>
-                                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                                            <p className="text-[13px] font-semibold">
-                                                Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
-                                                As SA Stuns AUS In T20 WC
-                                            </p>
-                                            <p className="text-[#586577] pt-2">17 hrs ago</p>
-                                        </div>
-                                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                                            <p className="text-[13px] font-semibold">
-                                                Women's T20 World Cup, NZ vs WI: Unchanged New Zealand Opt
-                                                To Bat; Check Out The Playing XIs
-                                            </p>
-                                            <p className="text-[#586577] pt-2">19 hrs ago</p>
-                                        </div>
-                                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                                            <p className="text-[13px] font-semibold">
-                                                SA Cricketers Get Emotional After Historic Win Against
-                                                Australia To Enter T20 World Cup 2024 Final - Watch
-                                            </p>
-                                            <p className="text-[#586577] pt-2">18 Oct 2024</p>
-                                        </div>
-                                        <div className=" pb-2 mb-2">
-                                            <p className="text-[13px] font-semibold">
-                                                'Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
-                                                As SA Stuns AUS In T20 WC
-                                            </p>
-                                            <p className="text-[#586577] pt-2">18 Oct 2024</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                  <div className="py-2 mb-2">
+                    <h3 className="text-1xl font-semibold pl-[3px] border-l-[3px] border-[#1a80f8]">
+                      Fantasy Tips
+                    </h3>
+                  </div>
+                  <div className="bg-[#ffffff] rounded-lg ">
+                    <div className="p-4">
+                    <Link href="#">
+                      <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                        <p className="text-[13px] font-semibold">
+                          NZ-W Vs WI-W Highlights: Eden Carson, Amelia Kerr Pummel
+                          West Indies In Semis As NZ Set Date With SA
+                        </p>
+                        <p className="text-[#586577] pt-2">15 hrs ago</p>
+                      </div>
+                      </Link>
+                      <Link href="#">
+                      <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                        <p className="text-[13px] font-semibold">
+                          Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
+                          As SA Stuns AUS In T20 WC
+                        </p>
+                        <p className="text-[#586577] pt-2">17 hrs ago</p>
+                      </div>
+                      </Link>
+                      <Link href="#">
+                      <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                        <p className="text-[13px] font-semibold">
+                          Women's T20 World Cup, NZ vs WI: Unchanged New Zealand Opt
+                          To Bat; Check Out The Playing XIs
+                        </p>
+                        <p className="text-[#586577] pt-2">19 hrs ago</p>
+                      </div>
+                      </Link>
+                      <Link href="#">
+                      <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                        <p className="text-[13px] font-semibold">
+                          SA Cricketers Get Emotional After Historic Win Against
+                          Australia To Enter T20 World Cup 2024 Final - Watch
+                        </p>
+                        <p className="text-[#586577] pt-2">18 Oct 2024</p>
+                      </div>
+                      </Link>
+                      <Link href="#">
+                      <div className=" pb-2 mb-2">
+                        <p className="text-[13px] font-semibold">
+                          'Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
+                          As SA Stuns AUS In T20 WC
+                        </p>
+                        <p className="text-[#586577] pt-2">18 Oct 2024</p>
+                      </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
                             <div className=" pb-2 my-4">
-                                <div className="py-2 mb-2">
-                                    <h3 className="text-1xl font-semibold pl-[3px] border-l-[3px] border-[#1a80f8]">
-                                        POPULAR
-                                    </h3>
-                                </div>
-                                <div className="">
+                            <div className="py-2">
+                                <h3 className="text-1xl font-semibold pl-[3px] border-l-[3px] border-[#1a80f8]">
+                                    POPULAR</h3>
+
+                            </div>
+                            <div className="">
+                                <Link href="/t20series">
                                     <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2">
                                         <div>
                                             <img src="/assets/img/1.png" alt="" />
                                         </div>
-                                        <div className="font-medium text-[#394351]">ICC World cup</div>
+                                        <div className="font-medium text-[#394351]">
+                                            ICC World cup
+                                        </div>
                                     </div>
+                                </Link>
+                                <Link href="/t20series">
                                     <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
                                         <div>
                                             <img src="/assets/img/2.png" alt="" />
@@ -1927,12 +1942,18 @@ export default function ScheduleResults() {
                                             ICC Champion Trophy
                                         </div>
                                     </div>
+                                </Link>
+                                <Link href="/t20series">
                                     <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
                                         <div>
                                             <img src="/assets/img/3.png" alt="" />
                                         </div>
-                                        <div className="font-medium text-[#394351]">T20 World Cup</div>
+                                        <div className="font-medium text-[#394351]">
+                                            T20 World Cup
+                                        </div>
                                     </div>
+                                </Link>
+                                <Link href="/t20series">
                                     <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
                                         <div>
                                             <img src="/assets/img/4.png" alt="" />
@@ -1941,6 +1962,8 @@ export default function ScheduleResults() {
                                             Indian Premium League
                                         </div>
                                     </div>
+                                </Link>
+                                <Link href="/t20series">
                                     <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
                                         <div>
                                             <img src="/assets/img/5.png" alt="" />
@@ -1949,6 +1972,8 @@ export default function ScheduleResults() {
                                             Pakistan Super League
                                         </div>
                                     </div>
+                                </Link>
+                                <Link href="/t20series">
                                     <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
                                         <div>
                                             <img src="/assets/img/6.png" alt="" />
@@ -1957,6 +1982,8 @@ export default function ScheduleResults() {
                                             Bangladesh Premium Leaguge
                                         </div>
                                     </div>
+                                </Link>
+                                <Link href="/t20series">
                                     <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3 mb-2 ">
                                         <div>
                                             <img src="/assets/img/7.png" alt="" />
@@ -1965,14 +1992,21 @@ export default function ScheduleResults() {
                                             Big Bash Leaguge
                                         </div>
                                     </div>
+                                </Link>
+                                <Link href="/t20series">
                                     <div className="bg-[#ffffff] text-[14px] rounded-lg px-4 flex items-center space-x-3 py-3">
                                         <div>
                                             <img src="/assets/img/8.png" alt="" />
                                         </div>
-                                        <div className="font-medium text-[#394351]">Super Smash</div>
+                                        <div className="font-medium text-[#394351]">
+                                            Super Smash
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
+
                             </div>
+
+                        </div>
                         </div>
                     </div>
                 </div>
