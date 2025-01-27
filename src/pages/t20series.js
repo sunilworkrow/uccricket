@@ -1,7 +1,9 @@
 import Layout from '@/Components/Layout'
 import Link from 'next/link';
-import React, { useState } from 'react'
+
 import { useRouter } from 'next/router';
+import React, { useRef, useState } from "react";
+
 
 
 const T20Series = () => {
@@ -12,6 +14,35 @@ const T20Series = () => {
     const selectedValue = event.target.value;
     if (selectedValue) {
       router.push(selectedValue);
+    }
+  };
+
+
+  const sliderRef = useRef(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const images = [
+    { src: "/assets/img/series/series-1.png", url: "/t20series" },
+    { src: "/assets/img/series/ipl.png", url: "/iplseries" },
+    { src: "/assets/img/series/series-1.png", url: "/t20series" },
+    { src: "/assets/img/series/ipl.png", url: "/iplseries" },
+    { src: "/assets/img/series/series-1.png", url: "/t20series" },
+    { src: "/assets/img/series/ipl.png", url: "/iplseries" },
+  ];
+
+  const handleScroll = (direction) => {
+    const slider = sliderRef.current;
+    const slideWidth = slider.children[0].offsetWidth + 15; // Width of 1 slide + gap
+    if (direction === "right") {
+      if (scrollPosition < images.length - 5) {
+        setScrollPosition(scrollPosition + 1);
+        slider.scrollBy({ left: slideWidth, behavior: "smooth" });
+      }
+    } else if (direction === "left") {
+      if (scrollPosition > 0) {
+        setScrollPosition(scrollPosition - 1);
+        slider.scrollBy({ left: -slideWidth, behavior: "smooth" });
+      }
     }
   };
 
@@ -77,11 +108,17 @@ const T20Series = () => {
               </div>
             </div>
             {/* Content Section mobile screen  */}
+
+
             <div className="md:hidden">
-              <div className=" relative">
+
+              <div className="relative">
+                {/* Left Arrow */}
                 <button
                   id="left-arrow"
-                  className="absolute left-[6px] top-1/2 -translate-y-1/2  bg-[#ffffff] p-[7px] rounded-full border-2 hidden"
+                  className={`absolute left-[6px] top-1/2 -translate-y-1/2 bg-[#ffffff] p-[7px] rounded-full border-2 ${scrollPosition === 0 ? "hidden" : ""
+                    }`}
+                  onClick={() => handleScroll("left")}
                   style={{ zIndex: 1 }}
                 >
                   <span className="text-[20px] font-bold">
@@ -101,44 +138,31 @@ const T20Series = () => {
                     </svg>
                   </span>
                 </button>
-                <div className="relative overflow-hidden mx-6">
-                  {/* Left Arrow */}
-                  {/* series Wrapper */}
+
+                {/* Slider */}
+                <div className="relative overflow-hidden mx-4">
                   <div
                     id="series"
-                    className="flex gap-3 transition-transform duration-300"
+                    ref={sliderRef}
+                    className="flex gap-3 transition-transform duration-300 overflow-x-hidden"
                   >
-                    <div className="flex-none w-1/5">
-                      <a href="#">
-                        <img src="/assets/img/series/series-1.png" className="" alt="" />
-                      </a>
-                    </div>
-                    <div className="flex-none w-1/5">
-                      <a href="#">
-                        <img src="/assets/img/series/series-1.png" className="" alt="" />
-                      </a>
-                    </div>
-                    <div className="flex-none w-1/5">
-                      <a href="#">
-                        <img src="/assets/img/series/series-1.png" className="" alt="" />
-                      </a>
-                    </div>
-                    <div className="flex-none w-1/5">
-                      <a href="#">
-                        <img src="/assets/img/series/series-1.png" className="" alt="" />
-                      </a>
-                    </div>
-                    <div className="flex-none w-1/5">
-                      <a href="#">
-                        <img src="/assets/img/series/series-1.png" className="" alt="" />
-                      </a>
-                    </div>
+                    {images.map((image, index) => (
+                      <div key={index} className="flex-none w-1/5">
+                        <a href={image.url} target="_blank" rel="noopener noreferrer">
+                          <img src={image.src} alt={`series-${index + 1}`} />
+                        </a>
+                      </div>
+                    ))}
                   </div>
-                  {/* Right Arrow */}
                 </div>
+
+                {/* Right Arrow */}
                 <button
                   id="right-arrow"
-                  className="absolute right-[6px] top-1/2 -translate-y-1/2 bg-[#ffffff] p-[7px] rounded-full border-2"
+                  className={`absolute right-[31px] top-1/2 -translate-y-1/2 bg-[#ffffff] p-[7px] rounded-full border-2 ${scrollPosition >= images.length - 5 ? "hidden" : ""
+                    }`}
+                  onClick={() => handleScroll("right")}
+                  style={{ zIndex: 1 }}
                 >
                   <span className="text-[20px] font-bold">
                     <svg
@@ -158,6 +182,8 @@ const T20Series = () => {
                   </span>
                 </button>
               </div>
+
+
               <div className="px-4 mt-5">
                 <h2 className="text-[17px] font-semibold">
                   Women's T20 World Cup 2020
@@ -171,7 +197,8 @@ const T20Series = () => {
                 </select>
               </div>
             </div>
-            {/* Right Arrow */}
+
+
             <Link href="/iplseries">
               <button className="md:block hidden p-2 bg-gray-700 rounded-full hover:bg-gray-600">
                 <svg
@@ -304,15 +331,15 @@ const T20Series = () => {
                   <div className="hidden lg:block">
                     <div className="py-3 flex justify-between items-center">
                       <div className="flex space-x-2 font-medium	w-full">
-                      <Link href="#">
-                        <div className="flex items-center space-x-1 flex-col">
-                          <img
-                            src="/assets/img/wiw.png"
-                            className="h-[30px] rounded-full"
-                            alt="wiw"
-                          />
-                          <span className="text-[#909090]">WIW</span>
-                        </div>
+                        <Link href="#">
+                          <div className="flex items-center space-x-1 flex-col">
+                            <img
+                              src="/assets/img/wiw.png"
+                              className="h-[30px] rounded-full"
+                              alt="wiw"
+                            />
+                            <span className="text-[#909090]">WIW</span>
+                          </div>
                         </Link>
                         <div className="mt-1">
                           <p className="text-1xl font-semibold">120/8</p>
@@ -331,29 +358,29 @@ const T20Series = () => {
                           <p className="text-[#909090]">(20.0 overs)</p>
                         </div>
                         <Link href="#">
-                        <div className="flex items-center space-x-1 flex-col font-medium">
-                          <img
-                            src="/assets/img/nz.png"
-                            className="h-[30px] rounded-full"
-                            alt="nz"
-                          />
-                          <span className="text-[#909090]">NZ-W</span>
-                        </div>
+                          <div className="flex items-center space-x-1 flex-col font-medium">
+                            <img
+                              src="/assets/img/nz.png"
+                              className="h-[30px] rounded-full"
+                              alt="nz"
+                            />
+                            <span className="text-[#909090]">NZ-W</span>
+                          </div>
                         </Link>
                       </div>
                     </div>
                     <div className="border-t-[1px] border-[#E4E9F0]" />
                     <div className="py-3 flex justify-between items-center">
                       <div className="flex space-x-2 font-medium	w-full">
-                      <Link href="#">
-                        <div className="flex items-center space-x-1 flex-col">
-                          <img
-                            src="/assets/img/eng.png"
-                            className="h-[30px] rounded-full"
-                            alt="wiw"
-                          />
-                          <span className="text-[#909090]">AUSW</span>
-                        </div>
+                        <Link href="#">
+                          <div className="flex items-center space-x-1 flex-col">
+                            <img
+                              src="/assets/img/eng.png"
+                              className="h-[30px] rounded-full"
+                              alt="wiw"
+                            />
+                            <span className="text-[#909090]">AUSW</span>
+                          </div>
                         </Link>
                         <div className="mt-1">
                           <p className="text-1xl font-semibold">134/5</p>
@@ -372,29 +399,29 @@ const T20Series = () => {
                           <p className="text-[#909090]">(17.2 overs)</p>
                         </div>
                         <Link href="#">
-                        <div className="flex items-center space-x-1 flex-col font-medium">
-                          <img
-                            src="/assets/img/sa.png"
-                            className="h-[30px] rounded-full"
-                            alt="nz"
-                          />
-                          <span className="text-[#909090]">SA-W</span>
-                        </div>
+                          <div className="flex items-center space-x-1 flex-col font-medium">
+                            <img
+                              src="/assets/img/sa.png"
+                              className="h-[30px] rounded-full"
+                              alt="nz"
+                            />
+                            <span className="text-[#909090]">SA-W</span>
+                          </div>
                         </Link>
                       </div>
                     </div>
                     <div className="border-t-[1px] border-[#E4E9F0]" />
                     <div className="py-3 pb-0 flex justify-between items-center">
                       <div className="flex space-x-2 font-medium	w-full">
-                      <Link href="#">
-                        <div className="flex items-center space-x-1 flex-row">
-                          <img
-                            src="/assets/img/wiw.png"
-                            className="h-[30px] rounded-full"
-                            alt="wiw"
-                          />
-                          <span className="text-[#909090]">SA-W</span>
-                        </div>
+                        <Link href="#">
+                          <div className="flex items-center space-x-1 flex-row">
+                            <img
+                              src="/assets/img/wiw.png"
+                              className="h-[30px] rounded-full"
+                              alt="wiw"
+                            />
+                            <span className="text-[#909090]">SA-W</span>
+                          </div>
                         </Link>
                       </div>
                       <div className=" font-semibold text-center w-full">
@@ -404,15 +431,15 @@ const T20Series = () => {
                         </p>
                       </div>
                       <div className="flex space-x-2 font-medium justify-end w-full">
-                      <Link href="#">
-                        <div className="flex items-center gap-1 flex-row-reverse font-medium">
-                          <img
-                            src="/assets/img/nz.png"
-                            className="h-[30px] rounded-full"
-                            alt="nz"
-                          />
-                          <span className="text-[#909090]">NZ-W</span>
-                        </div>
+                        <Link href="#">
+                          <div className="flex items-center gap-1 flex-row-reverse font-medium">
+                            <img
+                              src="/assets/img/nz.png"
+                              className="h-[30px] rounded-full"
+                              alt="nz"
+                            />
+                            <span className="text-[#909090]">NZ-W</span>
+                          </div>
                         </Link>
                       </div>
                     </div>
@@ -426,15 +453,15 @@ const T20Series = () => {
                       <div className="flex justify-between items-center">
                         <div className="">
                           <div className="flex space-x-2 items-start font-medium w-[162px] md:w-full mb-3">
-                          <Link href="#">
-                            <div className="flex items-center space-x-1 flex-col">
-                              <img
-                                src="/assets/img/wiw.png"
-                                className="h-[25px] rounded-full"
-                                alt="wiw"
-                              />
-                              <span className="text-[#909090]">WIW</span>
-                            </div>
+                            <Link href="#">
+                              <div className="flex items-center space-x-1 flex-col">
+                                <img
+                                  src="/assets/img/wiw.png"
+                                  className="h-[25px] rounded-full"
+                                  alt="wiw"
+                                />
+                                <span className="text-[#909090]">WIW</span>
+                              </div>
                             </Link>
                             <div className="flex items-center gap-2 mt-1">
                               <p className="text-1xl font-semibold">120/8</p>
@@ -442,15 +469,15 @@ const T20Series = () => {
                             </div>
                           </div>
                           <div className="flex space-x-2 items-start font-medium w-[162px] md:w-full">
-                          <Link href="#">
-                            <div className="flex items-center space-x-1 flex-col">
-                              <img
-                                src="/assets/img/nz.png"
-                                className="h-[25px] rounded-full"
-                                alt="wiw"
-                              />
-                              <span className="text-[#909090]">NZ-W</span>
-                            </div>
+                            <Link href="#">
+                              <div className="flex items-center space-x-1 flex-col">
+                                <img
+                                  src="/assets/img/nz.png"
+                                  className="h-[25px] rounded-full"
+                                  alt="wiw"
+                                />
+                                <span className="text-[#909090]">NZ-W</span>
+                              </div>
                             </Link>
                             <div className="flex items-center gap-2 mt-1">
                               <p className="text-1xl font-semibold">128/9</p>
@@ -471,15 +498,15 @@ const T20Series = () => {
                       <div className="flex justify-between items-center">
                         <div className="">
                           <div className="flex space-x-2 items-start font-medium w-[162px] md:w-full mb-3">
-                          <Link href="#">
-                            <div className="flex items-center space-x-1 flex-col">
-                              <img
-                                src="/assets/img/eng.png"
-                                className="h-[25px] rounded-full"
-                                alt="wiw"
-                              />
-                              <span className="text-[#909090]">AUSW</span>
-                            </div>
+                            <Link href="#">
+                              <div className="flex items-center space-x-1 flex-col">
+                                <img
+                                  src="/assets/img/eng.png"
+                                  className="h-[25px] rounded-full"
+                                  alt="wiw"
+                                />
+                                <span className="text-[#909090]">AUSW</span>
+                              </div>
                             </Link>
                             <div className="flex items-center gap-2 mt-1">
                               <p className="text-1xl font-semibold">134/5</p>
@@ -487,15 +514,15 @@ const T20Series = () => {
                             </div>
                           </div>
                           <div className="flex space-x-2 items-start font-medium w-[162px] md:w-full">
-                          <Link href="#">
-                            <div className="flex items-center space-x-1 flex-col">
-                              <img
-                                src="/assets/img/sa.png"
-                                className="h-[25px] rounded-full"
-                                alt="wiw"
-                              />
-                              <span className="text-[#909090]">SA-W</span>
-                            </div>
+                            <Link href="#">
+                              <div className="flex items-center space-x-1 flex-col">
+                                <img
+                                  src="/assets/img/sa.png"
+                                  className="h-[25px] rounded-full"
+                                  alt="wiw"
+                                />
+                                <span className="text-[#909090]">SA-W</span>
+                              </div>
                             </Link>
                             <div className="flex items-center gap-2 mt-1">
                               <p className="text-1xl font-semibold">135/2</p>
@@ -550,7 +577,7 @@ const T20Series = () => {
                       Key Stats
                     </h3>
                   </div>
-                  
+
                 </div>
                 <div className="mb-4">
                   <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 items-center gap-2">
@@ -563,9 +590,9 @@ const T20Series = () => {
                           alt="A Kerr"
                         />
                         <Link href="#">
-                        <h3 className="mt-2 text-[14px] font-semibold">
-                          L Wolvaardt
-                        </h3>
+                          <h3 className="mt-2 text-[14px] font-semibold">
+                            L Wolvaardt
+                          </h3>
                         </Link>
                         <p className="text-[#909090]">South Africa-W</p>
                         <div className="flex items-center gap-2 mt-2">
@@ -583,9 +610,9 @@ const T20Series = () => {
                           alt="A Kerr"
                         />
                         <Link href="#">
-                        <h3 className="mt-2 text-[14px] font-semibold">
-                          L Wolvaardt
-                        </h3>
+                          <h3 className="mt-2 text-[14px] font-semibold">
+                            L Wolvaardt
+                          </h3>
                         </Link>
                         <p className="text-[#909090]">A Bosch - SA-W</p>
                         <div className="flex items-center gap-2 mt-2">
@@ -603,7 +630,7 @@ const T20Series = () => {
                           alt="A Kerr"
                         />
                         <Link href="#">
-                        <h3 className="mt-2 text-[14px] font-semibold">A Kerr</h3>
+                          <h3 className="mt-2 text-[14px] font-semibold">A Kerr</h3>
                         </Link>
                         <p className="text-[#909090]">New Zealand-W</p>
                         <div className="flex items-center gap-2 mt-2">
@@ -621,7 +648,7 @@ const T20Series = () => {
                           alt="A Kerr"
                         />
                         <Link href="#">
-                        <h3 className="mt-2 text-[14px] font-semibold">K Ramhar</h3>
+                          <h3 className="mt-2 text-[14px] font-semibold">K Ramhar</h3>
                         </Link>
                         <p className="text-[#909090]">West Indies-W</p>
                         <div className="flex items-center gap-2 mt-2">
@@ -638,104 +665,104 @@ const T20Series = () => {
                   <div className="border-t-[1px] border-[#E4E9F0]" />
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mt-5">
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-1.png"
-                        alt="Pakistan-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">Pakistan-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-1.png"
+                          alt="Pakistan-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">Pakistan-W</p>
+                      </div>
                     </Link>
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-2.png"
-                        alt="West Indies-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">West Indies-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-2.png"
+                          alt="West Indies-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">West Indies-W</p>
+                      </div>
                     </Link>
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-3.png"
-                        alt="Australia-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">Australia-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-3.png"
+                          alt="Australia-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">Australia-W</p>
+                      </div>
                     </Link>
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-4.png"
-                        alt="Scotland-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">Scotland-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-4.png"
+                          alt="Scotland-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">Scotland-W</p>
+                      </div>
                     </Link>
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-5.png"
-                        alt="South Africa-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">South Africa-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-5.png"
+                          alt="South Africa-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">South Africa-W</p>
+                      </div>
                     </Link>
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-6.png"
-                        alt="New Zealand-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">New Zealand-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-6.png"
+                          alt="New Zealand-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">New Zealand-W</p>
+                      </div>
                     </Link>
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-7.png"
-                        alt="Sri Lanka-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">Sri Lanka-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-7.png"
+                          alt="Sri Lanka-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">Sri Lanka-W</p>
+                      </div>
                     </Link>
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-8.png"
-                        alt="India-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">India-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-8.png"
+                          alt="India-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">India-W</p>
+                      </div>
                     </Link>
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-9.png"
-                        alt="England-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">England-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-9.png"
+                          alt="England-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">England-W</p>
+                      </div>
                     </Link>
                     <Link href="/team">
-                    <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
-                      <img
-                        src="/assets/img/flag/b-10.png"
-                        alt="Bangladesh-W"
-                        className="h-[42px] mb-2"
-                      />
-                      <p className="font-medium">Bangladesh-W</p>
-                    </div>
+                      <div className="border-[1px] border-[##E2E2E2] rounded-md py-4 px-2 flex flex-col items-center">
+                        <img
+                          src="/assets/img/flag/b-10.png"
+                          alt="Bangladesh-W"
+                          className="h-[42px] mb-2"
+                        />
+                        <p className="font-medium">Bangladesh-W</p>
+                      </div>
                     </Link>
                   </div>
                 </div>
@@ -750,23 +777,23 @@ const T20Series = () => {
                     the finals of the gran...
                   </p>
                   <Link href="#">
-                  <p className="text-[#1A80F8] font-semibold flex items-center text-[13px] pt-2 underline">
-                    Read more{" "}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="currentColor"
-                      className="size-3 ml-2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
-                      />
-                    </svg>
-                  </p>
+                    <p className="text-[#1A80F8] font-semibold flex items-center text-[13px] pt-2 underline">
+                      Read more{" "}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="size-3 ml-2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+                        />
+                      </svg>
+                    </p>
                   </Link>
                 </div>
                 <div className="rounded-lg bg-[#ffffff] p-4 mb-4">
@@ -1476,50 +1503,50 @@ const T20Series = () => {
                   </div>
                   <div className="bg-[#ffffff] rounded-lg ">
                     <div className="p-4">
-                    <Link href="#">
-                      <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                        <p className="text-[13px] font-semibold">
-                          NZ-W Vs WI-W Highlights: Eden Carson, Amelia Kerr Pummel
-                          West Indies In Semis As NZ Set Date With SA
-                        </p>
-                        <p className="text-[#586577] pt-2">15 hrs ago</p>
-                      </div>
+                      <Link href="#">
+                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                          <p className="text-[13px] font-semibold">
+                            NZ-W Vs WI-W Highlights: Eden Carson, Amelia Kerr Pummel
+                            West Indies In Semis As NZ Set Date With SA
+                          </p>
+                          <p className="text-[#586577] pt-2">15 hrs ago</p>
+                        </div>
                       </Link>
                       <Link href="#">
-                      <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                        <p className="text-[13px] font-semibold">
-                          Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
-                          As SA Stuns AUS In T20 WC
-                        </p>
-                        <p className="text-[#586577] pt-2">17 hrs ago</p>
-                      </div>
+                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                          <p className="text-[13px] font-semibold">
+                            Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
+                            As SA Stuns AUS In T20 WC
+                          </p>
+                          <p className="text-[#586577] pt-2">17 hrs ago</p>
+                        </div>
                       </Link>
                       <Link href="#">
-                      <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                        <p className="text-[13px] font-semibold">
-                          Women's T20 World Cup, NZ vs WI: Unchanged New Zealand Opt
-                          To Bat; Check Out The Playing XIs
-                        </p>
-                        <p className="text-[#586577] pt-2">19 hrs ago</p>
-                      </div>
+                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                          <p className="text-[13px] font-semibold">
+                            Women's T20 World Cup, NZ vs WI: Unchanged New Zealand Opt
+                            To Bat; Check Out The Playing XIs
+                          </p>
+                          <p className="text-[#586577] pt-2">19 hrs ago</p>
+                        </div>
                       </Link>
                       <Link href="#">
-                      <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
-                        <p className="text-[13px] font-semibold">
-                          SA Cricketers Get Emotional After Historic Win Against
-                          Australia To Enter T20 World Cup 2024 Final - Watch
-                        </p>
-                        <p className="text-[#586577] pt-2">18 Oct 2024</p>
-                      </div>
+                        <div className=" pb-2 mb-4 border-b-[1px] border-border-gray-700 ">
+                          <p className="text-[13px] font-semibold">
+                            SA Cricketers Get Emotional After Historic Win Against
+                            Australia To Enter T20 World Cup 2024 Final - Watch
+                          </p>
+                          <p className="text-[#586577] pt-2">18 Oct 2024</p>
+                        </div>
                       </Link>
                       <Link href="#">
-                      <div className=" pb-2 mb-2">
-                        <p className="text-[13px] font-semibold">
-                          'Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
-                          As SA Stuns AUS In T20 WC
-                        </p>
-                        <p className="text-[#586577] pt-2">18 Oct 2024</p>
-                      </div>
+                        <div className=" pb-2 mb-2">
+                          <p className="text-[13px] font-semibold">
+                            'Probably Took Wrong Risk': Alyssa Healy Regrets Sitting Out
+                            As SA Stuns AUS In T20 WC
+                          </p>
+                          <p className="text-[#586577] pt-2">18 Oct 2024</p>
+                        </div>
                       </Link>
                     </div>
                   </div>

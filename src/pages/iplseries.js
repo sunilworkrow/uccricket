@@ -2,7 +2,8 @@ import Layout from '@/Components/Layout'
 import WeeklySlider from '@/Components/WeeklySlider';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+import React, { useRef, useState } from "react";
 
 const IplSeries = () => {
     const [activeTab, setActiveTab] = useState('info');
@@ -43,6 +44,36 @@ const IplSeries = () => {
             [key]: !prev[key],
         }));
     };
+
+
+  const sliderRef = useRef(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const images = [
+    { src: "/assets/img/series/series-1.png", url: "/t20series" },
+    { src: "/assets/img/series/ipl.png", url: "/iplseries" },
+    { src: "/assets/img/series/series-1.png", url: "/t20series" },
+    { src: "/assets/img/series/ipl.png", url: "/iplseries" },
+    { src: "/assets/img/series/series-1.png", url: "/t20series" },
+    { src: "/assets/img/series/ipl.png", url: "/iplseries" },
+  ];
+
+  const handleScroll = (direction) => {
+    const slider = sliderRef.current;
+    const slideWidth = slider.children[0].offsetWidth + 15; // Width of 1 slide + gap
+    if (direction === "right") {
+      if (scrollPosition < images.length - 5) {
+        setScrollPosition(scrollPosition + 1);
+        slider.scrollBy({ left: slideWidth, behavior: "smooth" });
+      }
+    } else if (direction === "left") {
+      if (scrollPosition > 0) {
+        setScrollPosition(scrollPosition - 1);
+        slider.scrollBy({ left: -slideWidth, behavior: "smooth" });
+      }
+    }
+  };
+
 
 
     return (
@@ -108,88 +139,76 @@ const IplSeries = () => {
                         </div>
                         {/* Content Section mobile screen  */}
                         <div className="md:hidden">
-                            <div className=" relative">
-                                <button
-                                    id="left-arrow"
-                                    className="absolute left-[6px] top-1/2 -translate-y-1/2  bg-[#ffffff] p-[7px] rounded-full border-2 hidden"
-                                    style={{ zIndex: 1, display: "none" }}
-                                >
-                                    <span className="text-[20px] font-bold">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth="1.5"
-                                            stroke="currentColor"
-                                            className="size-3 text-[black]"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="M15.75 19.5 8.25 12l7.5-7.5"
-                                            ></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div className="relative overflow-hidden mx-6">
-                                    {/* Left Arrow */}
-                                    {/* series Wrapper */}
-                                    <div
-                                        id="series"
-                                        className="flex gap-3 transition-transform duration-300"
-                                        style={{ transform: "translateX(0px)" }}
-                                    >
-                                        <div className="flex-none w-1/5">
-                                            <a href="#">
-                                                <img src="/assets/img/series/series-1.png" className="" alt="" />
-                                            </a>
-                                        </div>
-                                        <div className="flex-none w-1/5">
-                                            <a href="#">
-                                                <img src="/assets/img/series/ipl.png" className="" alt="" />
-                                            </a>
-                                        </div>
-                                        <div className="flex-none w-1/5">
-                                            <a href="#">
-                                                <img src="/assets/img/series/series-1.png" className="" alt="" />
-                                            </a>
-                                        </div>
-                                        <div className="flex-none w-1/5">
-                                            <a href="#">
-                                                <img src="/assets/img/series/ipl.png" className="" alt="" />
-                                            </a>
-                                        </div>
-                                        <div className="flex-none w-1/5">
-                                            <a href="#">
-                                                <img src="/assets/img/series/series-1.png" className="" alt="" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                    {/* Right Arrow */}
-                                </div>
-                                <button
-                                    id="right-arrow"
-                                    className="absolute right-[6px] top-1/2 -translate-y-1/2 bg-[#ffffff] p-[7px] rounded-full border-2"
-                                    style={{ display: "block" }}
-                                >
-                                    <span className="text-[20px] font-bold">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            strokeWidth="1.5"
-                                            stroke="currentColor"
-                                            className="size-3 text-[black]"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                                            ></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
+                        <div className="relative">
+                {/* Left Arrow */}
+                <button
+                  id="left-arrow"
+                  className={`absolute left-[6px] top-1/2 -translate-y-1/2 bg-[#ffffff] p-[7px] rounded-full border-2 ${scrollPosition === 0 ? "hidden" : ""
+                    }`}
+                  onClick={() => handleScroll("left")}
+                  style={{ zIndex: 1 }}
+                >
+                  <span className="text-[20px] font-bold">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-3 text-[black]"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15.75 19.5 8.25 12l7.5-7.5"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+
+                {/* Slider */}
+                <div className="relative overflow-hidden mx-4">
+                  <div
+                    id="series"
+                    ref={sliderRef}
+                    className="flex gap-3 transition-transform duration-300 overflow-x-hidden"
+                  >
+                    {images.map((image, index) => (
+                      <div key={index} className="flex-none w-1/5">
+                        <a href={image.url} target="_blank" rel="noopener noreferrer">
+                          <img src={image.src} alt={`series-${index + 1}`} />
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Right Arrow */}
+                <button
+                  id="right-arrow"
+                  className={`absolute right-[31px] top-1/2 -translate-y-1/2 bg-[#ffffff] p-[7px] rounded-full border-2 ${scrollPosition >= images.length - 5 ? "hidden" : ""
+                    }`}
+                  onClick={() => handleScroll("right")}
+                  style={{ zIndex: 1 }}
+                >
+                  <span className="text-[20px] font-bold">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="size-3 text-[black]"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
                             <div className="px-4 mt-5">
                                 <h2 className="text-[17px] font-semibold">
                                     Indian Premier League 2024
