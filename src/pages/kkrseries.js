@@ -218,61 +218,73 @@ const KKRSeries = () => {
                     </div>
                 </div>
             </section>
+
+
             <section className="lg:w-[1000px] mx-auto md:mb-0 mb-4 px-2 lg:px-0">
-                <div id="tabs" className="my-4">
+                
+
+            <div id="tabs" className="my-4">
                     <div className="flex text-1xl space-x-8 p-2 bg-[#ffffff] rounded-lg overflow-auto">
-                        <button
-                            // onclick="handleTabClick(event, 'info')"
-                            //     className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
-                            onClick={(e) => handleTabClick(e, 'info')}
-                            className={`font-medium py-2 px-3 whitespace-nowrap ${activeTab === 'info' ? 'bg-[#1A80F8] text-white' : ''} rounded-md`}
-                        >
-                            Overview
-                        </button>
-                        <button
-                            // onclick="handleTabClick(event, 'schedule&results')" className="font-medium py-2 px-3 whitespace-nowrap"
-                            onClick={(e) => handleTabClick(e, 'schedule&results')}
-                            className={`font-medium py-2 px-3 whitespace-nowrap ${activeTab === 'schedule&results' ? 'bg-[#1A80F8] text-white' : ''} rounded-md`}
-                        >
-                            Schedule & Results
-                        </button>
-                        <button
-                            // onclick="handleTabClick(event, 'squads')" className="font-medium py-2 px-3 whitespace-nowrap"
-                            onClick={(e) => handleTabClick(e, 'squads')}
-                            className={`font-medium py-2 px-3 whitespace-nowrap ${activeTab === 'squads' ? 'bg-[#1A80F8] text-white' : ''} rounded-md`}
-                        >
-                            Squads
-                        </button>
-                        <button
-                            // onclick="handleTabClick(event, 'pointstable')" className="font-medium py-2 px-3 whitespace-nowrap"
-                            onClick={(e) => handleTabClick(e, 'pointstable')}
-                            className={`font-medium py-2 px-3 whitespace-nowrap ${activeTab === 'pointstable' ? 'bg-[#1A80F8] text-white' : ''} rounded-md`}
-                        >
-                            Points Table
-                        </button>
-                        <button
-                            // onclick="handleTabClick(event, 'news')" className="font-medium py-2 px-3 whitespace-nowrap"
-                            onClick={(e) => handleTabClick(e, 'news')}
-                            className={`font-medium py-2 px-3 whitespace-nowrap ${activeTab === 'news' ? 'bg-[#1A80F8] text-white' : ''} rounded-md`}
-                        >
-                            News
-                        </button>
-                        <button
-                            //  onclick="handleTabClick(event, 'stats')" className="font-medium py-2 px-3 whitespace-nowrap"
-                            onClick={(e) => handleTabClick(e, 'stats')}
-                            className={`font-medium py-2 px-3 whitespace-nowrap ${activeTab === 'stats' ? 'bg-[#1A80F8] text-white' : ''} rounded-md`}
-                        >
-                            Stats
-                        </button>
-                        <button
-                            //  onclick="handleTabClick(event, 'stadiums')" className="font-medium py-2 px-3 whitespace-nowrap"
-                            onClick={(e) => handleTabClick(e, 'stadiums')}
-                            className={`font-medium py-2 px-3 whitespace-nowrap ${activeTab === 'stadiums' ? 'bg-[#1A80F8] text-white' : ''} rounded-md`}
-                        >
-                            Stadiums
-                        </button>
+                        <Link href="/kkrseries">
+                            <button
+                                onclick="handleTabClick(event, 'info')"
+                                className="font-medium py-2 px-3 whitespace-nowrap bg-[#1A80F8] text-white rounded-md"
+                            >
+                                Overview
+                            </button>
+                        </Link>
+                        <Link href="/kkr/schedule-results">
+                            <button
+                                onclick="handleTabClick(event, 'live')"
+                                className="font-medium py-2 px-3 whitespace-nowrap "
+                            >
+                                Schedule & Results
+
+                            </button>
+                        </Link>
+                        <Link href="/kkr/squads">
+                            <button
+                                onclick="handleTabClick(event, 'scorecard')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Squads
+                            </button>
+                        </Link>
+                        <Link href="/kkr/points-table">
+                            <button
+                                onclick="handleTabClick(event, 'overs')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Points Table
+                            </button>
+                        </Link>
+                        <Link href="/kkr/news">
+                            <button
+                                onclick="handleTabClick(event, 'points')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                News
+                            </button>
+                        </Link>
+                        <Link href="/kkr/stats">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Stats
+                            </button>
+                        </Link>
+                        {/* <Link href="">
+                            <button
+                                onclick="handleTabClick(event, 'stats')"
+                                className="font-medium py-2 px-3 whitespace-nowrap"
+                            >
+                                Stadiums
+                            </button>
+                        </Link> */}
                     </div>
                 </div>
+
                 <div id="tab-content">
                     <div id="info" className={`tab-content ${activeTab === 'info' ? '' : 'hidden'}`}>
 
